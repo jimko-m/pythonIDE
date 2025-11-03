@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/nav_drawer_header_padding"
+    android:background="@drawable/nav_header_background_dark">
+
+    <!-- Profile Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/space_md">
+
+        <!-- Profile Image -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/avatar_size_lg"
+            android:layout_height="@dimen/avatar_size_lg"
+            android:src="@drawable/ic_person_dark"
+            android:background="@drawable/avatar_shape_dark"
+            android:padding="2dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Avatar"
+            app:strokeColor="@color/glass_border_dark"
+            app:strokeWidth="2dp" />
+
+        <!-- Profile Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/space_md">
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_name"
+                android:textColor="@color/md_theme_dark_onPrimaryContainer"
+                style="@style/TextAppearance.DarkUI.Title" />
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_email"
+                android:textColor="@color/md_theme_dark_onPrimaryContainer"
+                android:alpha="0.8"
+                android:layout_marginTop="@dimen/space_xs"
+                style="@style/TextAppearance.DarkUI.Body.Small" />
+
+        </LinearLayout>
+
+        <!-- Settings Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/Widget.DarkUI.Button.Icon"
+            app:icon="@drawable/ic_settings_dark"
+            app:iconTint="@color/md_theme_dark_onPrimaryContainer" />
+
+    </LinearLayout>
+
+    <!-- Quick Stats -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/space_lg"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/stats_files"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:textColor="@color/md_theme_dark_onPrimaryContainer"
+                android:textSize="@dimen/text_size_lg"
+                android:textStyle="bold"
+                style="@style/TextAppearance.DarkUI.Display" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ملفات"
+                android:textColor="@color/md_theme_dark_onPrimaryContainer"
+                android:alpha="0.7"
+                android:textSize="@dimen/text_size_sm"
+                style="@style/TextAppearance.DarkUI.Label.Small" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="match_parent"
+            android:background="@color/md_theme_dark_onPrimaryContainer"
+            android:alpha="0.3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id_stats_projects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:textColor="@color/md_theme_dark_onPrimaryContainer"
+                android:textSize="@dimen/text_size_lg"
+                android:textStyle="bold"
+                style="@style/TextAppearance.DarkUI.Display" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مشاريع"
+                android:textColor="@color/md_theme_dark_onPrimaryContainer"
+                android:alpha="0.7"
+                android:textSize="@dimen/text_size_sm"
+                style="@style/TextAppearance.DarkUI.Label.Small" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="match_parent"
+            android:background="@color/md_theme_dark_onPrimaryContainer"
+            android:alpha="0.3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id_stats_favorites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textColor="@color/md_theme_dark_onPrimaryContainer"
+                android:textSize="@dimen/text_size_lg"
+                android:textStyle="bold"
+                style="@style/TextAppearance.DarkUI.Display" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مفضلة"
+                android:textColor="@color/md_theme_dark_onPrimaryContainer"
+                android:alpha="0.7"
+                android:textSize="@dimen/text_size_sm"
+                style="@style/TextAppearance.DarkUI.Label.Small" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Status Indicator -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/space_md"
+        android:layout_gravity="center_horizontal">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/status_dot_online"
+            android:layout_marginEnd="@dimen/space_xs" />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="متصل"
+            android:textColor="@color/online_dark"
+            android:textSize="@dimen/text_size_sm"
+            style="@style/TextAppearance.DarkUI.Body.Small" />
+
+    </LinearLayout>
+
+</LinearLayout>

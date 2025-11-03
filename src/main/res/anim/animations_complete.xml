@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ========================================= -->
+    <!-- FADE ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- Fade In Animation -->
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0" />
+            
+        <!-- Scale In Animation -->
+        <scale
+            android:fromXScale="0.8"
+            android:fromYScale="0.8"
+            android:toXScale="1.0"
+            android:toYScale="1.0"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/accelerate_interpolator">
+
+        <!-- Fade Out Animation -->
+        <alpha
+            android:fromAlpha="1.0"
+            android:toAlpha="0.0" />
+            
+        <!-- Scale Out Animation -->
+        <scale
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="0.8"
+            android:toYScale="0.8"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- SLIDE ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- Slide In from Right -->
+        <translate
+            android:fromXDelta="100%"
+            android:toXDelta="0%" />
+            
+        <!-- Fade In -->
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/accelerate_interpolator">
+
+        <!-- Slide Out to Right -->
+        <translate
+            android:fromXDelta="0%"
+            android:toXDelta="100%" />
+            
+        <!-- Fade Out -->
+        <alpha
+            android:fromAlpha="1.0"
+            android:toAlpha="0.0" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- Slide In from Left -->
+        <translate
+            android:fromXDelta="-100%"
+            android:toXDelta="0%" />
+            
+        <!-- Fade In -->
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/accelerate_interpolator">
+
+        <!-- Slide Out to Left -->
+        <translate
+            android:fromXDelta="0%"
+            android:toXDelta="-100%" />
+            
+        <!-- Fade Out -->
+        <alpha
+            android:fromAlpha="1.0"
+            android:toAlpha="0.0" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- Slide In from Bottom -->
+        <translate
+            android:fromYDelta="100%"
+            android:toYDelta="0%" />
+            
+        <!-- Fade In -->
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/accelerate_interpolator">
+
+        <!-- Slide Out to Bottom -->
+        <translate
+            android:fromYDelta="0%"
+            android:toYDelta="100%" />
+            
+        <!-- Fade Out -->
+        <alpha
+            android:fromAlpha="1.0"
+            android:toAlpha="0.0" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- Slide In from Top -->
+        <translate
+            android:fromYDelta="-100%"
+            android:toYDelta="0%" />
+            
+        <!-- Fade In -->
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- BOUNCE ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_long"
+        android:interpolator="@android:anim/bounce_interpolator">
+
+        <!-- Bounce In Animation -->
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0"
+            android:duration="@dimen/animation_duration_short" />
+            
+        <scale
+            android:fromXScale="0.3"
+            android:fromYScale="0.3"
+            android:toXScale="1.05"
+            android:toYScale="1.05"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:duration="@dimen/animation_duration_short" />
+            
+        <scale
+            android:fromXScale="1.05"
+            android:fromYScale="1.05"
+            android:toXScale="1.0"
+            android:toYScale="1.0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:startOffset="@dimen/animation_duration_short"
+            android:duration="@dimen/animation_duration_short" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- PULSE ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:duration="@dimen/animation_duration_short">
+
+        <!-- Pulse Animation -->
+        <scale
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="1.05"
+            android:toYScale="1.05"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:duration="@dimen/animation_duration_medium">
+
+        <!-- Gentle Pulse Animation -->
+        <scale
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="1.02"
+            android:toYScale="1.02"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- ROTATE ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- Rotate In Animation -->
+        <rotate
+            android:fromDegrees="-180"
+            android:toDegrees="0"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_long"
+        android:repeatCount="infinite"
+        android:interpolator="@android:anim/linear_interpolator">
+
+        <!-- Continuous Rotate Animation -->
+        <rotate
+            android:fromDegrees="0"
+            android:toDegrees="360"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- ZOOM ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_short"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- Zoom In Animation -->
+        <scale
+            android:fromXScale="0.0"
+            android:fromYScale="0.0"
+            android:toXScale="1.0"
+            android:toYScale="1.0"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_short"
+        android:interpolator="@android:anim/accelerate_interpolator">
+
+        <!-- Zoom Out Animation -->
+        <scale
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="0.0"
+            android:toYScale="0.0"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+        <alpha
+            android:fromAlpha="1.0"
+            android:toAlpha="0.0" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- BUTTON ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_short"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- Button Click Animation -->
+        <scale
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="0.95"
+            android:toYScale="0.95"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_short"
+        android:interpolator="@android:anim/bounce_interpolator">
+
+        <!-- Button Bounce Animation -->
+        <scale
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="1.1"
+            android:toYScale="1.1"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- LIST ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- List Item Slide In -->
+        <translate
+            android:fromYDelta="100%"
+            android:toYDelta="0%" />
+            
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_short"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- List Item Selection -->
+        <scale
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="1.02"
+            android:toYScale="1.02"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+        <alpha
+            android:fromAlpha="0.8"
+            android:toAlpha="1.0" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- DIALOG ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/bounce_interpolator">
+
+        <!-- Dialog Enter Animation -->
+        <scale
+            android:fromXScale="0.7"
+            android:fromYScale="0.7"
+            android:toXScale="1.0"
+            android:toYScale="1.0"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0"
+            android:duration="@dimen/animation_duration_short" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_short"
+        android:interpolator="@android:anim/accelerate_interpolator">
+
+        <!-- Dialog Exit Animation -->
+        <scale
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="0.7"
+            android:toYScale="0.7"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+        <alpha
+            android:fromAlpha="1.0"
+            android:toAlpha="0.0" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- BOTTOM SHEET ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_long"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- Bottom Sheet Enter Animation -->
+        <translate
+            android:fromYDelta="100%"
+            android:toYDelta="0%" />
+            
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0"
+            android:duration="@dimen/animation_duration_short" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/accelerate_interpolator">
+
+        <!-- Bottom Sheet Exit Animation -->
+        <translate
+            android:fromYDelta="0%"
+            android:toYDelta="100%" />
+            
+        <alpha
+            android:fromAlpha="1.0"
+            android:toAlpha="0.0"
+            android:duration="@dimen/animation_duration_short" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- FAB ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_short"
+        android:interpolator="@android:anim/bounce_interpolator">
+
+        <!-- FAB Show Animation -->
+        <scale
+            android:fromXScale="0.0"
+            android:fromYScale="0.0"
+            android:toXScale="1.0"
+            android:toYScale="1.0"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+        <rotate
+            android:fromDegrees="-180"
+            android:toDegrees="0"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_short"
+        android:interpolator="@android:anim/accelerate_interpolator">
+
+        <!-- FAB Hide Animation -->
+        <scale
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="0.0"
+            android:toYScale="0.0"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+        <rotate
+            android:fromDegrees="0"
+            android:toDegrees="-180"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- CARD ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- Card Hover Animation -->
+        <translate
+            android:fromYDelta="0dp"
+            android:toYDelta="-4dp" />
+            
+        <scale
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="1.02"
+            android:toYScale="1.02"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/accelerate_interpolator">
+
+        <!-- Card Hover Out Animation -->
+        <translate
+            android:fromYDelta="-4dp"
+            android:toYDelta="0dp" />
+            
+        <scale
+            android:fromXScale="1.02"
+            android:fromYScale="1.02"
+            android:toXScale="1.0"
+            android:toYScale="1.0"
+            android:pivotX="50%"
+            android:pivotY="50%" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- LOADING ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_long"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:interpolator="@android:anim/linear_interpolator">
+
+        <!-- Loading Dots Animation -->
+        <alpha
+            android:fromAlpha="0.3"
+            android:toAlpha="1.0"
+            android:duration="@dimen/animation_duration_short" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_extra_long"
+        android:repeatCount="infinite"
+        android:interpolator="@android:anim/linear_interpolator">
+
+        <!-- Skeleton Loading Shimmer -->
+        <alpha
+            android:fromAlpha="0.2"
+            android:toAlpha="0.8"
+            android:duration="@dimen/animation_duration_long" />
+            
+        <scale
+            android:fromXScale="0.8"
+            android:fromYScale="1.0"
+            android:toXScale="1.2"
+            android:toYScale="1.0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:duration="@dimen/animation_duration_extra_long" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- NAVIGATION ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_long"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- Navigation Slide Animation -->
+        <translate
+            android:fromXDelta="30%"
+            android:toXDelta="0%" />
+            
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- TOOLBAR ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_short"
+        android:interpolator="@android:anim/accelerate_interpolator">
+
+        <!-- Toolbar Hide Animation -->
+        <translate
+            android:fromYDelta="0%"
+            android:toYDelta="-100%" />
+            
+    </set>
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_short"
+        android:interpolator="@android:anim/decelerate_interpolator">
+
+        <!-- Toolbar Show Animation -->
+        <translate
+            android:fromYDelta="-100%"
+            android:toYDelta="0%" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- SCROLL ANIMATIONS -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_medium"
+        android:interpolator="@android:anim/linear_interpolator">
+
+        <!-- Scroll to Top Animation -->
+        <translate
+            android:fromYDelta="0"
+            android:toYDelta="-100%"
+            android:duration="@dimen/animation_duration_medium" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- TYPEWRITER ANIMATION -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_short"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse">
+
+        <!-- Typewriter Cursor Blink -->
+        <alpha
+            android:fromAlpha="1.0"
+            android:toAlpha="0.0"
+            android:duration="@dimen/animation_duration_short" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- WAVE ANIMATION -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_long"
+        android:repeatCount="infinite"
+        android:interpolator="@android:anim/linear_interpolator">
+
+        <!-- Wave Animation for Audio Visualizer -->
+        <scale
+            android:fromXScale="1.0"
+            android:fromYScale="0.5"
+            android:toXScale="1.0"
+            android:toYScale="1.0"
+            android:pivotX="50%"
+            android:pivotY="100%"
+            android:duration="@dimen/animation_duration_medium" />
+            
+    </set>
+
+    <!-- ========================================= -->
+    <!-- PARTICLE ANIMATION -->
+    <!-- ========================================= -->
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@dimen/animation_duration_extra_long"
+        android:repeatCount="infinite"
+        android:interpolator="@android:anim/linear_interpolator">
+
+        <!-- Particle Falling Animation -->
+        <translate
+            android:fromYDelta="0dp"
+            android:toYDelta="200dp" />
+            
+        <alpha
+            android:fromAlpha="1.0"
+            android:toAlpha="0.0"
+            android:duration="@dimen/animation_duration_long" />
+            
+        <scale
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="0.5"
+            android:toYScale="0.5"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:duration="@dimen/animation_duration_extra_long" />
+            
+    </set>
+
+</resources>

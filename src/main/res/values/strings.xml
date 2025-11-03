@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name and Branding -->
+    <string name="app_name">DarkUI Pro</string>
+    <string name="app_tagline">واجهة داكنة احترافية</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_dashboard">لوحة التحكم</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="nav_profile">الملف الشخصي</string>
+    <string name="nav_favorites">المفضلة</string>
+    <string name="nav_recent">الحديث</string>
+    <string name="nav_downloads">التحميلات</string>
+    <string name="nav_help">المساعدة</string>
+    <string name="nav_about">حول</string>
+    
+    <!-- Common Actions -->
+    <string name="action_ok">موافق</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_save">حفظ</string>
+    <string name="action_edit">تعديل</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_share">مشاركة</string>
+    <string name="action_copy">نسخ</string>
+    <string name="action_paste">لصق</string>
+    <string name="action_search">بحث</string>
+    <string name="action_filter">تصفية</string>
+    <string name="action_sort">ترتيب</string>
+    <string name="action_refresh">تحديث</string>
+    <string name="action_retry">إعادة المحاولة</string>
+    <string name="action_load_more">تحميل المزيد</string>
+    <string name="action_view_all">عرض الكل</string>
+    <string name="action_see_more">عرض المزيد</string>
+    
+    <!-- Login and Authentication -->
+    <string name="login_title">تسجيل الدخول</string>
+    <string name="signup_title">إنشاء حساب جديد</string>
+    <string name="forgot_password_title">نسيت كلمة المرور</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="remember_me">تذكرني</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="signup">إنشاء حساب</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="forgot_password">نسيت كلمة المرور؟</string>
+    <string name="create_account">إنشاء حساب جديد</string>
+    
+    <!-- Dashboard -->
+    <string name="dashboard_title">لوحة التحكم</string>
+    <string name="welcome_message">مرحباً بك في DarkUI Pro</string>
+    <string name="quick_stats">الإحصائيات السريعة</string>
+    <string name="recent_activity">النشاطات الأخيرة</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="today">اليوم</string>
+    <string name="this_week">هذا الأسبوع</string>
+    <string name="this_month">هذا الشهر</string>
+    <string name="total">المجموع</string>
+    <string name="average">المتوسط</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_general">عام</string>
+    <string name="settings_notifications">الإشعارات</string>
+    <string name="settings_privacy">الخصوصية</string>
+    <string name="settings_security">الأمان</string>
+    <string name="settings_appearance">المظهر</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_theme">المظهر</string>
+    <string name="settings_dark_mode">الوضع المظلم</string>
+    <string name="settings_notifications_enabled">تفعيل الإشعارات</string>
+    <string name="settings_sound">الصوت</string>
+    <string name="settings_vibration">الاهتزاز</string>
+    <string name="settings_privacy_enabled">تفعيل الخصوصية</string>
+    <string name="settings_auto_backup">النسخ الاحتياطي التلقائي</string>
+    
+    <!-- Profile -->
+    <string name="profile_title">الملف الشخصي</string>
+    <string name="profile_edit">تعديل الملف الشخصي</string>
+    <string name="profile_photo">صورة الملف الشخصي</string>
+    <string name="change_photo">تغيير الصورة</string>
+    <string name="remove_photo">إزالة الصورة</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="bio">النبذة الشخصية</string>
+    <string name="member_since">عضو منذ</string>
+    
+    <!-- Messages and Feedback -->
+    <string name="message_welcome">مرحباً بك!</string>
+    <string name="message_success">تم بنجاح</string>
+    <string name="message_error">حدث خطأ</string>
+    <string name="message_loading">جاري التحميل...</string>
+    <string name="message_no_data">لا توجد بيانات</string>
+    <string name="message_empty_state">الصفحة فارغة</string>
+    <string name="message_no_internet">لا يوجد اتصال بالإنترنت</string>
+    <string name="message_server_error">خطأ في الخادم</string>
+    <string name="message_try_again">حاول مرة أخرى</string>
+    <string name="message_exit">هل تريد الخروج؟</string>
+    <string name="message_logout">هل تريد تسجيل الخروج؟</string>
+    <string name="message_delete">هل تريد الحذف؟</string>
+    
+    <!-- Time and Date -->
+    <string name="time_now">الآن</string>
+    <string name="time_minutes_ago">منذ {0} دقائق</string>
+    <string name="time_hours_ago">منذ {0} ساعات</string>
+    <string name="time_days_ago">منذ {0} أيام</string>
+    <string name="date_today">اليوم</string>
+    <string name="date_yesterday">أمس</string>
+    <string name="date_tomorrow">غداً</string>
+    
+    <!-- Units and Measurements -->
+    <string name="unit_kb">كيلوبايت</string>
+    <string name="unit_mb">ميجابايت</string>
+    <string name="unit_gb">جيجابايت</string>
+    <string name="unit_percent">%</string>
+    
+    <!-- Search -->
+    <string name="search_hint">ابحث عن...</string>
+    <string name="search_no_results">لا توجد نتائج</string>
+    <string name="search_recent">عمليات البحث الحديثة</string>
+    <string name="search_suggestions">اقتراحات البحث</string>
+    
+    <!-- Categories -->
+    <string name="category_all">الكل</string>
+    <string name="category_favorites">المفضلة</string>
+    <string name="category_recent">الحديث</string>
+    <string name="category_trending">الأكثر شيوعاً</string>
+    <string name="category_new">جديد</string>
+    <string name="category_popular">شائع</string>
+    
+    <!-- Form Labels -->
+    <string name="label_name">الاسم</string>
+    <string name="label_description">الوصف</string>
+    <string name="label_title">العنوان</string>
+    <string name="label_category">الفئة</string>
+    <string name="label_status">الحالة</string>
+    <string name="label_date">التاريخ</string>
+    <string name="label_time">الوقت</string>
+    <string name="label_location">الموقع</string>
+    <string name="label_tags">العلامات</string>
+    <string name="label_comments">التعليقات</string>
+    
+    <!-- Status Messages -->
+    <string name="status_online">متصل</string>
+    <string name="status_offline">غير متصل</string>
+    <string name="status_busy">مشغول</string>
+    <string name="status_away">بعيد</string>
+    <string name="status_active">نشط</string>
+    <string name="status_inactive">غير نشط</string>
+    
+    <!-- Tab Labels -->
+    <string name="tab_overview">نظرة عامة</string>
+    <string name="tab_details">التفاصيل</string>
+    <string name="tab_reviews">المراجعات</string>
+    <string name="tab_related">ذات صلة</string>
+    
+    <!-- Error Messages -->
+    <string name="error_network">خطأ في الشبكة</string>
+    <string name="error_server">خطأ في الخادم</string>
+    <string name="error_unknown">خطأ غير معروف</string>
+    <string name="error_permission">ليس لديك صلاحية للوصول</string>
+    <string name="error_not_found">غير موجود</string>
+    <string name="error_timeout">انتهت المهلة الزمنية</string>
+    
+    <!-- Placeholder Text -->
+    <string name="placeholder_search">البحث في DarkUI Pro...</string>
+    <string name="placeholder_email">أدخل بريدك الإلكتروني</string>
+    <string name="placeholder_password">أدخل كلمة المرور</string>
+    <string name="placeholder_name">أدخل اسمك</string>
+    <string name="placeholder_message">اكتب رسالتك...</string>
+    
+    <!-- Empty States -->
+    <string name="empty_dashboard">لا توجد بيانات في لوحة التحكم</string>
+    <string name="empty_notifications">لا توجد إشعارات</string>
+    <string name="empty_favorites">لا توجد عناصر مفضلة</string>
+    <string name="empty_history">لا توجد سجلات</string>
+    <string name="empty_search">لا توجد نتائج للبحث</string>
+    
+    <!-- Terminal specific strings -->
+    <string name="terminal_title">🐍 Python IDE Terminal</string>
+    <string name="terminal_ready"> جاهز</string>
+    <string name="terminal_input_hint">اكتب أمر Python هنا...</string>
+    <string name="terminal_execute">تشغيل ▶</string>
+    <string name="terminal_clear">مسح</string>
+    <string name="terminal_help">مساعدة</string>
+    <string name="terminal_navigation">↑↓ للتنقل في التاريخ • ⌫ لإزالة النص • Enter للتنفيذ</string>
+    
+    <!-- Terminal help content -->
+    <string name="terminal_help_title">مساعدة Terminal</string>
+    <string name="terminal_help_content">أوامر Terminal المتاحة:
+
+الأوامر المدمجة:
+• clear - مسح الشاشة
+• exit/quit - إنهاء البرنامج  
+• history - عرض تاريخ الأوامر
+• ps - عرض العمليات النشطة
+• kill &lt;id&gt; - إيقاف عملية
+• help - عرض هذه المساعدة
+
+أمثلة Python:
+• print(\'Hello, World!\')
+• import sys
+• sys.version
+• 2 + 2
+
+الميزات:
+• تاريخ الأوامر (↑↓ للتنقل)
+• تنفيذ Python حقيقي
+• دعم النصوص العربية
+• معالجة الأخطاء المتقدمة
+• عرض العمليات النشطة
+
+للخروج: اضغط_back أو اكتب exit</string>
+    
+    <!-- Terminal status messages -->
+    <string name="terminal_started">تم تشغيل Terminal المدمج</string>
+    <string name="python_ready">مفسر Python جاهز</string>
+    <string name="python_not_found">Python غير متوفر</string>
+    <string name="terminal_shutdown">تم إغلاق Terminal</string>
+    <string name="process_started">تم بدء العملية</string>
+    <string name="process_killed">تم إيقاف العملية</string>
+    <string name="process_running">العملية قيد التشغيل</string>
+    
+    <!-- Terminal colors -->
+    <string name="color_terminal_green">#00ff00</string>
+    <string name="color_terminal_white">#ffffff</string>
+    <string name="color_terminal_gray">#888888</string>
+    <string name="color_terminal_black">#000000</string>
+    <string name="color_terminal_dark_gray">#333333</string>
+    <string name="color_terminal_blue">#007acc</string>
+    
+    <!-- File Manager Strings -->
+    <string name="file_manager_title">مدير الملفات</string>
+    <string name="parent_directory">المجلد الأب</string>
+    <string name="file_name">اسم الملف</string>
+    <string name="file_size">حجم الملف</string>
+    <string name="file_modified">تاريخ التعديل</string>
+    <string name="file_properties">خصائص الملف</string>
+    <string name="file_path">مسار الملف</string>
+    
+    <!-- File Operations -->
+    <string name="operation_open">فتح</string>
+    <string name="operation_edit">تعديل</string>
+    <string name="operation_rename">إعادة تسمية</string>
+    <string name="operation_delete">حذف</string>
+    <string name="operation_copy">نسخ</string>
+    <string name="operation_cut">قص</string>
+    <string name="operation_paste">لصق</string>
+    <string name="operation_move">نقل</string>
+    <string name="operation_duplicate">نسخ مكرر</string>
+    <string name="operation_new_folder">مجلد جديد</string>
+    <string name="operation_new_file">ملف جديد</string>
+    <string name="operation_import">استيراد</string>
+    <string name="operation_export">تصدير</string>
+    <string name="operation_share">مشاركة</string>
+    <string name="operation_compress">ضغط</string>
+    <string name="operation_extract">استخراج</string>
+    
+    <!-- File Operations Confirmations -->
+    <string name="confirm_delete">هل أنت متأكد من الحذف؟</string>
+    <string name="confirm_overwrite">الملف موجود بالفعل، هل تريد استبداله؟</string>
+    <string name="confirm_paste">هل تريد لصق الملفات؟</string>
+    
+    <!-- File Manager Actions -->
+    <string name="action_create_folder">إنشاء مجلد</string>
+    <string name="action_create_file">إنشاء ملف</string>
+    <string name="action_select_all">تحديد الكل</string>
+    <string name="action_deselect_all">إلغاء تحديد الكل</string>
+    <string name="action_view_mode">طريقة العرض</string>
+    <string name="action_list_view">عرض القائمة</string>
+    <string name="action_grid_view">عرض الشبكة</string>
+    <string name="action_sort">ترتيب</string>
+    <string name="action_sort_name">ترتيب بالاسم</string>
+    <string name="action_sort_date">ترتيب بالتاريخ</string>
+    <string name="action_sort_size">ترتيب بالحجم</string>
+    <string name="action_filter">تصفية</string>
+    <string name="action_filter_folders">المجلدات فقط</string>
+    <string name="action_filter_files">الملفات فقط</string>
+    <string name="action_filter_images">الصور فقط</string>
+    <string name="action_filter_documents">المستندات فقط</string>
+    
+    <!-- File Types -->
+    <string name="file_type_folder">مجلد</string>
+    <string name="file_type_document">مستند</string>
+    <string name="file_type_image">صورة</string>
+    <string name="file_type_video">فيديو</string>
+    <string name="file_type_audio">صوت</string>
+    <string name="file_type_archive">أرشيف</string>
+    <string name="file_type_text">نص</string>
+    <string name="file_type_code">كود</string>
+    <string name="file_type_pdf">PDF</string>
+    <string name="file_type_unknown">غير محدد</string>
+    
+    <!-- File Status Messages -->
+    <string name="status_loading">جاري التحميل...</string>
+    <string name="status_copying">جاري النسخ...</string>
+    <string name="status_moving">جاري النقل...</string>
+    <string name="status_deleting">جاري الحذف...</string>
+    <string name="status_compressing">جاري الضغط...</string>
+    <string name="status_extracting">جاري الاستخراج...</string>
+    <string name="status_searching">جاري البحث...</string>
+    
+    <!-- File Manager Messages -->
+    <string name="message_operation_success">تمت العملية بنجاح</string>
+    <string name="message_operation_failed">فشلت العملية</string>
+    <string name="message_permission_denied">تم رفض الإذن</string>
+    <string name="message_file_not_found">الملف غير موجود</string>
+    <string name="message_folder_empty">المجلد فارغ</string>
+    <string name="message_no_files_selected">لم يتم تحديد ملفات</string>
+    <string name="message_clipboard_empty">الحافظة فارغة</string>
+    <string name="message_no_storage_permission">يحتاج التطبيق إلى إذن التخزين</string>
+    <string name="message_invalid_filename">اسم الملف غير صالح</string>
+    <string name="message_file_exists">الملف موجود بالفعل</string>
+    <string name="message_disk_full">القرص ممتلئ</string>
+    <string name="message_readonly">الملف للقراءة فقط</string>
+    <string name="message_not_accessible">لا يمكن الوصول إلى الملف</string>
+    
+    <!-- File Manager Dialogs -->
+    <string name="dialog_new_folder_title">إنشاء مجلد جديد</string>
+    <string name="dialog_new_file_title">إنشاء ملف جديد</string>
+    <string name="dialog_rename_title">إعادة تسمية</string>
+    <string name="dialog_properties_title">خصائص الملف</string>
+    <string name="dialog_search_title">البحث عن ملفات</string>
+    <string name="dialog_select_items">تحديد العناصر</string>
+    
+    <!-- File Manager Input Hints -->
+    <string name="hint_folder_name">اسم المجلد</string>
+    <string name="hint_file_name">اسم الملف</string>
+    <string name="hint_search_files">البحث عن ملفات...</string>
+    <string name="hint_new_folder_name">أدخل اسم المجلد الجديد</string>
+    <string name="hint_new_file_name">أدخل اسم الملف الجديد</string>
+    <string name="hint_rename_to">إعادة تسمية إلى</string>
+    
+    <!-- File Manager Context Menus -->
+    <string name="context_menu_open">فتح</string>
+    <string name="context_menu_edit">تعديل</string>
+    <string name="context_menu_rename">إعادة تسمية</string>
+    <string name="context_menu_delete">حذف</string>
+    <string name="context_menu_copy">نسخ</string>
+    <string name="context_menu_cut">قص</string>
+    <string name="context_menu_paste">لصق</string>
+    <string name="context_menu_move">نقل</string>
+    <string name="context_menu_duplicate">نسخ مكرر</string>
+    <string name="context_menu_compress">ضغط</string>
+    <string name="context_menu_extract">استخراج</string>
+    <string name="context_menu_share">مشاركة</string>
+    <string name="context_menu_properties">خصائص</string>
+    <string name="context_menu_select">تحديد</string>
+    <string name="context_menu_select_all">تحديد الكل</string>
+    <string name="context_menu_info">معلومات</string>
+    
+    <!-- File Manager Tabs and Sections -->
+    <string name="tab_recent">الحديث</string>
+    <string name="tab_favorites">المفضلة</string>
+    <string name="tab_downloads">التحميلات</string>
+    <string name="tab_documents">المستندات</string>
+    <string name="tab_images">الصور</string>
+    <string name="tab_videos">الفيديوهات</string>
+    <string name="tab_music">الموسيقى</string>
+    <string name="section_current_folder">المجلد الحالي</string>
+    <string name="section_parent_folder">المجلد الأب</string>
+    <string name="section_storage_info">معلومات التخزين</string>
+    
+    <!-- File Manager Stats -->
+    <string name="stats_folders">%d مجلد</string>
+    <string name="stats_files">%d ملف</string>
+    <string name="stats_folders_and_files">%d مجلد، %d ملف</string>
+    <string name="stats_selected">%d محدد</string>
+    <string name="stats_selected_size">حجم المحدد: %s</string>
+    <string name="stats_total_size">الحجم الإجمالي: %s</string>
+    <string name="stats_available_space">المساحة المتاحة: %s</string>
+    <string name="stats_used_space">المساحة المستخدمة: %s</string>
+    
+    <!-- Auto-save settings -->
+    <string name="auto_save_enabled">الحفظ التلقائي مفعل</string>
+    <string name="auto_save_disabled">الحفظ التلقائي معطل</string>
+    <string name="auto_save_interval">فترة الحفظ التلقائي</string>
+    <string name="auto_save_settings">إعدادات الحفظ التلقائي</string>
+    
+    <!-- Library Manager -->
+    <string name="library_manager_title">إدارة المكتبات</string>
+    <string name="library_details_title">تفاصيل المكتبة</string>
+    <string name="install_libraries_title">تثبيت المكتبات</string>
+    
+    <!-- Library Management -->
+    <string name="search_library_hint">ابحث عن مكتبة Python...</string>
+    <string name="no_libraries">لا توجد مكتبات</string>
+    <string name="installed_libraries">المكتبات المثبتة</string>
+    <string name="available_libraries">المكتبات المتاحة</string>
+    <string name="recent_libraries">المكتبات الحديثة</string>
+    <string name="favorites_libraries">المكتبات المفضلة</string>
+    
+    <!-- Library Actions -->
+    <string name="action_install">تثبيت</string>
+    <string name="action_uninstall">إلغاء التثبيت</string>
+    <string name="action_update">تحديث</string>
+    <string name="action_details">تفاصيل</string>
+    <string name="action_homepage">الموقع الرسمي</string>
+    <string name="action_add_favorite">إضافة للمفضلة</string>
+    <string name="action_remove_favorite">إزالة من المفضلة</string>
+    
+    <!-- Library Status -->
+    <string name="status_installing">جاري التثبيت...</string>
+    <string name="status_uninstalling">جاري إلغاء التثبيت...</string>
+    <string name="status_updating">جاري التحديث...</string>
+    <string name="status_searching">جاري البحث...</string>
+    <string name="status_loading_libraries">جاري تحميل المكتبات...</string>
+    
+    <!-- Library Info -->
+    <string name="library_author">المؤلف</string>
+    <string name="library_license">الترخيص</string>
+    <string name="library_homepage">الصفحة الرئيسية</string>
+    <string name="library_downloads">عدد التحميلات</string>
+    <string name="library_size">حجم المكتبة</string>
+    <string name="library_version">الإصدار</string>
+    <string name="library_description">الوصف</string>
+    <string name="library_dependencies">التبعيات</string>
+    <string name="library_keywords">الكلمات المفتاحية</string>
+    <string name="library_classifiers">التصنيفات</string>
+    <string name="library_maintainer">المسؤول</string>
+    <string name="library_platforms">المنصات المدعومة</string>
+    <string name="library_python_versions">إصدارات Python المدعومة</string>
+    
+    <!-- Library Messages -->
+    <string name="message_install_success">تم تثبيت المكتبة بنجاح</string>
+    <string name="message_uninstall_success">تم إلغاء تثبيت المكتبة بنجاح</string>
+    <string name="message_update_success">تم تحديث المكتبة بنجاح</string>
+    <string name="message_install_failed">فشل في تثبيت المكتبة</string>
+    <string name="message_uninstall_failed">فشل في إلغاء تثبيت المكتبة</string>
+    <string name="message_update_failed">فشل في تحديث المكتبة</string>
+    <string name="message_library_not_found">المكتبة غير موجودة</string>
+    <string name="message_dependency_conflict">تعارض في التبعيات</string>
+    <string name="message_incompatible_library">المكتبة غير متوافقة</string>
+    <string name="message_network_error">خطأ في الاتصال بالإنترنت</string>
+    <string name="message_search_empty">لا توجد نتائج للبحث</string>
+    
+    <!-- Library Dialogs -->
+    <string name="dialog_install_title">تثبيت مكتبة</string>
+    <string name="dialog_uninstall_title">إلغاء تثبيت مكتبة</string>
+    <string name="dialog_update_title">تحديث مكتبة</string>
+    <string name="dialog_dependency_title">تبعيات المكتبة</string>
+    <string name="dialog_confirm_install">هل تريد تثبيت هذه المكتبة؟</string>
+    <string name="dialog_confirm_uninstall">هل تريد إلغاء تثبيت هذه المكتبة؟</string>
+    <string name="dialog_confirm_update">هل تريد تحديث هذه المكتبة؟</string>
+    
+    <!-- Library Installation Options -->
+    <string name="option_include_dependencies">تضمين التبعيات</string>
+    <string name="option_upgrade_if_installed">ترقية إذا كانت مثبتة</string>
+    <string name="option_target_directory">الدليل المستهدف</string>
+    <string name="option_verbose_output">مخرجات مفصلة</string>
+    <string name="option_force_reinstall">إعادة التثبيت القسري</string>
+    
+    <!-- Library Filters -->
+    <string name="filter_all">جميع المكتبات</string>
+    <string name="filter_installed">المثبتة</string>
+    <string name="filter_available">غير مثبتة</string>
+    <string name="filter_compatible">المتوافقة</string>
+    <string name="filter_incompatible">غير متوافقة</string>
+    <string name="filter_popular">شائعة</string>
+    <string name="filter_recent">حديثة</string>
+    
+    <!-- Library Sort -->
+    <string name="sort_name">ترتيب بالاسم</string>
+    <string name="sort_version">ترتيب بالإصدار</string>
+    <string name="sort_downloads">ترتيب بعدد التحميلات</string>
+    <string name="sort_date">ترتيب بالتاريخ</string>
+    <string name="sort_size">ترتيب بالحجم</string>
+    <string name="sort_popularity">ترتيب بالشعبية</string>
+    
+    <!-- Library Categories -->
+    <string name="category_web_development">تطوير الويب</string>
+    <string name="category_data_science">علوم البيانات</string>
+    <string name="category_machine_learning">تعلم الآلة</string>
+    <string name="category_artificial_intelligence">الذكاء الاصطناعي</string>
+    <string name="category_game_development">تطوير الألعاب</string>
+    <string name="category_mobile_development">تطوير تطبيقات الجوال</string>
+    <string name="category_desktop_applications">تطبيقات سطح المكتب</string>
+    <string name="category_networking">الشبكات</string>
+    <string name="category_databases">قواعد البيانات</string>
+    <string name="category_scientific_computing">الحوسبة العلمية</string>
+    <string name="category_image_processing">معالجة الصور</string>
+    <string name="category_audio_processing">معالجة الصوت</string>
+    <string name="category_text_processing">معالجة النصوص</string>
+    <string name="category_automation">الأتمتة</string>
+    <string name="category_testing">الاختبار</string>
+    <string name="category_security">الأمان</string>
+    <string name="category_devops">DevOps</string>
+    <string name="category_utilities">الأدوات المساعدة</string>
+    <string name="category_graphics">الرسوميات</string>
+    <string name="category_mathematics">الرياضيات</string>
+    
+    <!-- Library Installation Progress -->
+    <string name="progress_downloading">جاري التحميل...</string>
+    <string name="progress_extracting">جاري الاستخراج...</string>
+    <string name="progress_installing">جاري التثبيت...</string>
+    <string name="progress_resolving_dependencies">جاري حل التبعيات...</string>
+    <string name="progress_validating">جاري التحقق...</string>
+    
+    <!-- Library Dependencies -->
+    <string name="dependency_required">مطلوبة</string>
+    <string name="dependency_optional">اختيارية</string>
+    <string name="dependency_conflict_detected">تم اكتشاف تعارض في التبعيات</string>
+    <string name="dependency_version_conflict">تعارض في إصدارات التبعيات</string>
+    <string name="dependency_circular">تبعية دائرية</string>
+    <string name="dependency_missing">تبعية مفقودة</string>
+    
+    <!-- Library Compatibility -->
+    <string name="compatibility_checking">جاري فحص التوافق...</string>
+    <string name="compatibility_compatible">متوافقة</string>
+    <string name="compatibility_incompatible">غير متوافقة</string>
+    <string name="compatibility_unknown">غير معروف</string>
+    <string name="compatibility_python_version">إصدار Python</string>
+    <string name="compatibility_architecture">المعمارية</string>
+    <string name="compatibility_android_version">إصدار Android</string>
+    
+    <!-- Library Search -->
+    <string name="search_placeholder">ابحث في مكتبات Python...</string>
+    <string name="search_recent">عمليات البحث الحديثة</string>
+    <string name="search_trending">عمليات البحث الشائعة</string>
+    <string name="search_no_results">لا توجد نتائج</string>
+    <string name="search_suggestions">اقتراحات البحث</string>
+    <string name="search_clear">مسح البحث</string>
+    <string name="search_history">تاريخ البحث</string>
+    
+    <!-- Library Favorites -->
+    <string name="favorites_add_success">تم إضافة المكتبة للمفضلة</string>
+    <string name="favorites_remove_success">تم إزالة المكتبة من المفضلة</string>
+    <string name="favorites_empty">لا توجد مكتبات مفضلة</string>
+    <string name="favorites_manage">إدارة المفضلة</string>
+    
+    <!-- Library Update -->
+    <string name="update_available">تحديث متوفر</string>
+    <string name="update_checking">جاري فحص التحديثات...</string>
+    <string name="update_latest">الإصدار الأحدث مثبت</string>
+    <string name="update_all">تحديث الكل</string>
+    <string name="update_check_all">فحص جميع التحديثات</string>
+    
+    <!-- Library Statistics -->
+    <string name="stats_total_libraries">إجمالي المكتبات: %d</string>
+    <string name="stats_installed_libraries">المكتبات المثبتة: %d</string>
+    <string name="stats_total_size">الحجم الإجمالي: %s</string>
+    <string name="stats_disk_usage">استخدام التخزين: %s</string>
+    
+    <!-- Add Libraries FAB -->
+    <string name="fab_add_libraries">إضافة مكتبات جديدة</string>
+    <string name="fab_install_from_pypi">تثبيت من PyPI</string>
+    <string name="fab_install_from_url">تثبيت من رابط</string>
+    <string name="fab_install_from_file">تثبيت من ملف</string>
+</resources>

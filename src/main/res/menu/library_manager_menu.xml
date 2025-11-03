@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/nav_all"
+        android:icon="@drawable/ic_all_libraries"
+        android:title="الكل" />
+    
+    <item
+        android:id="@+id/nav_installed"
+        android:icon="@drawable/ic_installed"
+        android:title="المثبتة" />
+    
+    <item
+        android:id="@+id/nav_available"
+        android:icon="@drawable/ic_available"
+        android:title="متاحة" />
+    
+    <item
+        android:id="@+id/nav_compatible"
+        android:icon="@drawable/ic_compatible"
+        android:title="متوافقة" />
+    
+</menu>

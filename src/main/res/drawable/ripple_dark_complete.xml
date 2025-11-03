@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Disabled state -->
+    <item android:color="@color/md_theme_dark_surfaceDim" android:state_enabled="false" />
+    
+    <!-- Focused state -->
+    <item android:color="@color/md_theme_dark_surfaceBright" android:state_focused="true" />
+    
+    <!-- Selected state -->
+    <item android:color="@color/md_theme_dark_surfaceContainerHighest" android:state_selected="true" />
+    
+    <!-- Pressed state -->
+    <item android:color="@color/ripple_dark" android:state_pressed="true" />
+    
+    <!-- Default state -->
+    <item android:color="@android:color/transparent" />
+    
+</selector>

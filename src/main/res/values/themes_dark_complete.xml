@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    <!-- Main Dark Theme - Material Design 3 -->
+    <style name="Theme.DarkUI" parent="Theme.Material3.Dark">
+        <!-- Color System -->
+        <item name="colorPrimary">@color/md_theme_dark_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_dark_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_dark_onPrimaryContainer</item>
+        
+        <item name="colorSecondary">@color/md_theme_dark_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_dark_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_dark_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_dark_onSecondaryContainer</item>
+        
+        <item name="colorTertiary">@color/md_theme_dark_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_dark_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_dark_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_dark_onTertiaryContainer</item>
+        
+        <item name="colorError">@color/md_theme_dark_error</item>
+        <item name="colorErrorContainer">@color/md_theme_dark_errorContainer</item>
+        <item name="colorOnError">@color/md_theme_dark_onError</item>
+        <item name="colorOnErrorContainer">@color/md_theme_dark_onErrorContainer</item>
+        
+        <item name="android:colorBackground">@color/md_theme_dark_background</item>
+        <item name="colorOnBackground">@color/md_theme_dark_onBackground</item>
+        
+        <item name="colorSurface">@color/md_theme_dark_surface</item>
+        <item name="colorOnSurface">@color/md_theme_dark_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_dark_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="colorSurfaceBright">@color/md_theme_dark_surfaceBright</item>
+        <item name="colorSurfaceDim">@color/md_theme_dark_surfaceDim</item>
+        <item name="colorSurfaceContainer">@color/md_theme_dark_surfaceContainer</item>
+        <item name="colorSurfaceContainerHighest">@color/md_theme_dark_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/md_theme_dark_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/md_theme_dark_surfaceContainerLowest</item>
+        
+        <item name="colorOutline">@color/md_theme_dark_outline</item>
+        <item name="colorOutlineVariant">@color/md_theme_dark_outlineVariant</item>
+        <item name="colorSurfaceInverse">@color/md_theme_dark_inverseSurface</item>
+        <item name="colorOnSurfaceInverse">@color/md_theme_dark_inverseOnSurface</item>
+        <item name="colorPrimaryInverse">@color/md_theme_dark_inversePrimary</item>
+        <item name="colorSurfaceTint">@color/md_theme_dark_surfaceTint</item>
+        
+        <!-- System Bars -->
+        <item name="android:statusBarColor">@color/status_bar_dark</item>
+        <item name="android:navigationBarColor">@color/navigation_bar_dark</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        
+        <!-- Window Configuration -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        
+        <!-- Edge-to-Edge -->
+        <item name="android:windowOptOutEdgeToEdge">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        
+        <!-- Animations and Transitions -->
+        <item name="android:windowActivityTransitions" tools:targetApi="l">true</item>
+        <item name="android:windowEnterTransition" tools:targetApi="l">@transition/fade</item>
+        <item name="android:windowExitTransition" tools:targetApi="l">@transition/fade</item>
+        <item name="android:windowReenterTransition" tools:targetApi="l">@transition/fade</item>
+        <item name="android:windowReturnTransition" tools:targetApi="l">@transition/fade</item>
+        <item name="android:windowSharedElementEnterTransition" tools:targetApi="l">@transition/slide_in_right</item>
+        <item name="android:windowSharedElementExitTransition" tools:targetApi="l">@transition/fade</item>
+        
+        <!-- Action Mode -->
+        <item name="actionModeBackground">@color/md_theme_dark_surface</item>
+        <item name="actionModeSplitBackground">@color/md_theme_dark_surface</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.DarkUI</item>
+        
+        <!-- Toolbar -->
+        <item name="toolbarStyle">@style/Widget.DarkUI.Toolbar</item>
+        <item name="android:toolbarStyle">@style/Widget.DarkUI.Toolbar</item>
+    </style>
+    
+    <!-- Splash Screen Theme -->
+    <style name="Theme.DarkUI.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/md_theme_dark_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_animated</item>
+        <item name="windowSplashScreenAnimationDuration">300</item>
+        <item name="postSplashScreenTheme">@style/Theme.DarkUI</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/md_theme_dark_surface</item>
+    </style>
+    
+    <!-- Welcome/Onboarding Theme -->
+    <style name="Theme.DarkUI.Welcome" parent="Theme.DarkUI">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+    
+    <!-- Fullscreen Theme -->
+    <style name="Theme.DarkUI.Fullscreen" parent="Theme.DarkUI">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+    
+    <!-- Dialog Themes -->
+    <style name="Theme.DarkUI.Dialog" parent="Theme.Material3.Dark.Dialog">
+        <item name="android:windowBackground">@color/dialog_background_dark</item>
+        <item name="android:windowTitleStyle">@style/DialogTitle.DarkUI</item>
+        <item name="android:windowMinWidthMajor">@dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@dimen/dialog_min_width_minor</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation.DarkUI</item>
+    </style>
+    
+    <style name="Theme.DarkUI.Dialog.Alert" parent="Theme.Material3.Dark.Dialog.Alert">
+        <item name="android:windowBackground">@color/dialog_background_dark</item>
+        <item name="android:windowTitleStyle">@style/DialogTitle.DarkUI</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    
+    <style name="Theme.DarkUI.Dialog.BottomSheet" parent="Theme.Material3.Dark.BottomSheetDialog">
+        <item name="android:windowBackground">@color/bottom_sheet_background_dark</item>
+        <item name="android:windowAnimationStyle">@style/BottomSheetAnimation.DarkUI</item>
+    </style>
+    
+    <!-- Translucent Dialog -->
+    <style name="Theme.DarkUI.Dialog.Translucent" parent="Theme.DarkUI.Dialog">
+        <item name="android:windowBackground">@color/glass_background_dim_dark</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/FadeAnimation.DarkUI</item>
+    </style>
+    
+    <!-- Transparent Activity -->
+    <style name="Theme.DarkUI.Transparent" parent="Theme.DarkUI">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
+    <!-- No Action Bar Theme -->
+    <style name="Theme.DarkUI.NoActionBar" parent="Theme.DarkUI">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <!-- No Action Bar Fullscreen Theme -->
+    <style name="Theme.DarkUI.NoActionBar.Fullscreen" parent="Theme.DarkUI.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+    
+    <!-- Custom Button Styles -->
+    <style name="Button.DarkUI" parent="Widget.Material3.Button">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/button_primary_text_dark</item>
+        <item name="android:backgroundTint">@color/button_primary_dark</item>
+        <item name="rippleColor">@color/ripple_dark</item>
+        <item name="android:stateListAnimator">@animator/button_elevation</item>
+        <item name="cornerRadius">@dimen/shape_corner_md</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">@dimen/space_sm</item>
+        <item name="iconTint">@color/button_primary_text_dark</item>
+    </style>
+    
+    <style name="Button.DarkUI.Elevated" parent="Widget.Material3.Button.Elevated">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/button_primary_text_dark</item>
+        <item name="android:backgroundTint">@color/button_primary_dark</item>
+        <item name="rippleColor">@color/ripple_dark</item>
+        <item name="android:stateListAnimator">@animator/button_elevation</item>
+        <item name="cornerRadius">@dimen/shape_corner_md</item>
+        <item name="elevation">@dimen/button_elevation</item>
+    </style>
+    
+    <style name="Button.DarkUI.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/button_outline_text_dark</item>
+        <item name="strokeColor">@color/button_outline_dark</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/ripple_dark</item>
+        <item name="cornerRadius">@dimen/shape_corner_md</item>
+        <item name="iconPadding">@dimen/space_sm</item>
+    </style>
+    
+    <style name="Button.DarkUI.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/md_theme_dark_primary</item>
+        <item name="rippleColor">@color/ripple_dark</item>
+        <item name="cornerRadius">@dimen/shape_corner_md</item>
+        <item name="iconPadding">@dimen/space_sm</item>
+    </style>
+    
+    <style name="Button.DarkUI.Icon" parent="Widget.Material3.Button.IconButton">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="iconTint">@color/md_theme_dark_onSurface</item>
+        <item name="rippleColor">@color/ripple_dark</item>
+        <item name="cornerRadius">@dimen/shape_corner_md</item>
+    </style>
+    
+    <style name="Button.DarkUI.Fab" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="android:layout_width">@dimen/fab_size</item>
+        <item name="android:layout_height">@dimen/fab_size</item>
+        <item name="backgroundTint">@color/md_theme_dark_primary</item>
+        <item name="tint">@color/md_theme_dark_onPrimary</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+        <item name="shapeAppearanceOverlay">?attr/shapeAppearanceLargeComponent</item>
+    </style>
+    
+    <!-- Text Input Layout Styles -->
+    <style name="TextInputLayout.DarkUI" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/input_border_focus_dark</item>
+        <item name="hintTextColor">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="startIconTint">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="endIconTint">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="boxBackgroundColor">@color/input_background_dark</item>
+        <item name="android:textColorHint">@color/input_hint_dark</item>
+        <item name="boxStrokeErrorColor">@color/input_error_dark</item>
+        <item name="errorTextColor">@color/input_error_dark</item>
+        <item name="errorIconTint">@color/input_error_dark</item>
+        <item name="helperTextTextColor">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="counterTextColor">@color/md_theme_dark_onSurfaceVariant</item>
+    </style>
+    
+    <style name="EditText.DarkUI" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/input_text_dark</item>
+        <item name="android:textColorHint">@color/input_hint_dark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+    
+    <!-- Card Styles -->
+    <style name="Card.DarkUI" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/card_background_dark</item>
+        <item name="cardElevation">8dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="strokeColor">@color/card_border_dark</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="contentPadding">16dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardPreventCornerOverlap">true</item>
+    </style>
+    
+    <style name="Card.DarkUI.Filled" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/surface_dark_100</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="strokeColor">@color/card_border_dark</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+    
+    <style name="Card.DarkUI.Outlined" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/md_theme_dark_surface</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="strokeColor">@color/card_border_dark</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+    
+    <style name="Card.DarkUI.Glass" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/glass_background_dark</item>
+        <item name="cardElevation">8dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="strokeColor">@color/glass_border_dark</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="contentPadding">16dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+    
+    <!-- App Bar and Toolbar Styles -->
+    <style name="Toolbar.DarkUI" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/md_theme_dark_surface</item>
+        <item name="titleTextColor">@color/md_theme_dark_onSurface</item>
+        <item name="subtitleTextColor">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="android:theme">@style/ThemeOverlay.Material3.Dark</item>
+        <item name="titleCentered">false</item>
+        <item name="subtitleCentered">false</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+    
+    <style name="Toolbar.DarkUI.Primary" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/md_theme_dark_primary</item>
+        <item name="titleTextColor">@color/md_theme_dark_onPrimary</item>
+        <item name="subtitleTextColor">@color/md_theme_dark_onPrimaryContainer</item>
+        <item name="android:theme">@style/ThemeOverlay.Material3.Dark</item>
+        <item name="titleCentered">false</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+    
+    <!-- Navigation Component Styles -->
+    <style name="BottomNavigation.DarkUI" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/nav_background_dark</item>
+        <item name="itemIconTint">@drawable/bottom_nav_color_selector_dark</item>
+        <item name="itemTextColor">@drawable/bottom_nav_color_selector_dark</item>
+        <item name="elevation">8dp</item>
+        <item name="menu">@menu/bottom_nav_menu</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    
+    <style name="NavigationView.DarkUI" parent="Widget.Material3.NavigationView">
+        <item name="android:background">@color/drawer_background_dark</item>
+        <item name="itemIconTint">@drawable/nav_view_color_selector_dark</item>
+        <item name="itemTextColor">@drawable/nav_view_color_selector_dark</item>
+        <item name="elevation">16dp</item>
+        <item name="menu">@menu/drawer_menu</item>
+        <item name="headerLayout">@layout/nav_header</item>
+        <item name="dividerInsetStart">72dp</item>
+        <item name="subheaderInsetStart">72dp</item>
+    </style>
+    
+    <!-- Tab Layout Styles -->
+    <style name="TabLayout.DarkUI" parent="Widget.Material3.TabLayout">
+        <item name="android:background">@color/md_theme_dark_surface</item>
+        <item name="tabTextColor">@color/tab_unselected_dark</item>
+        <item name="tabSelectedTextColor">@color/tab_selected_dark</item>
+        <item name="tabIndicatorColor">@color/tab_selected_dark</item>
+        <item name="tabIconTint">@drawable/tab_color_selector_dark</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabGravity">fill</item>
+        <item name="elevation">4dp</item>
+    </style>
+    
+    <!-- Chip Styles -->
+    <style name="Chip.DarkUI" parent="Widget.Material3.Chip.Filter">
+        <item name="android:layout_height">32dp</item>
+        <item name="android:textSize">@dimen/text_size_sm</item>
+        <item name="android:textColor">@color/chip_text_dark</item>
+        <item name="chipBackgroundColor">@color/chip_background_dark</item>
+        <item name="android:textAppearance">@style/TextAppearance.DarkUI.Body.Small</item>
+        <item name="chipStrokeColor">@color/chip_border_dark</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:checkable">true</item>
+        <item name="checkedIconVisible">true</item>
+        <item name="closeIconVisible">true</item>
+        <item name="closeIconTint">@color/chip_text_dark</item>
+    </style>
+    
+    <!-- Progress Indicator Styles -->
+    <style name="ProgressBar.DarkUI" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="indicatorColor">@color/progress_indicator_dark</item>
+        <item name="trackColor">@color/progress_track_dark</item>
+        <item name="trackThickness">4dp</item>
+        <item name="trackCornerRadius">2dp</item>
+        <item name="trackStopIndicatorColor">@color/progress_indicator_dark</item>
+        <item name="indicatorDirection">leftToRight</item>
+    </style>
+    
+    <style name="ProgressBar.Circular.DarkUI" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="indicatorColor">@color/progress_indicator_dark</item>
+        <item name="indicatorSize">48dp</item>
+        <item name="trackColor">@color/progress_track_dark</item>
+        <item name="trackThickness">4dp</item>
+        <item name="indicatorInset">16dp</item>
+    </style>
+    
+    <!-- Switch Styles -->
+    <style name="Switch.DarkUI" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="thumbTint">@color/switch_thumb_dark</item>
+        <item name="trackTint">@color/switch_track_dark</item>
+        <item name="thumbTintMode">multiply</item>
+        <item name="trackTintMode">multiply</item>
+        <item name="switchMinWidth">48dp</item>
+        <item name="switchMinHeight">32dp</item>
+    </style>
+    
+    <!-- CheckBox Styles -->
+    <style name="CheckBox.DarkUI" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/md_theme_dark_primary</item>
+        <item name="android:textColor">@color/md_theme_dark_onSurface</item>
+        <item name="android:textSize">@dimen/text_size_md</item>
+    </style>
+    
+    <!-- RadioButton Styles -->
+    <style name="RadioButton.DarkUI" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="buttonTint">@color/md_theme_dark_primary</item>
+        <item name="android:textColor">@color/md_theme_dark_onSurface</item>
+        <item name="android:textSize">@dimen/text_size_md</item>
+    </style>
+    
+    <!-- SeekBar Styles -->
+    <style name="SeekBar.DarkUI" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="indicatorColor">@color/progress_indicator_dark</item>
+        <item name="trackColor">@color/progress_track_dark</item>
+        <item name="trackThickness">4dp</item>
+        <item name="trackCornerRadius">2dp</item>
+        <item name="thumbTint">@color/progress_indicator_dark</item>
+        <item name="thumbOffset">4dp</item>
+    </style>
+    
+    <!-- Dialog Styles -->
+    <style name="DialogTitle.DarkUI" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textColor">@color/md_theme_dark_onSurface</item>
+        <item name="android:textSize">@dimen/text_size_headline</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_marginBottom">@dimen/space_md</item>
+    </style>
+    
+    <style name="DialogAnimation.DarkUI">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    
+    <style name="BottomSheetAnimation.DarkUI">
+        <item name="android:windowEnterAnimation">@anim/bottom_sheet_enter</item>
+        <item name="android:windowExitAnimation">@anim/bottom_sheet_exit</item>
+    </style>
+    
+    <style name="FadeAnimation.DarkUI">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    
+    <!-- Action Mode Styles -->
+    <style name="ActionButton.CloseMode.DarkUI" parent="Widget.Material3.Button.IconButton">
+        <item name="android:layout_margin">4dp</item>
+        <item name="iconTint">@color/md_theme_dark_onSurface</item>
+    </style>
+    
+    <!-- Status Bar Theme -->
+    <style name="StatusBar.Dark" parent="android:Theme.Material3.Dark.NoActionBar">
+        <item name="android:statusBarColor">@color/status_bar_dark</item>
+        <item name="android:navigationBarColor">@color/navigation_bar_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+    
+    <!-- Edge-to-Edge Theme -->
+    <style name="EdgeToEdge.Dark" parent="Theme.DarkUI">
+        <item name="android:windowOptOutEdgeToEdge">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+    </style>
+    
+</resources>

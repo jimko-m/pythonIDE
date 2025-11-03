@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ========================================= -->
+    <!-- APP STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="app_name">DarkUI Pro</string>
+    <string name="app_description">واجهة مستخدم احترافية داكنة</string>
+    
+    <!-- ========================================= -->
+    <!-- NAVIGATION STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_dashboard">لوحة التحكم</string>
+    <string name="nav_library">المكتبة</string>
+    <string name="nav_profile">الملف الشخصي</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="nav_favorites">المفضلة</string>
+    <string name="nav_history">التاريخ</string>
+    <string name="nav_help">المساعدة</string>
+    <string name="nav_about">حول التطبيق</string>
+    <string name="nav_logout">تسجيل الخروج</string>
+    
+    <!-- ========================================= -->
+    <!-- HOME SCREEN STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="home_title">مرحباً بك</string>
+    <string name="home_subtitle">كيف يمكنني مساعدتك اليوم؟</string>
+    <string name="home_search_hint">ابحث عن أي شيء...</string>
+    <string name="home_recent_files">الملفات الحديثة</string>
+    <string name="home_quick_actions">الإجراءات السريعة</string>
+    <string name="home_statistics">الإحصائيات</string>
+    
+    <!-- ========================================= -->
+    <!-- DASHBOARD STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="dashboard_title">لوحة التحكم</string>
+    <string name="dashboard_overview">نظرة عامة</string>
+    <string name="dashboard_analytics">التحليلات</string>
+    <string name="dashboard_trends">الاتجاهات</string>
+    <string name="dashboard_performance">الأداء</string>
+    <string name="dashboard_summary">الملخص</string>
+    <string name="dashboard_last_updated">آخر تحديث</string>
+    <string name="dashboard_view_details">عرض التفاصيل</string>
+    
+    <!-- ========================================= -->
+    <!-- SETTINGS STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_subtitle">إعدادات التطبيق والتفضيلات</string>
+    
+    <!-- Profile Settings -->
+    <string name="profile_name">أحمد محمد</string>
+    <string name="profile_email">ahmed@example.com</string>
+    <string name="edit_profile">تعديل الملف</string>
+    
+    <!-- Appearance Settings -->
+    <string name="appearance_settings">المظهر</string>
+    <string name="theme_setting">الوضع الداكن</string>
+    <string name="theme_description">تفعيل الوضع الداكن للتطبيق</string>
+    <string name="dynamic_colors">الألوان الديناميكية</string>
+    <string name="dynamic_colors_description">استخدام ألوان wallpaper للنظام</string>
+    
+    <!-- Notifications Settings -->
+    <string name="notifications_settings">الإشعارات</string>
+    <string name="push_notifications">الإشعارات الفورية</string>
+    <string name="push_notifications_description">تلقي الإشعارات المهمة</string>
+    <string name="sound_settings">الأصوات</string>
+    <string name="sound_settings_description">أصوات التنبيه والإشعارات</string>
+    
+    <!-- Privacy Settings -->
+    <string name="privacy_settings">الخصوصية والأمان</string>
+    <string name="biometric_auth">المصادقة البيومترية</string>
+    <string name="biometric_auth_description">استخدام البصمة أو التعرف على الوجه</string>
+    <string name="auto_lock">القفل التلقائي</string>
+    <string name="auto_lock_description">قفل التطبيق تلقائياً</string>
+    <string name="configure">تكوين</string>
+    
+    <!-- About Settings -->
+    <string name="about_settings">حول التطبيق</string>
+    <string name="app_version">إصدار التطبيق</string>
+    <string name="app_version_number">2.1.0</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="privacy_policy_description">كيفية حماية بياناتك</string>
+    <string name="terms_of_service">شروط الاستخدام</string>
+    <string name="terms_of_service_description">الشروط والأحكام</string>
+    
+    <!-- ========================================= -->
+    <!-- COMMON UI STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="ok">موافق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="save">حفظ</string>
+    <string name="edit">تعديل</string>
+    <string name="delete">حذف</string>
+    <string name="add">إضافة</string>
+    <string name="search">بحث</string>
+    <string name="filter">تصفية</string>
+    <string name="sort">ترتيب</string>
+    <string name="share">مشاركة</string>
+    <string name="copy">نسخ</string>
+    <string name="paste">لصق</string>
+    <string name="cut">قص</string>
+    <string name="undo">تراجع</string>
+    <string name="redo">إعادة</string>
+    <string name="refresh">تحديث</string>
+    <string name="close">إغلاق</string>
+    <string name="open">فتح</string>
+    <string name="next">التالي</string>
+    <string name="previous">السابق</string>
+    <string name="finish">إنهاء</string>
+    <string name="start">بدء</string>
+    <string name="stop">إيقاف</string>
+    <string name="pause">إيقاف مؤقت</string>
+    <string name="play">تشغيل</string>
+    
+    <!-- Status Strings -->
+    <string name="loading">جاري التحميل...</string>
+    <string name="please_wait">يرجى الانتظار</string>
+    <string name="no_data">لا توجد بيانات</string>
+    <string name="no_results">لا توجد نتائج</string>
+    <string name="empty_state">حالة فارغة</string>
+    <string name="error_occurred">حدث خطأ</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="success">نجح</string>
+    <string name="completed">مكتمل</string>
+    <string name="processing">قيد المعالجة</string>
+    <string name="pending">في الانتظار</string>
+    <string name="failed">فشل</string>
+    
+    <!-- ========================================= -->
+    <!-- FORM STRINGS -->
+    <!-- ========================================= -->
+    
+    <!-- Input Labels -->
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="first_name">الاسم الأول</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="address">العنوان</string>
+    <string name="city">المدينة</string>
+    <string name="country">الدولة</string>
+    <string name="zip_code">الرمز البريدي</string>
+    <string name="date">التاريخ</string>
+    <string name="time">الوقت</string>
+    <string name="description">الوصف</string>
+    <string name="title">العنوان</string>
+    <string name="message">الرسالة</string>
+    <string name="subject">الموضوع</string>
+    
+    <!-- Input Hints -->
+    <string name="email_hint">أدخل بريدك الإلكتروني</string>
+    <string name="password_hint">أدخل كلمة المرور</string>
+    <string name="search_hint">ابحث هنا...</string>
+    <string name="name_hint">أدخل اسمك</string>
+    <string name="phone_hint">أدخل رقم هاتفك</string>
+    
+    <!-- Validation Messages -->
+    <string name="field_required">هذا الحقل مطلوب</string>
+    <string name="invalid_email">بريد إلكتروني غير صحيح</string>
+    <string name="password_too_short">كلمة المرور قصيرة جداً</string>
+    <string name="passwords_dont_match">كلمات المرور غير متطابقة</string>
+    <string name="invalid_phone">رقم هاتف غير صحيح</string>
+    
+    <!-- ========================================= -->
+    <!-- BUTTON STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="btn_login">تسجيل الدخول</string>
+    <string name="btn_signup">إنشاء حساب</string>
+    <string name="btn_signout">تسجيل الخروج</string>
+    <string name="btn_continue">متابعة</string>
+    <string name="btn_back">رجوع</string>
+    <string name="btn_skip">تخطي</string>
+    <string name="btn_submit">إرسال</string>
+    <string name="btn_update">تحديث</string>
+    <string name="btn_install">تثبيت</string>
+    <string name="btn_uninstall">إلغاء التثبيت</string>
+    <string name="btn_download">تحميل</string>
+    <string name="btn_upload">رفع</string>
+    <string name="btn_send">إرسال</string>
+    <string name="btn_receive">استقبال</string>
+    <string name="btn_connect">اتصال</string>
+    <string name="btn_disconnect">قطع الاتصال</string>
+    
+    <!-- ========================================= -->
+    <!-- ERROR STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="network_error">خطأ في الاتصال بالشبكة</string>
+    <string name="server_error">خطأ في الخادم</string>
+    <string name="permission_denied">تم رفض الإذن</string>
+    <string name="file_not_found">الملف غير موجود</string>
+    <string name="operation_failed">فشلت العملية</string>
+    <string name="invalid_input">مدخل غير صحيح</string>
+    <string name="out_of_memory">نفد الذاكرة</string>
+    <string name="access_denied">تم رفض الوصول</string>
+    <string name="timeout">انتهت المهلة الزمنية</string>
+    
+    <!-- ========================================= -->
+    <!-- SUCCESS STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="operation_success">تمت العملية بنجاح</string>
+    <string name="saved_successfully">تم الحفظ بنجاح</string>
+    <string name="deleted_successfully">تم الحذف بنجاح</string>
+    <string name="updated_successfully">تم التحديث بنجاح</string>
+    <string name="created_successfully">تم الإنشاء بنجاح</string>
+    <string name="uploaded_successfully">تم الرفع بنجاح</string>
+    <string name="downloaded_successfully">تم التحميل بنجاح</string>
+    <string name="sent_successfully">تم الإرسال بنجاح</string>
+    <string name="connected_successfully">تم الاتصال بنجاح</string>
+    
+    <!-- ========================================= -->
+    <!-- CONFIRMATION STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="are_you_sure">هل أنت متأكد؟</string>
+    <string name="confirm_delete">تأكيد الحذف</string>
+    <string name="confirm_logout">تأكيد تسجيل الخروج</string>
+    <string name="confirm_exit">تأكيد الخروج</string>
+    <string name="confirm_clear">تأكيد المسح</string>
+    <string name="confirm_reset">تأكيد إعادة التعيين</string>
+    
+    <!-- ========================================= -->
+    <!-- TOOLBAR STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="toolbar_title">العنوان</string>
+    <string name="toolbar_subtitle">العنوان الفرعي</string>
+    <string name="toolbar_menu">قائمة</string>
+    <string name="toolbar_search">بحث</string>
+    <string name="toolbar_filter">تصفية</string>
+    <string name="toolbar_sort">ترتيب</string>
+    <string name="toolbar_options">خيارات</string>
+    <string name="toolbar_more">المزيد</string>
+    <string name="toolbar_share">مشاركة</string>
+    <string name="toolbar_favorite">مفضلة</string>
+    <string name="toolbar_bookmark">علامة مرجعية</string>
+    
+    <!-- ========================================= -->
+    <!-- DIALOG STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="dialog_title">عنوان مربع الحوار</string>
+    <string name="dialog_message">رسالة مربع الحوار</string>
+    <string name="dialog_yes">نعم</string>
+    <string name="dialog_no">لا</string>
+    <string name="dialog_agree">موافق</string>
+    <string name="dialog_disagree">غير موافق</string>
+    <string name="dialog_accept">قبول</string>
+    <string name="dialog_reject">رفض</string>
+    <string name="dialog_allow">سماح</string>
+    <string name="dialog_deny">رفض</string>
+    
+    <!-- ========================================= -->
+    <!-- NOTIFICATION STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="notification_channel_name">إشعارات التطبيق</string>
+    <string name="notification_channel_description">إشعارات عامة من التطبيق</string>
+    <string name="notification_title">عنوان الإشعار</string>
+    <string name="notification_message">نص الإشعار</string>
+    <string name="notification_action">إجراء</string>
+    <string name="notification_dismiss">إخفاء</string>
+    
+    <!-- ========================================= -->
+    <!-- LIBRARY STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="library_title">المكتبة</string>
+    <string name="library_available">متاح</string>
+    <string name="library_installed">مثبت</string>
+    <string name="library_update">تحديث متاح</string>
+    <string name="library_install">تثبيت</string>
+    <string name="library_uninstall">إلغاء التثبيت</string>
+    <string name="library_update_now">تحديث الآن</string>
+    <string name="library_details">التفاصيل</string>
+    <string name="library_version">الإصدار</string>
+    <string name="library_size">الحجم</string>
+    <string name="library_author">المؤلف</string>
+    <string name="library_description">الوصف</string>
+    <string name="library_dependencies">التبعيات</string>
+    <string name="library_compatible">متوافق</string>
+    <string name="library_incompatible">غير متوافق</string>
+    <string name="library_search">بحث في المكتبة</string>
+    <string name="library_categories">التصنيفات</string>
+    <string name="library_popular">شائع</string>
+    <string name="library_recommended">مُوصى به</string>
+    <string name="library_recent">حديث</string>
+    <string name="library_featured">مميز</string>
+    
+    <!-- ========================================= -->
+    <!-- FILE MANAGER STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="file_manager">مدير الملفات</string>
+    <string name="file_name">اسم الملف</string>
+    <string name="file_type">نوع الملف</string>
+    <string name="file_size">حجم الملف</string>
+    <string name="file_modified">تاريخ التعديل</string>
+    <string name="file_created">تاريخ الإنشاء</string>
+    <string name="file_location">الموقع</string>
+    <string name="file_path">مسار الملف</string>
+    <string name="file_properties">خصائص الملف</string>
+    <string name="file_permissions">الصلاحيات</string>
+    <string name="file_rename">إعادة تسمية</string>
+    <string name="file_move">نقل</string>
+    <string name="file_copy">نسخ</string>
+    <string name="file_duplicate">تكرار</string>
+    <string name="file_compress">ضغط</string>
+    <string name="file_extract">استخراج</string>
+    <string name="file_share">مشاركة</string>
+    <string name="file_open_with">فتح بواسطة</string>
+    <string name="file_preview">معاينة</string>
+    <string name="file_info">معلومات</string>
+    
+    <!-- File Types -->
+    <string name="file_folder">مجلد</string>
+    <string name="file_document">مستند</string>
+    <string name="file_image">صورة</string>
+    <string name="file_video">فيديو</string>
+    <string name="file_audio">صوت</string>
+    <string name="file_archive">أرشيف</string>
+    <string name="file_text">نص</string>
+    <string name="file_code">كود</string>
+    <string name="file_executable">قابل للتنفيذ</string>
+    
+    <!-- File Actions -->
+    <string name="file_action_open">فتح</string>
+    <string name="file_action_edit">تحرير</string>
+    <string name="file_action_view">عرض</string>
+    <string name="file_action_run">تشغيل</string>
+    <string name="file_action_install">تثبيت</string>
+    <string name="file_action_play">تشغيل</string>
+    <string name="file_action_download">تحميل</string>
+    <string name="file_action_upload">رفع</string>
+    
+    <!-- ========================================= -->
+    <!-- CODE EDITOR STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="code_editor">محرر الكود</string>
+    <string name="code_save">حفظ</string>
+    <string name="code_save_as">حفظ باسم</string>
+    <string name="code_new_file">ملف جديد</string>
+    <string name="code_open_file">فتح ملف</string>
+    <string name="code_close_file">إغلاق ملف</string>
+    <string name="code_find">بحث</string>
+    <string name="code_replace">استبدال</string>
+    <string name="code_find_next">البحث التالي</string>
+    <string name="code_find_previous">البحث السابق</string>
+    <string name="code_find_replace_all">البحث والاستبدال الكل</string>
+    <string name="code_select_all">تحديد الكل</string>
+    <string name="code_cut">قص</string>
+    <string name="code_copy">نسخ</string>
+    <string name="code_paste">لصق</string>
+    <string name="code_undo">تراجع</string>
+    <string name="code_redo">إعادة</string>
+    <string name="code_format">تنسيق</string>
+    <string name="code_indent">إضافة مسافة بادئة</string>
+    <string name="code_outdent">إزالة المسافة البادئة</string>
+    <string name="code_comment">تعليق</string>
+    <string name="code_uncomment">إلغاء التعليق</string>
+    <string name="code_toggle_comment">تبديل التعليق</string>
+    <string name="code_zoom_in">تكبير</string>
+    <string name="code_zoom_out">تصغير</string>
+    <string name="code_reset_zoom">إعادة تعيين التكبير</string>
+    <string name="code_wrap_lines">التفاف الأسطر</string>
+    <string name="code_show_line_numbers">إظهار أرقام الأسطر</string>
+    <string name="code_highlight_selection">تحديد التمييز</string>
+    <string name="code_auto_complete">الإكمال التلقائي</string>
+    
+    <!-- Code Themes -->
+    <string name="theme_default">افتراضي</string>
+    <string name="theme_monokai">Monokai</string>
+    <string name="theme_dracula">Dracula</string>
+    <string name="theme_github">GitHub</string>
+    <string name="theme_solarized">Solarized</string>
+    <string name="theme_high_contrast">تباين عالي</string>
+    
+    <!-- ========================================= -->
+    <!-- WELCOME SCREEN STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="welcome_title">مرحباً بك</string>
+    <string name="welcome_subtitle">في تطبيق DarkUI Pro</string>
+    <string name="welcome_description">تطبيق احترافي بواجهة مستخدم داكنة متطورة</string>
+    <string name="welcome_get_started">البدء</string>
+    <string name="welcome_learn_more">اعرف المزيد</string>
+    <string name="welcome_skip">تخطي</string>
+    
+    <!-- Welcome Features -->
+    <string name="feature_1_title">واجهة داكنة مريحة</string>
+    <string name="feature_1_description">تصميم احترافي يحمي عينيك</string>
+    <string name="feature_2_title">أداء سريع</string>
+    <string name="feature_2_description">تجربة مستخدم سلسة ومثالية</string>
+    <string name="feature_3_title">ميزات متقدمة</string>
+    <string name="feature_3_description">أدوات احترافية لجميع احتياجاتك</string>
+    
+    <!-- ========================================= -->
+    <!-- PROFILE STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="profile_title">الملف الشخصي</string>
+    <string name="profile_edit">تعديل الملف الشخصي</string>
+    <string name="profile_settings">إعدادات الملف الشخصي</string>
+    <string name="profile_photo">صورة الملف الشخصي</string>
+    <string name="profile_change_photo">تغيير الصورة</string>
+    <string name="profile_remove_photo">إزالة الصورة</string>
+    <string name="profile_display_name">اسم العرض</string>
+    <string name="profile_bio">نبذة شخصية</string>
+    <string name="profile_location">الموقع</string>
+    <string name="profile_website">الموقع الإلكتروني</string>
+    <string name="profile_join_date">تاريخ الانضمام</string>
+    <string name="profile_stats">الإحصائيات</string>
+    <string name="profile_followers">المتابعون</string>
+    <string name="profile_following">يتابع</string>
+    <string name="profile_posts">المنشورات</string>
+    <string name="profile_likes">الإعجابات</string>
+    
+    <!-- ========================================= -->
+    <!-- FAVORITES STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="favorites_title">المفضلة</string>
+    <string name="favorites_empty">لا توجد عناصر مفضلة بعد</string>
+    <string name="favorites_add_first">أضف أول عنصر إلى المفضلة</string>
+    <string name="favorites_recent">الحديثة</string>
+    <string name="favorites_most_used">الأكثر استخداماً</string>
+    <string name="favorites_all">الكل</string>
+    <string name="favorites_search">البحث في المفضلة</string>
+    <string name="favorites_sort">ترتيب المفضلة</string>
+    <string name="favorites_filter">تصفية المفضلة</string>
+    
+    <!-- ========================================= -->
+    <!-- SEARCH STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="search_title">البحث</string>
+    <string name="search_hint">ابحث عن أي شيء...</string>
+    <string name="search_recent">البحثات الحديثة</string>
+    <string name="search_suggestions">اقتراحات البحث</string>
+    <string name="search_clear">مسح البحث</string>
+    <string name="search_results">نتائج البحث</string>
+    <string name="search_no_results">لا توجد نتائج للبحث</string>
+    <string name="search_filter">تصفية النتائج</string>
+    <string name="search_sort">ترتيب النتائج</string>
+    <string name="search_history">تاريخ البحث</string>
+    <string name="search_saved">بحثات محفوظة</string>
+    
+    <!-- ========================================= -->
+    <!-- GENERAL UTILITY STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="maybe">ربما</string>
+    <string name="always">دائماً</string>
+    <string name="never">أبداً</string>
+    <string name="sometimes">أحياناً</string>
+    <string name="often">غالباً</string>
+    <string name="rarely">نادراً</string>
+    
+    <!-- Time -->
+    <string name="now">الآن</string>
+    <string name="today">اليوم</string>
+    <string name="yesterday">أمس</string>
+    <string name="tomorrow">غداً</string>
+    <string name="this_week">هذا الأسبوع</string>
+    <string name="this_month">هذا الشهر</string>
+    <string name="this_year">هذا العام</string>
+    
+    <!-- Quantity -->
+    <string name="one">واحد</string>
+    <string name="two">اثنان</string>
+    <string name="three">ثلاثة</string>
+    <string name="four">أربعة</string>
+    <string name="five">خمسة</string>
+    <string name="many">الكثير</string>
+    <string name="few">قليل</string>
+    
+    <!-- Status -->
+    <string name="active">نشط</string>
+    <string name="inactive">غير نشط</string>
+    <string name="online">متصل</string>
+    <string name="offline">غير متصل</string>
+    <string name="busy">مشغول</string>
+    <string name="away">بعيد</string>
+    <string name="available">متاح</string>
+    <string name="unavailable">غير متاح</string>
+    
+    <!-- ========================================= -->
+    <!-- ACCESSIBILITY STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="content_description_home">الصفحة الرئيسية</string>
+    <string name="content_description_back">العودة</string>
+    <string name="content_description_forward">التقدم</string>
+    <string name="content_description_menu">القائمة</string>
+    <string name="content_description_search">البحث</string>
+    <string name="content_description_settings">الإعدادات</string>
+    <string name="content_description_profile">الملف الشخصي</string>
+    <string name="content_description_favorites">المفضلة</string>
+    <string name="content_description_share">مشاركة</string>
+    <string name="content_description_more">المزيد من الخيارات</string>
+    <string name="content_description_close">إغلاق</string>
+    <string name="content_description_expand">توسيع</string>
+    <string name="content_description_collapse">طي</string>
+    <string name="content_description_play">تشغيل</string>
+    <string name="content_description_pause">إيقاف مؤقت</string>
+    <string name="content_description_stop">إيقاف</string>
+    <string name="content_description_previous">السابق</string>
+    <string name="content_description_next">التالي</string>
+    <string name="content_description_add">إضافة</string>
+    <string name="content_description_remove">إزالة</string>
+    <string name="content_description_edit">تحرير</string>
+    <string name="content_description_delete">حذف</string>
+    <string name="content_description_save">حفظ</string>
+    <string name="content_description_load">تحميل</string>
+    
+    <!-- ========================================= -->
+    <!-- PLACEHOLDER STRINGS -->
+    <!-- ========================================= -->
+    
+    <string name="placeholder_loading">جاري التحميل...</string>
+    <string name="placeholder_empty">لا توجد عناصر</string>
+    <string name="placeholder_error">حدث خطأ</string>
+    <string name="placeholder_retry">إعادة المحاولة</string>
+    <string name="placeholder_no_connection">لا يوجد اتصال</string>
+    <string name="placeholder_no_permission">لا توجد صلاحيات</string>
+    <string name="placeholder_not_found">غير موجود</string>
+    <string name="placeholder_access_denied">تم رفض الوصول</string>
+    <string name="placeholder_timeout">انتهت المهلة</string>
+    <string name="placeholder_maintenance">تحت الصيانة</string>
+    
+</resources>

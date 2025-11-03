@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_save"
+        android:title="@string/action_save"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_save_as"
+        android:title="@string/menu_save_as"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_find_replace"
+        android:icon="@drawable/ic_search"
+        android:title="@string/editor_find_replace"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_format"
+        android:icon="@drawable/ic_format_align_left"
+        android:title="@string/editor_format_code"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_run"
+        android:icon="@drawable/ic_play_arrow"
+        android:title="@string/action_run"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_undo"
+        android:title="@string/editor_undo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_redo"
+        android:title="@string/editor_redo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_cut"
+        android:title="@string/editor_cut"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_copy"
+        android:title="@string/editor_copy"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_paste"
+        android:title="@string/editor_paste"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_select_all"
+        android:title="@string/editor_select_all"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/editor_share"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_export"
+        android:title="@string/editor_export"
+        app:showAsAction="never" />
+
+</menu>

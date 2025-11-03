@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ========================================= -->
+    <!-- BOTTOM NAVIGATION COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Selected state -->
+        <item android:color="@color/nav_selected_dark" android:state_selected="true" />
+        <!-- Focused state -->
+        <item android:color="@color/nav_selected_dark" android:state_focused="true" />
+        <!-- Checked state -->
+        <item android:color="@color/nav_selected_dark" android:state_checked="true" />
+        <!-- Activated state -->
+        <item android:color="@color/nav_selected_dark" android:state_activated="true" />
+        <!-- Default state -->
+        <item android:color="@color/nav_unselected_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- NAVIGATION VIEW COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Selected state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_selected="true" />
+        <!-- Focused state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_focused="true" />
+        <!-- Checked state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_checked="true" />
+        <!-- Activated state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_activated="true" />
+        <!-- Default state -->
+        <item android:color="@color/md_theme_dark_onSurface" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- TAB LAYOUT COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Selected state -->
+        <item android:color="@color/tab_selected_dark" android:state_selected="true" />
+        <!-- Focused state -->
+        <item android:color="@color/tab_selected_dark" android:state_focused="true" />
+        <!-- Checked state -->
+        <item android:color="@color/tab_selected_dark" android:state_checked="true" />
+        <!-- Activated state -->
+        <item android:color="@color/tab_selected_dark" android:state_activated="true" />
+        <!-- Default state -->
+        <item android:color="@color/tab_unselected_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- SWITCH COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Selected/Checked state -->
+        <item android:color="@color/switch_track_active_dark" android:state_checked="true" />
+        <!-- Focused state -->
+        <item android:color="@color/switch_track_active_dark" android:state_focused="true" />
+        <!-- Default state -->
+        <item android:color="@color/switch_track_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- SWITCH THUMB COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Selected/Checked state -->
+        <item android:color="@color/switch_thumb_active_dark" android:state_checked="true" />
+        <!-- Focused state -->
+        <item android:color="@color/switch_thumb_active_dark" android:state_focused="true" />
+        <!-- Default state -->
+        <item android:color="@color/switch_thumb_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- CHECKBOX COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Checked state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_checked="true" />
+        <!-- Focused state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_focused="true" />
+        <!-- Default state -->
+        <item android:color="@color/md_theme_dark_outline" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- RADIO BUTTON COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Checked state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_checked="true" />
+        <!-- Focused state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_focused="true" />
+        <!-- Default state -->
+        <item android:color="@color/md_theme_dark_outline" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- SEEK BAR COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Progress state -->
+        <item android:color="@color/progress_indicator_dark" />
+        <!-- Track state -->
+        <item android:color="@color/progress_track_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- PROGRESS BAR COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Indicator state -->
+        <item android:color="@color/progress_indicator_dark" />
+        <!-- Track state -->
+        <item android:color="@color/progress_track_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- BUTTON COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Pressed state -->
+        <item android:color="@color/button_primary_pressed_dark" android:state_pressed="true" />
+        <!-- Focused state -->
+        <item android:color="@color/button_primary_pressed_dark" android:state_focused="true" />
+        <!-- Enabled state -->
+        <item android:color="@color/button_primary_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- BUTTON OUTLINE COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Pressed state -->
+        <item android:color="@color/button_outline_dark" android:state_pressed="true" />
+        <!-- Focused state -->
+        <item android:color="@color/button_outline_dark" android:state_focused="true" />
+        <!-- Disabled state -->
+        <item android:color="@color/button_outline_disabled_dark" android:state_enabled="false" />
+        <!-- Enabled state -->
+        <item android:color="@color/button_outline_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- TEXT COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Disabled state -->
+        <item android:color="@color/text_disabled_dark" android:state_enabled="false" />
+        <!-- Selected state -->
+        <item android:color="@color/tab_selected_dark" android:state_selected="true" />
+        <!-- Checked state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_checked="true" />
+        <!-- Focused state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_focused="true" />
+        <!-- Default state -->
+        <item android:color="@color/md_theme_dark_onSurface" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- SECONDARY TEXT COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Disabled state -->
+        <item android:color="@color/text_disabled_dark" android:state_enabled="false" />
+        <!-- Selected state -->
+        <item android:color="@color/md_theme_dark_onSurface" android:state_selected="true" />
+        <!-- Checked state -->
+        <item android:color="@color/md_theme_dark_onSurface" android:state_checked="true" />
+        <!-- Focused state -->
+        <item android:color="@color/md_theme_dark_onSurface" android:state_focused="true" />
+        <!-- Default state -->
+        <item android:color="@color/md_theme_dark_onSurfaceVariant" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- HINT TEXT COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Disabled state -->
+        <item android:color="@color/text_disabled_dark" android:state_enabled="false" />
+        <!-- Focused state -->
+        <item android:color="@color/md_theme_dark_onSurfaceVariant" android:state_focused="true" />
+        <!-- Default state -->
+        <item android:color="@color/text_hint_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- INPUT FIELD COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Error state -->
+        <item android:color="@color/md_theme_dark_error" android:state_enabled="true" android:state_invalid="true" />
+        <!-- Focused state -->
+        <item android:color="@color/input_border_focus_dark" android:state_focused="true" />
+        <!-- Disabled state -->
+        <item android:color="@color/input_border_dark" android:state_enabled="false" />
+        <!-- Default state -->
+        <item android:color="@color/input_border_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- FAB COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Pressed state -->
+        <item android:color="@color/button_primary_pressed_dark" android:state_pressed="true" />
+        <!-- Focused state -->
+        <item android:color="@color/button_primary_pressed_dark" android:state_focused="true" />
+        <!-- Default state -->
+        <item android:color="@color/md_theme_dark_primary" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- ICON COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Disabled state -->
+        <item android:color="@color/text_disabled_dark" android:state_enabled="false" />
+        <!-- Selected state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_selected="true" />
+        <!-- Focused state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_focused="true" />
+        <!-- Checked state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_checked="true" />
+        <!-- Default state -->
+        <item android:color="@color/md_theme_dark_onSurface" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- ACCENT COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Primary accent -->
+        <item android:color="@color/md_theme_dark_primary" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- ERROR COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Error state -->
+        <item android:color="@color/md_theme_dark_error" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- SUCCESS COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Success state -->
+        <item android:color="@color/success_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- WARNING COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Warning state -->
+        <item android:color="@color/warning_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- INFO COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Info state -->
+        <item android:color="@color/info_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- SURFACE COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Disabled state -->
+        <item android:color="@color/md_theme_dark_surfaceDim" android:state_enabled="false" />
+        <!-- Selected state -->
+        <item android:color="@color/md_theme_dark_surfaceContainerHighest" android:state_selected="true" />
+        <!-- Focused state -->
+        <item android:color="@color/md_theme_dark_surfaceBright" android:state_focused="true" />
+        <!-- Default state -->
+        <item android:color="@color/md_theme_dark_surface" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- CARD COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Pressed state -->
+        <item android:color="@color/card_background_elevated_dark" android:state_pressed="true" />
+        <!-- Focused state -->
+        <item android:color="@color/card_background_elevated_dark" android:state_focused="true" />
+        <!-- Selected state -->
+        <item android:color="@color/md_theme_dark_primaryContainer" android:state_selected="true" />
+        <!-- Default state -->
+        <item android:color="@color/card_background_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- DIVIDER COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Focused state -->
+        <item android:color="@color/divider_bright_dark" android:state_focused="true" />
+        <!-- Default state -->
+        <item android:color="@color/divider_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- CHIP COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Checked state -->
+        <item android:color="@color/md_theme_dark_primary" android:state_checked="true" />
+        <!-- Focused state -->
+        <item android:color="@color/chip_border_dark" android:state_focused="true" />
+        <!-- Default state -->
+        <item android:color="@color/chip_background_dark" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- BADGE COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Error badge -->
+        <item android:color="@color/md_theme_dark_error" />
+    </selector>
+
+    <!-- ========================================= -->
+    <!-- STATUS COLOR SELECTOR -->
+    <!-- ========================================= -->
+    
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Online state -->
+        <item android:color="@color/online_dark" />
+    </selector>
+
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Offline state -->
+        <item android:color="@color/offline_dark" />
+    </selector>
+
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Away state -->
+        <item android:color="@color/away_dark" />
+    </selector>
+
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Busy state -->
+        <item android:color="@color/busy_dark" />
+    </selector>
+
+</resources>

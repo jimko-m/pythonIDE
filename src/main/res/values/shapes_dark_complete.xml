@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- ========================================= -->
+    <!-- CORNER RADIUS VALUES -->
+    <!-- ========================================= -->
+    
+    <!-- Small Corner Radius -->
+    <dimen name="shape_corner_xs">2dp</dimen>
+    <dimen name="shape_corner_sm">4dp</dimen>
+    <dimen name="shape_corner_md">6dp</dimen>
+    
+    <!-- Medium Corner Radius -->
+    <dimen name="shape_corner_lg">8dp</dimen>
+    <dimen name="shape_corner_xl">12dp</dimen>
+    <dimen name="shape_corner_xxl">16dp</dimen>
+    
+    <!-- Large Corner Radius -->
+    <dimen name="shape_corner_3xl">20dp</dimen>
+    <dimen name="shape_corner_4xl">24dp</dimen>
+    <dimen name="shape_corner_round">28dp</dimen>
+    <dimen name="shape_corner_circular">50dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- BUTTON SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Primary Button Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_md" />
+        <solid android:color="@color/button_primary_dark" />
+        <stroke android:width="0dp" android:color="@color/button_primary_dark" />
+    </shape>
+    
+    <!-- Elevated Button Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_md" />
+        <solid android:color="@color/button_primary_dark" />
+        <stroke android:width="0dp" android:color="@color/button_primary_dark" />
+        <size android:height="@dimen/button_height" />
+    </shape>
+    
+    <!-- Outlined Button Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_md" />
+        <solid android:color="@android:color/transparent" />
+        <stroke android:width="1dp" android:color="@color/button_outline_dark" />
+    </shape>
+    
+    <!-- Text Button Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_xs" />
+        <solid android:color="@android:color/transparent" />
+    </shape>
+    
+    <!-- Icon Button Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_md" />
+        <solid android:color="@android:color/transparent" />
+        <size android:width="48dp" android:height="48dp" />
+    </shape>
+    
+    <!-- Filled Icon Button Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_md" />
+        <solid android:color="@color/md_theme_dark_secondaryContainer" />
+        <size android:width="48dp" android:height="48dp" />
+    </shape>
+    
+    <!-- Rounded Button Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_xl" />
+        <solid android:color="@color/button_primary_dark" />
+    </shape>
+    
+    <!-- Small Button Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_sm" />
+        <solid android:color="@color/button_primary_dark" />
+        <size android:height="@dimen/button_height_small" />
+    </shape>
+    
+    <!-- Large Button Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_lg" />
+        <solid android:color="@color/button_primary_dark" />
+        <size android:height="@dimen/button_height_large" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- FAB SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Standard FAB Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/md_theme_dark_primary" />
+        <size android:width="@dimen/fab_size" android:height="@dimen/fab_size" />
+    </shape>
+    
+    <!-- Mini FAB Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/md_theme_dark_secondary" />
+        <size android:width="@dimen/fab_size_mini" android:height="@dimen/fab_size_mini" />
+    </shape>
+    
+    <!-- Large FAB Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/md_theme_dark_tertiary" />
+        <size android:width="@dimen/fab_size_large" android:height="@dimen/fab_size_large" />
+    </shape>
+    
+    <!-- Extended FAB Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_round" />
+        <solid android:color="@color/md_theme_dark_primary" />
+        <size android:height="@dimen/fab_size" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- CARD SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Standard Card Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/card_corner_radius" />
+        <solid android:color="@color/card_background_dark" />
+        <stroke android:width="0dp" android:color="@color/card_border_dark" />
+    </shape>
+    
+    <!-- Elevated Card Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/card_corner_radius" />
+        <solid android:color="@color/card_background_elevated_dark" />
+        <stroke android:width="0dp" android:color="@color/card_border_dark" />
+        <size android:minHeight="@dimen/card_min_height" />
+    </shape>
+    
+    <!-- Filled Card Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_lg" />
+        <solid android:color="@color/surface_dark_100" />
+        <stroke android:width="0dp" android:color="@color/card_border_dark" />
+    </shape>
+    
+    <!-- Outlined Card Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_lg" />
+        <solid android:color="@color/md_theme_dark_surface" />
+        <stroke android:width="1dp" android:color="@color/card_border_dark" />
+    </shape>
+    
+    <!-- Glass Card Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/card_corner_radius" />
+        <solid android:color="@color/glass_background_dark" />
+        <stroke android:width="1dp" android:color="@color/glass_border_dark" />
+    </shape>
+    
+    <!-- Highlighted Card Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/card_corner_radius" />
+        <solid android:color="@color/md_theme_dark_primaryContainer" />
+        <stroke android:width="2dp" android:color="@color/md_theme_dark_primary" />
+    </shape>
+    
+    <!-- Small Card Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_lg" />
+        <solid android:color="@color/card_background_dark" />
+        <stroke android:width="0dp" android:color="@color/card_border_dark" />
+        <size android:minHeight="80dp" />
+    </shape>
+    
+    <!-- Large Card Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_xxl" />
+        <solid android:color="@color/card_background_dark" />
+        <stroke android:width="0dp" android:color="@color/card_border_dark" />
+        <size android:minHeight="200dp" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- INPUT FIELD SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Standard Input Field Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_sm" />
+        <solid android:color="@color/input_background_dark" />
+        <stroke android:width="1dp" android:color="@color/input_border_dark" />
+        <size android:height="@dimen/input_height" />
+    </shape>
+    
+    <!-- Filled Input Field Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_sm" android:topLeftRadius="@dimen/shape_corner_xs" android:topRightRadius="@dimen/shape_corner_xs" />
+        <solid android:color="@color/md_theme_dark_surfaceVariant" />
+        <stroke android:width="0dp" android:color="@color/input_border_dark" />
+        <size android:height="@dimen/input_height" />
+    </shape>
+    
+    <!-- Focused Input Field Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_sm" />
+        <solid android:color="@color/input_background_dark" />
+        <stroke android:width="2dp" android:color="@color/input_border_focus_dark" />
+        <size android:height="@dimen/input_height" />
+    </shape>
+    
+    <!-- Error Input Field Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_sm" />
+        <solid android:color="@color/input_background_dark" />
+        <stroke android:width="1dp" android:color="@color/md_theme_dark_error" />
+        <size android:height="@dimen/input_height" />
+    </shape>
+    
+    <!-- Search Bar Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_round" />
+        <solid android:color="@color/search_background_dark" />
+        <stroke android:width="1dp" android:color="@color/input_border_dark" />
+        <size android:height="@dimen/search_height" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- CIRCULAR SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Circular Shape for Avatars -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/md_theme_dark_secondaryContainer" />
+        <size android:width="@dimen/avatar_size_md" android:height="@dimen/avatar_size_md" />
+    </shape>
+    
+    <!-- Small Avatar Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/md_theme_dark_secondaryContainer" />
+        <size android:width="@dimen/avatar_size_sm" android:height="@dimen/avatar_size_sm" />
+    </shape>
+    
+    <!-- Large Avatar Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/md_theme_dark_secondaryContainer" />
+        <size android:width="@dimen/avatar_size_lg" android:height="@dimen/avatar_size_lg" />
+    </shape>
+    
+    <!-- Profile Picture Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <stroke android:width="2dp" android:color="@color/md_theme_dark_primary" />
+        <solid android:color="@color/md_theme_dark_surface" />
+        <size android:width="@dimen/avatar_size_xl" android:height="@dimen/avatar_size_xl" />
+    </shape>
+    
+    <!-- Profile Picture with Border -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <stroke android:width="3dp" android:color="@color/glass_border_dark" />
+        <solid android:color="@color/md_theme_dark_secondaryContainer" />
+        <size android:width="@dimen/avatar_size_lg" android:height="@dimen/avatar_size_lg" />
+    </shape>
+    
+    <!-- Circular Badge Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/md_theme_dark_error" />
+        <size android:width="@dimen/badge_size_md" android:height="@dimen/badge_size_md" />
+    </shape>
+    
+    <!-- Notification Dot Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/md_theme_dark_error" />
+        <size android:width="@dimen/dot_size" android:height="@dimen/dot_size" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- NAVIGATION SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Bottom Navigation Background Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_xl" android:topLeftRadius="@dimen/shape_corner_xl" android:topRightRadius="@dimen/shape_corner_xl" />
+        <solid android:color="@color/nav_background_dark" />
+        <stroke android:width="1dp" android:color="@color/card_border_dark" />
+    </shape>
+    
+    <!-- Navigation Item Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_md" />
+        <solid android:color="@color/md_theme_dark_primaryContainer" />
+    </shape>
+    
+    <!-- Navigation Rail Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_xl" />
+        <solid android:color="@color/nav_background_dark" />
+        <stroke android:width="1dp" android:color="@color/card_border_dark" />
+    </shape>
+    
+    <!-- Tab Indicator Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_xs" />
+        <solid android:color="@color/tab_selected_dark" />
+        <size android:height="@dimen/tab_indicator_height" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- DIVIDER SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Standard Divider Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/divider_dark" />
+        <size android:height="@dimen/divider_height" />
+    </shape>
+    
+    <!-- Thick Divider Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/divider_bright_dark" />
+        <size android:height="@dimen/divider_height_thick" />
+    </shape>
+    
+    <!-- Horizontal Divider Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/divider_dark" />
+        <size android:height="1dp" />
+        <corners android:radius="0.5dp" />
+    </shape>
+    
+    <!-- Vertical Divider Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/divider_dark" />
+        <size android:width="1dp" />
+        <corners android:radius="0.5dp" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- PROGRESS BAR SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Progress Bar Track Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_xs" />
+        <solid android:color="@color/progress_track_dark" />
+        <size android:height="@dimen/progress_bar_height" />
+    </shape>
+    
+    <!-- Progress Bar Progress Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_xs" />
+        <solid android:color="@color/progress_indicator_dark" />
+        <size android:height="@dimen/progress_bar_height" />
+    </shape>
+    
+    <!-- Circular Progress Ring Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <stroke android:width="@dimen/progress_bar_height" android:color="@color/progress_track_dark" />
+        <size android:width="@dimen/circular_progress_size" android:height="@dimen/circular_progress_size" />
+    </shape>
+    
+    <!-- Circular Progress Indicator Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <stroke android:width="@dimen/progress_bar_height" android:color="@color/progress_indicator_dark" android:dashWidth="2dp" android:dashGap="2dp" />
+        <size android:width="@dimen/circular_progress_size" android:height="@dimen/circular_progress_size" />
+    </shape>
+    
+    <!-- Seek Bar Track Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_xs" />
+        <solid android:color="@color/progress_track_dark" />
+        <size android:height="@dimen/seekbar_height" />
+    </shape>
+    
+    <!-- Seek Bar Thumb Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/progress_indicator_dark" />
+        <size android:width="@dimen/seekbar_thumb_size" android:height="@dimen/seekbar_thumb_size" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- DIALOG AND MODAL SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Dialog Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/dialog_corner_radius" />
+        <solid android:color="@color/dialog_background_dark" />
+        <stroke android:width="1dp" android:color="@color/dialog_border_dark" />
+    </shape>
+    
+    <!-- Bottom Sheet Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_xl" android:topLeftRadius="@dimen/shape_corner_xl" android:topRightRadius="@dimen/shape_corner_xl" />
+        <solid android:color="@color/bottom_sheet_background_dark" />
+        <stroke android:width="1dp" android:color="@color/dialog_border_dark" />
+    </shape>
+    
+    <!-- Modal Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_lg" />
+        <solid android:color="@color/modal_background_dark" />
+        <stroke android:width="1dp" android:color="@color/dialog_border_dark" />
+    </shape>
+    
+    <!-- Alert Dialog Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_xl" />
+        <solid android:color="@color/dialog_background_dark" />
+        <stroke android:width="1dp" android:color="@color/dialog_border_dark" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- CHIP AND TAG SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Chip Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_round" />
+        <solid android:color="@color/chip_background_dark" />
+        <stroke android:width="1dp" android:color="@color/chip_border_dark" />
+    </shape>
+    
+    <!-- Filter Chip Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_round" />
+        <solid android:color="@color/chip_background_dark" />
+        <stroke android:width="1dp" android:color="@color/chip_border_dark" />
+        <size android:height="32dp" />
+    </shape>
+    
+    <!-- Input Chip Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_round" />
+        <solid android:color="@color/md_theme_dark_surfaceVariant" />
+        <size android:height="32dp" />
+    </shape>
+    
+    <!-- Suggestion Chip Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_round" />
+        <solid android:color="@color/md_theme_dark_secondaryContainer" />
+        <stroke android:width="1dp" android:color="@color/md_theme_dark_secondary" />
+        <size android:height="32dp" />
+    </shape>
+    
+    <!-- Badge Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_round" />
+        <solid android:color="@color/md_theme_dark_error" />
+        <size android:height="20dp" />
+    </shape>
+    
+    <!-- Tag Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_sm" />
+        <solid android:color="@color/md_theme_dark_secondaryContainer" />
+        <size android:height="24dp" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- SWITCH AND TOGGLE SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Switch Track Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_round" />
+        <solid android:color="@color/switch_track_dark" />
+        <size android:height="32dp" android:width="52dp" />
+    </shape>
+    
+    <!-- Switch Thumb Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/switch_thumb_dark" />
+        <size android:width="20dp" android:height="20dp" />
+    </shape>
+    
+    <!-- Checkbox Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="4dp</dimen>
+        <stroke android:width="2dp" android:color="@color/md_theme_dark_outline" />
+        <solid android:color="@android:color/transparent" />
+        <size android:width="18dp" android:height="18dp" />
+    </shape>
+    
+    <!-- Radio Button Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <stroke android:width="2dp" android:color="@color/md_theme_dark_outline" />
+        <solid android:color="@android:color/transparent" />
+        <size android:width="18dp" android:height="18dp" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- TOOLTIP AND POPUP SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Tooltip Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_sm" />
+        <solid android:color="@color/md_theme_dark_inverseSurface" />
+        <stroke android:width="1dp" android:color="@color/md_theme_dark_outline" />
+    </shape>
+    
+    <!-- Popup Window Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_lg" />
+        <solid android:color="@color/md_theme_dark_surface" />
+        <stroke android:width="1dp" android:color="@color/card_border_dark" />
+    </shape>
+    
+    <!-- Context Menu Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_md" />
+        <solid android:color="@color/md_theme_dark_surface" />
+        <stroke android:width="1dp" android:color="@color/card_border_dark" />
+    </shape>
+    
+    <!-- Dropdown Menu Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_sm" />
+        <solid android:color="@color/md_theme_dark_surface" />
+        <stroke android:width="1dp" android:color="@color/card_border_dark" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- EFFECTS AND GRADIENTS -->
+    <!-- ========================================= -->
+    
+    <!-- Gradient Button Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_md" />
+        <gradient
+            android:angle="45"
+            android:startColor="@color/gradient_start_dark"
+            android:centerColor="@color/gradient_middle_dark"
+            android:endColor="@color/gradient_end_dark" />
+    </shape>
+    
+    <!-- Primary Gradient Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_md" />
+        <gradient
+            android:angle="90"
+            android:startColor="@color/md_theme_dark_primaryContainer"
+            android:centerColor="@color/md_theme_dark_primary"
+            android:endColor="@color/md_theme_dark_primaryVariant" />
+    </shape>
+    
+    <!-- Glass Effect Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/glass_corner_radius" />
+        <solid android:color="@color/glass_background_dark" />
+        <stroke android:width="@dimen/glass_border_width" android:color="@color/glass_border_dark" />
+    </shape>
+    
+    <!-- Glass Effect Large Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/glass_corner_radius_large" />
+        <solid android:color="@color/glass_background_dark" />
+        <stroke android:width="@dimen/glass_border_width_thick" android:color="@color/glass_border_dark" />
+    </shape>
+    
+    <!-- Neon Glow Effect -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_md" />
+        <solid android:color="@color/md_theme_dark_background" />
+        <stroke android:width="2dp" android:color="@color/md_theme_dark_primary" />
+        <gradient
+            android:angle="90"
+            android:startColor="#004F64"
+            android:centerColor="#ADD8E6"
+            android:endColor="#004F64" />
+    </shape>
+    
+    <!-- Banner Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_sm" />
+        <gradient
+            android:angle="0"
+            android:startColor="@color/md_theme_dark_tertiaryContainer"
+            android:centerColor="@color/md_theme_dark_secondaryContainer"
+            android:endColor="@color/md_theme_dark_primaryContainer" />
+    </shape>
+    
+    <!-- Header Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="0dp" />
+        <gradient
+            android:angle="90"
+            android:startColor="@color/md_theme_dark_primary"
+            android:endColor="@color/md_theme_dark_primaryContainer" />
+    </shape>
+    
+    <!-- Footer Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="0dp" />
+        <gradient
+            android:angle="270"
+            android:startColor="@color/md_theme_dark_surfaceContainerHighest"
+            android:endColor="@color/md_theme_dark_surfaceContainer" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- LOADING AND SKELETON SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Skeleton Loading Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/skeleton_corner_radius" />
+        <solid android:color="@color/md_theme_dark_surfaceVariant" />
+        <size android:height="16dp" />
+    </shape>
+    
+    <!-- Skeleton Loading Large Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/skeleton_corner_radius_large" />
+        <solid android:color="@color/md_theme_dark_surfaceVariant" />
+        <size android:height="24dp" />
+    </shape>
+    
+    <!-- Loading Spinner Shape -->
+    <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+        <stroke android:width="3dp" android:color="@color/progress_indicator_dark" android:dashWidth="8dp" android:dashGap="4dp" />
+        <size android:width="@dimen/loading_size_md" android:height="@dimen/loading_size_md" />
+    </shape>
+    
+    <!-- ========================================= -->
+    <!-- CUSTOM CONTAINER SHAPES -->
+    <!-- ========================================= -->
+    
+    <!-- Search Bar Container Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_round" />
+        <solid android:color="@color/search_bar_background_dark" />
+        <stroke android:width="1dp" android:color="@color/search_bar_border_dark" />
+        <size android:height="@dimen/search_height" />
+    </shape>
+    
+    <!-- Header Card Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/card_corner_radius" android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp" />
+        <gradient
+            android:angle="180"
+            android:startColor="@color/md_theme_dark_primary"
+            android:centerColor="@color/md_theme_dark_primaryContainer"
+            android:endColor="@color/md_theme_dark_surface" />
+    </shape>
+    
+    <!-- Profile Header Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="0dp" />
+        <gradient
+            android:angle="180"
+            android:startColor="@color/md_theme_dark_tertiary"
+            android:centerColor="@color/md_theme_dark_tertiaryContainer"
+            android:endColor="@color/md_theme_dark_surface" />
+    </shape>
+    
+    <!-- Feature Card Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/card_corner_radius" />
+        <solid android:color="@color/md_theme_dark_surfaceContainer" />
+        <stroke android:width="2dp" android:color="@color/md_theme_dark_primaryContainer" />
+    </shape>
+    
+    <!-- Highlight Container Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_lg" />
+        <solid android:color="@color/md_theme_dark_primaryContainer" />
+        <stroke android:width="1dp" android:color="@color/md_theme_dark_primary" />
+    </shape>
+    
+    <!-- Stats Card Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_md" />
+        <solid android:color="@color/md_theme_dark_surfaceVariant" />
+        <stroke android:width="1dp" android:color="@color/md_theme_dark_outline" />
+    </shape>
+    
+    <!-- Timeline Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="0dp" />
+        <solid android:color="@color/md_theme_dark_surfaceContainer" />
+        <stroke android:width="2dp" android:color="@color/md_theme_dark_outline" />
+        <size android:height="2dp" />
+    </shape>
+    
+    <!-- Calendar Day Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="50dp" />
+        <solid android:color="@android:color/transparent" />
+        <stroke android:width="1dp" android:color="@color/md_theme_dark_outline" />
+        <size android:width="40dp" android:height="40dp" />
+    </shape>
+    
+    <!-- Calendar Day Selected Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="50dp" />
+        <solid android:color="@color/md_theme_dark_primary" />
+        <stroke android:width="0dp" android:color="@color/md_theme_dark_primary" />
+        <size android:width="40dp" android:height="40dp" />
+    </shape>
+    
+    <!-- Floating Element Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_lg" />
+        <solid android:color="@color/md_theme_dark_surfaceContainerHighest" />
+        <stroke android:width="1dp" android:color="@color/card_border_dark" />
+        <size android:height="48dp" />
+    </shape>
+    
+    <!-- Call to Action Shape -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="@dimen/shape_corner_xl" />
+        <gradient
+            android:angle="45"
+            android:startColor="@color/md_theme_dark_primary"
+            android:centerColor="@color/gradient_middle_dark"
+            android:endColor="@color/md_theme_dark_secondary" />
+        <stroke android:width="0dp" android:color="@color/md_theme_dark_primary" />
+    </shape>
+    
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/outline_variant"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- أيقونة المكتبة -->
+        <ImageView
+            android:id="@+id/iconImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_library_default"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- اسم المكتبة -->
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="numpy"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toEndOf="@id/iconImageView"
+            app:layout_constraintEnd_toStartOf="@id/actionButton"
+            app:layout_constraintTop_toTopOf="@id/iconImageView" />
+
+        <!-- إصدار المكتبة -->
+        <TextView
+            android:id="@+id/versionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإصدار: 1.21.0"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toStartOf="@id/nameTextView"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView" />
+
+        <!-- عدد التحميلات -->
+        <TextView
+            android:id="@+id/downloadsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="50M تحميل"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/versionTextView"
+            app:layout_constraintTop_toTopOf="@id/versionTextView"
+            app:layout_constraintBottom_toBottomOf="@id/versionTextView" />
+
+        <!-- زر الإجراء -->
+        <Button
+            android:id="@+id/actionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="تثبيت"
+            android:textSize="12sp"
+            android:textColor="@color/on_primary"
+            android:backgroundTint="@color/primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <!-- زر التفاصيل -->
+        <Button
+            android:id="@+id/detailsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:text="تفاصيل"
+            android:textSize="12sp"
+            android:textColor="@color/primary"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:layout_constraintEnd_toEndOf="@id/actionButton"
+            app:layout_constraintTop_toBottomOf="@id/actionButton" />
+
+        <!-- وصف المكتبة -->
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="مكتبة الحوسبة العلمية الأساسية في Python"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="@id/iconImageView"
+            app:layout_constraintEnd_toStartOf="@id/detailsButton"
+            app:layout_constraintTop_toBottomOf="@id/versionTextView" />
+
+        <!-- شارات الحالة -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/iconImageView"
+            app:layout_constraintEnd_toStartOf="@id/detailsButton"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTextView">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/installedChip"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="مثبت"
+                android:textSize="10sp"
+                android:visibility="gone"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/dependencyChip"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:text="3 تبعيات"
+                android:textSize="10sp"
+                android:visibility="gone"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/licenseChip"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:text="MIT"
+                android:textSize="10sp"
+                android:visibility="gone"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

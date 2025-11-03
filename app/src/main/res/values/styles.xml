@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="Base.Theme.PythonIDE" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_light_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_light_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_light_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_light_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/md_theme_light_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_light_onTertiaryContainer</item>
+        <item name="colorError">@color/md_theme_light_error</item>
+        <item name="colorOnError">@color/md_theme_light_onError</item>
+        <item name="colorErrorContainer">@color/md_theme_light_errorContainer</item>
+        <item name="colorOnErrorContainer">@color/md_theme_light_onErrorContainer</item>
+        <item name="colorOutline">@color/md_theme_light_outline</item>
+        <item name="android:colorBackground">@color/md_theme_light_background</item>
+        <item name="colorOnBackground">@color/md_theme_light_onBackground</item>
+        <item name="colorSurface">@color/md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/md_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="colorSurfaceInverse">@color/md_theme_light_inverseSurface</item>
+        <item name="colorOnSurfaceInverse">@color/md_theme_light_inverseOnSurface</item>
+        <item name="colorPrimaryInverse">@color/md_theme_light_inversePrimary</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor">?attr/colorSurfaceVariant</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        
+        <!-- Typography -->
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textColorPrimary">?attr/colorOnSurface</item>
+        <item name="android:textColorSecondary">?attr/colorOnSurfaceVariant</item>
+        
+        <!-- Action bar -->
+        <item name="actionBarTheme">@style/ThemeOverlay.PythonIDE.ActionBar</item>
+        <item name="actionBarStyle">@style/Widget.PythonIDE.ActionBar</item>
+    </style>
+
+    <!-- Theme variants -->
+    <style name="Theme.PythonIDE" parent="Base.Theme.PythonIDE" />
+    
+    <!-- Light theme -->
+    <style name="Theme.PythonIDE.Light" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <item name="colorBackground">@color/md_theme_light_background</item>
+        <item name="colorOnBackground">@color/md_theme_light_onBackground</item>
+        <item name="colorSurface">@color/md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/md_theme_light_onSurface</item>
+    </style>
+    
+    <!-- Dark theme -->
+    <style name="Theme.PythonIDE.Dark" parent="Theme.Material3.Dark">
+        <item name="colorPrimary">@color/md_theme_dark_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
+        <item name="colorBackground">@color/md_theme_dark_background</item>
+        <item name="colorOnBackground">@color/md_theme_dark_onBackground</item>
+        <item name="colorSurface">@color/md_theme_dark_surface</item>
+        <item name="colorOnSurface">@color/md_theme_dark_onSurface</item>
+    </style>
+    
+    <style name="Theme.PythonIDE.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    
+    <style name="Theme.PythonIDE.Fullscreen" parent="Theme.PythonIDE.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <!-- Action bar styles -->
+    <style name="Widget.PythonIDE.ActionBar" parent="Widget.Material3.ActionBar.Solid">
+        <item name="android:background">?attr/colorPrimaryContainer</item>
+        <item name="android:titleTextColor">?attr/colorOnPrimaryContainer</item>
+        <item name="android:subtitleTextColor">?attr/colorOnPrimaryContainer</item>
+        <item name="displayOptions">homeAsUp|showTitle</item>
+    </style>
+    
+    <style name="ThemeOverlay.PythonIDE.ActionBar" parent="ThemeOverlay.Material3.Dark.ActionBar">
+        <item name="colorOnPrimaryContainer">?attr/colorOnPrimaryContainer</item>
+    </style>
+    
+    <!-- Editor styles -->
+    <style name="EditorStyle">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+    
+    <!-- Terminal styles -->
+    <style name="TerminalStyle">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    
+    <!-- Card styles -->
+    <style name="CardStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+    
+    <!-- Button styles -->
+    <style name="ButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+    </style>
+    
+    <style name="ButtonStyle.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+    </style>
+    
+    <!-- EditText styles -->
+    <style name="EditTextStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:hint">@string/hint_search_files</item>
+    </style>
+    
+    <!-- Tab styles -->
+    <style name="TabStyle" parent="Widget.Material3.TabLayout.Secondary">
+        <item name="tabBackground">?attr/colorPrimaryContainer</item>
+        <item name="tabSelectedTextColor">?attr/colorOnPrimaryContainer</item>
+        <item name="tabTextColor">?attr/colorOnPrimaryContainer</item>
+        <item name="tabIndicatorColor">?attr/colorOnPrimaryContainer</item>
+    </style>
+    
+    <!-- Toolbar styles -->
+    <style name="ToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="android:background">?attr/colorPrimaryContainer</item>
+        <item name="titleTextColor">?attr/colorOnPrimaryContainer</item>
+        <item name="subtitleTextColor">?attr/colorOnPrimaryContainer</item>
+        <item name="theme">@style/ThemeOverlay.PythonIDE.Toolbar</item>
+    </style>
+    
+    <style name="ThemeOverlay.PythonIDE.Toolbar" parent="ThemeOverlay.Material3.Dark">
+        <item name="colorOnPrimaryContainer">?attr/colorOnPrimaryContainer</item>
+    </style>
+    
+    <!-- Bottom navigation styles -->
+    <style name="BottomNavigationStyle" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="itemIconTint">@color/bottom_nav_color_selector</item>
+        <item name="itemTextColor">@color/bottom_nav_color_selector</item>
+        <item name="elevation">8dp</item>
+    </style>
+    
+    <!-- Progress bar styles -->
+    <style name="ProgressBarStyle" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="indicatorColor">?attr/colorPrimary</item>
+        <item name="indicatorSize">48dp</item>
+        <item name="trackThickness">4dp</item>
+    </style>
+    
+    <!-- Fab styles -->
+    <style name="FabStyle" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="android:layout_margin">16dp</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="tint">?attr/colorOnPrimary</item>
+    </style>
+    
+    <!-- Switch styles -->
+    <style name="SwitchStyle" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="thumbTint">?attr/colorPrimary</item>
+        <item name="trackTint">?attr/colorPrimaryContainer</item>
+    </style>
+    
+    <!-- Dialog styles -->
+    <style name="DialogStyle" parent="ThemeOverlay.Material3.Dialog.Alert">
+        <item name="android:windowBackground">?attr/colorSurface</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
+    </style>
+    
+    <!-- WebView styles -->
+    <style name="WebViewStyle">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+    
+    <!-- File list styles -->
+    <style name="FileListStyle">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:divider">?attr/colorOutline</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+    
+    <!-- Git styles -->
+    <style name="GitStyle">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Selected state -->
+    <item android:color="@color/tab_selected_dark" android:state_selected="true" />
+    
+    <!-- Focused state -->
+    <item android:color="@color/tab_selected_dark" android:state_focused="true" />
+    
+    <!-- Checked state -->
+    <item android:color="@color/tab_selected_dark" android:state_checked="true" />
+    
+    <!-- Activated state -->
+    <item android:color="@color/tab_selected_dark" android:state_activated="true" />
+    
+    <!-- Default state -->
+    <item android:color="@color/tab_unselected_dark" />
+    
+</selector>

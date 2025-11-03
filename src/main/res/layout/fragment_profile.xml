@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <!-- Profile Header -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.DarkUI.Card.Glass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_lg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/padding_lg">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profile_image_large"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="@dimen/margin_md"
+                    android:background="@drawable/bg_glass_effect"
+                    android:contentDescription="@string/profile_photo"
+                    android:padding="3dp"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Material3.Corner.Size.50pct"
+                    app:strokeColor="@color/md_theme_dark_primary"
+                    app:strokeWidth="3dp"
+                    app:srcCompat="@drawable/ic_person_dark" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_edit_photo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginEnd="-20dp"
+                    android:layout_gravity="end|top"
+                    android:contentDescription="@string/action_edit"
+                    android:src="@drawable/ic_edit_dark"
+                    app:fabSize="mini"
+                    app:tint="@color/md_theme_dark_onPrimary" />
+
+                <TextView
+                    android:id="@+id/profile_name_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:textAppearance="@style/TextAppearance.DarkUI.Headline"
+                    android:layout_marginBottom="@dimen/margin_xs" />
+
+                <TextView
+                    android:id="@+id/profile_email_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textAppearance="@style/TextAppearance.DarkUI.Body"
+                    android:textColor="@color/md_theme_dark_onSurfaceVariant"
+                    android:layout_marginBottom="@dimen/margin_xs" />
+
+                <TextView
+                    android:id="@+id/member_since"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/member_since"
+                    android:textAppearance="@style/TextAppearance.DarkUI.Caption"
+                    android:textColor="@color/md_theme_dark_onSurfaceVariant" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Profile Form -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.DarkUI.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_lg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_lg">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_edit"
+                    android:textAppearance="@style/TextAppearance.DarkUI.Title"
+                    android:layout_marginBottom="@dimen/margin_lg"
+                    android:textColor="@color/md_theme_dark_onPrimary" />
+
+                <!-- Full Name -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.DarkUI.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_md"
+                    android:hint="@string/full_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_full_name"
+                        style="@style/Widget.DarkUI.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/username"
+                        android:drawableStart="@drawable/ic_person_dark"
+                        android:drawablePadding="@dimen/padding_sm" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Email -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.DarkUI.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_md"
+                    android:hint="@string/email">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_email"
+                        style="@style/Widget.DarkUI.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:drawableStart="@drawable/ic_email_dark"
+                        android:drawablePadding="@dimen/padding_sm" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Phone Number -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.DarkUI.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_md"
+                    android:hint="@string/phone_number">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_phone"
+                        style="@style/Widget.DarkUI.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:drawableStart="@drawable/ic_phone_dark"
+                        android:drawablePadding="@dimen/padding_sm" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Bio -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.DarkUI.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_lg"
+                    android:hint="@string/bio">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_bio"
+                        style="@style/Widget.DarkUI.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:maxLines="5"
+                        android:drawableStart="@drawable/ic_info_dark"
+                        android:drawablePadding="@dimen/padding_sm" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Action Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.DarkUI.Button.Outlined"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/margin_sm"
+                        android:text="@string/action_cancel" />
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.DarkUI.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/margin_sm"
+                        android:text="@string/action_save" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Statistics Section -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.DarkUI.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_lg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_lg">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="إحصائيات الملف الشخصي"
+                    android:textAppearance="@style/TextAppearance.DarkUI.Title"
+                    android:layout_marginBottom="@dimen/margin_md"
+                    android:textColor="@color/md_theme_dark_onPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="128"
+                            android:textAppearance="@style/TextAppearance.DarkUI.Title"
+                            android:textColor="@color/md_theme_dark_primary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="المفضلة"
+                            android:textAppearance="@style/TextAppearance.DarkUI.Caption"
+                            android:textColor="@color/md_theme_dark_onSurfaceVariant" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="256"
+                            android:textAppearance="@style/TextAppearance.DarkUI.Title"
+                            android:textColor="@color/md_theme_dark_secondary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="النشاطات"
+                            android:textAppearance="@style/TextAppearance.DarkUI.Caption"
+                            android:textColor="@color/md_theme_dark_onSurfaceVariant" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="64"
+                            android:textAppearance="@style/TextAppearance.DarkUI.Title"
+                            android:textColor="@color/md_theme_dark_tertiary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="الإنجازات"
+                            android:textAppearance="@style/TextAppearance.DarkUI.Caption"
+                            android:textColor="@color/md_theme_dark_onSurfaceVariant" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

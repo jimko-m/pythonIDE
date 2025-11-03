@@ -1,0 +1,224 @@
+<resources>
+    <string name="app_name">Python IDE</string>
+    
+    <!-- Main Menu -->
+    <string name="menu_new_file">New File</string>
+    <string name="menu_open_file">Open File</string>
+    <string name="menu_save_file">Save</string>
+    <string name="menu_save_as">Save As</string>
+    <string name="menu_file_manager">File Manager</string>
+    <string name="menu_git">Git</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_exit">Exit</string>
+    
+    <!-- Navigation -->
+    <string name="nav_editor">Editor</string>
+    <string name="nav_terminal">Terminal</string>
+    <string name="nav_files">Files</string>
+    <string name="nav_git">Git</string>
+    <string name="nav_termux">Termux</string>
+    
+    <!-- Editor -->
+    <string name="editor_new_file">New File</string>
+    <string name="editor_open_file">Open File</string>
+    <string name="editor_save_file">Save</string>
+    <string name="editor_find_replace">Find & Replace</string>
+    <string name="editor_format_code">Format Code</string>
+    <string name="editor_undo">Undo</string>
+    <string name="editor_redo">Redo</string>
+    <string name="editor_cut">Cut</string>
+    <string name="editor_copy">Copy</string>
+    <string name="editor_paste">Paste</string>
+    <string name="editor_select_all">Select All</string>
+    <string name="editor_share">Share</string>
+    <string name="editor_export">Export</string>
+    
+    <!-- Terminal -->
+    <string name="terminal_title">Terminal</string>
+    <string name="terminal_clear">Clear</string>
+    <string name="terminal_kill_process">Kill Process</string>
+    <string name="terminal_run_python">Run Python</string>
+    <string name="terminal_install_package">Install Package</string>
+    <string name="terminal_create_virtual_env">Create Virtual Environment</string>
+    
+    <!-- File Manager -->
+    <string name="file_manager_title">File Manager</string>
+    <string name="file_new_folder">New Folder</string>
+    <string name="file_new_file">New File</string>
+    <string name="file_rename">Rename</string>
+    <string name="file_delete">Delete</string>
+    <string name="file_move">Move</string>
+    <string name="file_copy">Copy</string>
+    <string name="file_share">Share</string>
+    <string name="file_export">Export</string>
+    <string name="file_import">Import</string>
+    <string name="file_properties">Properties</string>
+    
+    <!-- Git -->
+    <string name="git_title">Git Version Control</string>
+    <string name="git_init">Initialize Repository</string>
+    <string name="git_clone">Clone</string>
+    <string name="git_commit">Commit</string>
+    <string name="git_push">Push</string>
+    <string name="git_pull">Pull</string>
+    <string name="git_branch">Branch</string>
+    <string name="git_merge">Merge</string>
+    <string name="git_diff">Diff</string>
+    <string name="git_status">Status</string>
+    <string name="git_log">Log</string>
+    <string name="git_add_all">Add All</string>
+    <string name="git_commit_message">Commit Message</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_editor">Code Editor</string>
+    <string name="settings_terminal">Terminal</string>
+    <string name="settings_git">Git</string>
+    <string name="settings_general">General</string>
+    <string name="settings_about">About</string>
+    
+    <!-- Theme -->
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_auto">Auto</string>
+    
+    <!-- Permissions -->
+    <string name="permission_storage_required">App requires storage access permission</string>
+    <string name="permission_camera_required">App requires camera permission</string>
+    <string name="permission_microphone_required">App requires microphone permission</string>
+    <string name="permission_grant">Grant</string>
+    <string name="permission_deny">Deny</string>
+    
+    <!-- Messages -->
+    <string name="msg_file_saved">File saved successfully</string>
+    <string name="msg_file_not_saved">Failed to save file</string>
+    <string name="msg_file_opened">File opened successfully</string>
+    <string name="msg_file_created">File created successfully</string>
+    <string name="msg_file_deleted">File deleted successfully</string>
+    <string name="msg_invalid_file">Invalid file</string>
+    <string name="msg_no_file_selected">No file selected</string>
+    <string name="msg_unsaved_changes">Unsaved changes exist</string>
+    <string name="msg_save_changes">Save changes?</string>
+    <string name="msg_yes">Yes</string>
+    <string name="msg_no">No</string>
+    <string name="msg_cancel">Cancel</string>
+    <string name="msg_ok">OK</string>
+    <string name="msg_error">Error</string>
+    <string name="msg_success">Success</string>
+    <string name="msg_warning">Warning</string>
+    <string name="msg_info">Information</string>
+    <string name="msg_later">Later</string>
+    
+    <!-- Error Messages -->
+    <string name="error_file_not_found">File not found</string>
+    <string name="error_permission_denied">Permission denied</string>
+    <string name="error_network_connection">Network connection problem</string>
+    <string name="error_git_operation">Git operation error</string>
+    <string name="error_terminal_execution">Terminal command execution error</string>
+    <string name="error_unknown">Unknown error</string>
+    
+    <!-- Hints -->
+    <string name="hint_search_files">Search files</string>
+    <string name="hint_commit_message">Enter commit message</string>
+    <string name="hint_filename">Filename</string>
+    <string name="hint_foldername">Folder name</string>
+    <string name="hint_search_terminal">Enter terminal command</string>
+    
+    <!-- Placeholders -->
+    <string name="placeholder_python_file">main.py</string>
+    <string name="placeholder_app_description">Integrated development environment for Python programming</string>
+    <string name="placeholder_version">Version %s</string>
+    
+    <!-- Menu Actions -->
+    <string name="action_new">New</string>
+    <string name="action_open">Open</string>
+    <string name="action_save">Save</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="action_help">Help</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_search">Search</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_sort">Sort</string>
+    
+    <!-- Bottom Sheet -->
+    <string name="bottom_sheet_title">Options</string>
+    <string name="bottom_sheet_dismiss">Close</string>
+    
+    <!-- Dialog Titles -->
+    <string name="dialog_new_file_title">New File</string>
+    <string name="dialog_rename_file_title">Rename File</string>
+    <string name="dialog_delete_file_title">Delete File</string>
+    <string name="dialog_git_commit_title">Commit Changes</string>
+    <string name="dialog_settings_title">Settings</string>
+    <string name="dialog_about_title">About Python IDE</string>
+    
+    <!-- Long Click Actions -->
+    <string name="long_click_edit">Edit</string>
+    <string name="long_click_run">Run</string>
+    <string name="long_click_debug">Debug</string>
+    <string name="long_click_preview">Preview</string>
+    
+    <!-- Status Messages -->
+    <string name="status_loading">Loading...</string>
+    <string name="status_saving">Saving...</string>
+    <string name="status_compiling">Compiling...</string>
+    <string name="status_running">Running...</string>
+    <string name="status_ready">Ready</string>
+    
+    <!-- Search -->
+    <string name="search_hint">Search...</string>
+    <string name="search_replace_hint">Find & Replace</string>
+    <string name="search_result_not_found">No results found</string>
+    <string name="search_results_found">Found %d results</string>
+    
+    <!-- Tab Labels -->
+    <string name="tab_editor">Editor</string>
+    <string name="tab_console">Console</string>
+    <string name="tab_terminal">Terminal</string>
+    <string name="tab_files">Files</string>
+    <string name="tab_git">Git</string>
+    
+    <!-- Actions -->
+    <string name="action_run">Run</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_debug">Debug</string>
+    <string name="action_install">Install</string>
+    <string name="action_update">Update</string>
+    <string name="action_download">Download</string>
+    <string name="action_upload">Upload</string>
+    <string name="action_sync">Sync</string>
+    <string name="action_backup">Backup</string>
+    <string name="action_restore">Restore</string>
+    
+    <!-- Features -->
+    <string name="feature_monaco_editor">Advanced Monaco Editor</string>
+    <string name="feature_termux_integration">Termux Integration</string>
+    <string name="feature_git_support">Git Support</string>
+    <string name="feature_room_database">Room Database</string>
+    <string name="feature_webview_support">WebView Support</string>
+    <string name="feature_file_manager">Advanced File Manager</string>
+    <string name="feature_code_completion">Smart Code Completion</string>
+    <string name="feature_syntax_highlight">Syntax Highlighting</string>
+    <string name="feature_auto_save">Auto Save</string>
+    <string name="feature_cloud_sync">Cloud Sync</string>
+    
+    <!-- Feature descriptions -->
+    <string name="feature_desc_monaco_editor">Advanced code editor with professional features</string>
+    <string name="feature_desc_termux_integration">Integration with Termux environment for Python execution</string>
+    <string name="feature_desc_git_support">Full support for Git commands for version control</string>
+    <string name="feature_desc_room_database">Fast and reliable local database</string>
+    <string name="feature_desc_webview_support">Display web pages and HTML files</string>
+    <string name="feature_desc_file_manager">Powerful file manager with multi-format support</string>
+    
+    <!-- Notifications -->
+    <string name="notification_channel_name">Python IDE Notifications</string>
+    <string name="notification_channel_desc">App notifications and errors</string>
+    <string name="notification_file_saved_title">File Saved</string>
+    <string name="notification_file_saved_text">File saved successfully</string>
+    <string name="notification_git_sync_title">Git Sync</string>
+    <string name="notification_git_sync_text">Repository synchronized</string>
+    <string name="notification_termux_error_title">Termux Error</string>
+    <string name="notification_termux_error_text">An error occurred while executing the command</string>
+    
+</resources>

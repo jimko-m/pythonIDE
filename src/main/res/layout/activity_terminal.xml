@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="8dp">
+
+    <!-- Header with terminal info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1a1a1a"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/terminal_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🐍 Python IDE Terminal"
+            android:textColor="#00ff00"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مسح"
+            android:textColor="#ffffff"
+            android:background="#333333"
+            android:layout_marginStart="8dp"
+            android:padding="4dp" />
+
+        <Button
+            android:id="@+id/help_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مساعدة"
+            android:textColor="#ffffff"
+            android:background="#333333"
+            android:layout_marginStart="4dp"
+            android:padding="4dp" />
+
+    </LinearLayout>
+
+    <!-- Terminal output area -->
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:padding="8dp"
+        android:scrollbarStyle="insideOverlay">
+
+        <TextView
+            android:id="@+id/output_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00ff00"
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="2dp"
+            android:textIsSelectable="true"
+            android:importantForAutofill="no"
+            android:importantForAccessibility="no" />
+
+    </ScrollView>
+
+    <!-- Status bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1a1a1a"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="جاهز"
+            android:textColor="#888888"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/python_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python: -"
+            android:textColor="#888888"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- Input area -->
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#333333"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/prompt_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ python-ide> "
+            android:textColor="#00ff00"
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/input_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:maxLines="3"
+            android:hint="اكتب أمر Python هنا..."
+            android:textColorHint="#666666"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/execute_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تشغيل ▶"
+            android:textColor="#ffffff"
+            android:background="#007acc"
+            android:layout_marginStart="8dp"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- History and navigation hints -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1a1a1a"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="↑↓ للتنقل في التاريخ • ⌫ لإزالة النص • enter للتنفيذ"
+            android:textColor="#666666"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

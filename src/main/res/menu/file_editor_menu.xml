@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_save"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="حفظ"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_find_replace"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="البحث والاستبدال"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_auto_save"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="الحفظ التلقائي"
+        app:showAsAction="never"
+        app:checkableBehavior="single" />
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="مشاركة"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_properties"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="خصائص الملف"
+        app:showAsAction="never" />
+
+</menu>

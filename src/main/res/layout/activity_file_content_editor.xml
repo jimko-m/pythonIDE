@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="محرر النصوص" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- File Info Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@color/file_editor_header_background">
+
+            <TextView
+                android:id="@+id/fileNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/file_editor_text_primary"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:text="اسم الملف.txt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/fileSizeTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/file_editor_text_secondary"
+                    android:textSize="14sp"
+                    android:text="حجم الملف: 0 بايت" />
+
+                <TextView
+                    android:id="@+id/lastModifiedTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/file_editor_text_secondary"
+                    android:textSize="14sp"
+                    android:gravity="end"
+                    android:text="آخر تعديل: --/--/---- --:--" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Status Bar -->
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/file_editor_status_background"
+            android:textColor="@color/file_editor_status_text"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif"
+            android:text="جاهز" />
+
+        <!-- Text Editor -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/contentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="400dp"
+                android:padding="16dp"
+                android:background="@color/file_editor_content_background"
+                android:textColor="@color/file_editor_text_primary"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:lineSpacingMultiplier="1.2"
+                android:scrollbars="vertical"
+                android:hint="اكتب محتوى الملف هنا..."
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Line Number View (Optional) -->
+    <LinearLayout
+        android:id="@+id/lineNumberView"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/file_editor_line_numbers_background"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Line numbers will be populated programmatically -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:padding="4dp"
+            android:text="1"
+            android:textColor="@color/file_editor_line_numbers_text"
+            android:textSize="10sp"
+            android:fontFamily="monospace"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Search Highlight Overlay -->
+    <View
+        android:id="@+id/searchHighlightView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/search_highlight_overlay"
+        android:visibility="gone" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

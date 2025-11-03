@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.DarkUI.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_sm"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:rippleColor="@color/ripple_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_md">
+
+        <!-- Icon -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_activity_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="@dimen/padding_md"
+            android:background="@drawable/bg_glass_effect"
+            android:padding="@dimen/padding_sm"
+            app:srcCompat="@drawable/ic_notifications_dark"
+            app:tint="@color/md_theme_dark_primary" />
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_activity_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xs"
+                android:text="عنوان النشاط"
+                android:textAppearance="@style/TextAppearance.DarkUI.Body"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_activity_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xs"
+                android:text="وصف النشاط أو التفاصيل"
+                android:textAppearance="@style/TextAppearance.DarkUI.Body.Small"
+                android:textColor="@color/md_theme_dark_onSurfaceVariant" />
+
+            <TextView
+                android:id="@+id/text_activity_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="منذ 5 دقائق"
+                android:textAppearance="@style/TextAppearance.DarkUI.Caption"
+                android:textColor="@color/md_theme_dark_onSurfaceVariant" />
+
+        </LinearLayout>
+
+        <!-- Action Button -->
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.DarkUI.Button.Icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/padding_sm"
+            android:contentDescription="إجراء"
+            app:icon="@drawable/ic_arrow_forward_dark"
+            app:iconSize="20dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

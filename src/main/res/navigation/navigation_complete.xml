@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.darkui.ui.home.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home_complete">
+        
+        <action
+            android:id="@+id/action_home_to_settings"
+            app:destination="@id/nav_settings"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+            
+        <action
+            android:id="@+id/action_home_to_profile"
+            app:destination="@id/nav_profile"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+            
+    </fragment>
+
+    <!-- Dashboard Fragment -->
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.darkui.ui.dashboard.DashboardFragment"
+        android:label="@string/nav_dashboard"
+        tools:layout="@layout/fragment_dashboard_complete">
+        
+        <action
+            android:id="@+id/action_dashboard_to_details"
+            app:destination="@id/nav_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+            
+    </fragment>
+
+    <!-- Library Fragment -->
+    <fragment
+        android:id="@+id/nav_library"
+        android:name="com.example.darkui.ui.library.LibraryFragment"
+        android:label="@string/nav_library"
+        tools:layout="@layout/fragment_library_complete">
+        
+        <action
+            android:id="@+id/action_library_to_details"
+            app:destination="@id/nav_library_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+            
+    </fragment>
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.darkui.ui.profile.ProfileFragment"
+        android:label="@string/nav_profile"
+        tools:layout="@layout/fragment_profile_complete">
+        
+        <action
+            android:id="@+id/action_profile_to_settings"
+            app:destination="@id/nav_settings"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+            
+    </fragment>
+
+    <!-- Settings Activity -->
+    <activity
+        android:id="@+id/nav_settings"
+        android:name="com.example.darkui.ui.settings.SettingsActivity"
+        android:label="@string/nav_settings"
+        android:theme="@style/Theme.DarkUI.NoActionBar"
+        tools:layout="@layout/activity_settings_complete" />
+
+    <!-- Favorites Fragment -->
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.example.darkui.ui.favorites.FavoritesFragment"
+        android:label="@string/nav_favorites"
+        tools:layout="@layout/fragment_favorites_complete" />
+
+    <!-- History Fragment -->
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.darkui.ui.history.HistoryFragment"
+        android:label="@string/nav_history"
+        tools:layout="@layout/fragment_history_complete" />
+
+    <!-- Help Fragment -->
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.example.darkui.ui.help.HelpFragment"
+        android:label="@string/nav_help"
+        tools:layout="@layout/fragment_help_complete" />
+
+    <!-- About Fragment -->
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.darkui.ui.about.AboutFragment"
+        android:label="@string/nav_about"
+        tools:layout="@layout/fragment_about_complete" />
+
+    <!-- Details SubFragments -->
+    <fragment
+        android:id="@+id/nav_details"
+        android:name="com.example.darkui.ui.details.DetailsFragment"
+        android:label="التفاصيل"
+        tools:layout="@layout/fragment_details_complete" />
+
+    <fragment
+        android:id="@+id/nav_library_details"
+        android:name="com.example.darkui.ui.library_details.LibraryDetailsFragment"
+        android:label="تفاصيل المكتبة"
+        tools:layout="@layout/fragment_library_details_complete" />
+
+</navigation>

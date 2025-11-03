@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/terminal_background"
+    tools:context=".ui.activities.TerminalActivity">
+
+    <!-- Terminal Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/terminal_background"
+        android:title="@string/terminal_title"
+        android:titleTextColor="@color/terminal_foreground"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:menu="@menu/terminal_menu" />
+
+    <!-- Terminal Container -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Terminal Output -->
+        <ScrollView
+            android:id="@+id/terminal_output_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/terminal_output"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Terminal history will be added here dynamically -->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- Terminal Input -->
+        <LinearLayout
+            android:id="@+id/terminal_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/terminal_background"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/terminal_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="$ "
+                android:textColor="@color/terminal_white"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:paddingEnd="4dp" />
+
+            <EditText
+                android:id="@+id/terminal_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="@color/terminal_foreground"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:imeOptions="actionSend"
+                android:inputType="textNoSuggestions|text"
+                android:maxLines="1"
+                android:cursorVisible="true" />
+
+        </LinearLayout>
+
+        <!-- Keyboard Overlay -->
+        <View
+            android:id="@+id/keyboard_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone" />
+
+        <!-- Process List -->
+        <LinearLayout
+            android:id="@+id/process_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:background="?attr/colorSurface"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="gone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="العمليات النشطة"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/process_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_close_processes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="إغلاق"
+                android:layout_marginTop="16dp"
+                style="@style/ButtonStyle" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Terminal Status Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/terminal_black"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:id="@+id/terminal_status"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="جاهز"
+            android:textColor="@color/terminal_white"
+            android:textSize="10sp"
+            android:gravity="start|center_vertical" />
+
+        <TextView
+            android:id="@+id/termux_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Termux: متصل"
+            android:textColor="@color/terminal_green"
+            android:textSize="10sp"
+            android:gravity="end|center_vertical" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CodeEditorActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- File Explorer Sidebar -->
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@color/sidebar_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="ملفات المشروع"
+                android:textColor="@color/sidebar_title_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/file_explorer_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <!-- Main Editor Area -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Search Bar -->
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/search_background"
+                app:queryBackground="@android:color/transparent"
+                app:queryHint="البحث في الكود..."
+                app:iconifiedByDefault="false" />
+
+            <!-- Editor Container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!-- Line Numbers -->
+                <com.pythonide.editor.LineNumbersView
+                    android:id="@+id/line_numbers_view"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_numbers_background"
+                    android:padding="8dp"
+                    android:scrollbars="none" />
+
+                <!-- Code Editor -->
+                <com.pythonide.editor.CodeEditText
+                    android:id="@+id/code_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/editor_background"
+                    android:fontFamily="monospace"
+                    android:gravity="top|start"
+                    android:imeOptions="flagNoExtractUi|actionGo"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:padding="16dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/editor_text"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:textSize="16sp"
+                    android:ems="10"
+                    android:importantForAutofill="no" />
+
+            </LinearLayout>
+
+            <!-- Status Bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/status_background"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/line_info_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="السطر: 1, العمود: 1"
+                    android:textColor="@color/status_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/char_info_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="الأحرف: 0"
+                    android:textColor="@color/status_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/file_info_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="main.py"
+                    android:textColor="@color/status_text"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Floating Action Button for Run -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_play_arrow"
+        app:backgroundTint="@color/fab_background"
+        app:tint="@color/fab_icon" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

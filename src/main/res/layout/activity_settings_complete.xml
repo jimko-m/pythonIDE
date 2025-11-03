@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_dark_background"
+    tools:context=".ui.settings.SettingsActivity">
+
+    <!-- App Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.Material3.Dark">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/md_theme_dark_surface"
+            app:title="@string/settings_title"
+            app:titleTextColor="@color/md_theme_dark_onSurface"
+            app:navigationIcon="@drawable/ic_arrow_back_dark"
+            app:navigationIconTint="@color/md_theme_dark_onSurface"
+            style="@style/Widget.DarkUI.Toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Main Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_padding"
+            android:clipToPadding="false">
+
+            <!-- Profile Section -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_lg"
+                style="@style/Widget.DarkUI.Card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding_lg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/space_md">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="@dimen/avatar_size_lg"
+                            android:layout_height="@dimen/avatar_size_lg"
+                            android:src="@drawable/ic_person_dark"
+                            android:background="@drawable/avatar_shape_dark"
+                            android:padding="2dp"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Avatar"
+                            app:strokeColor="@color/glass_border_dark"
+                            app:strokeWidth="2dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/space_md">
+
+                            <TextView
+                                android:id="@+id/profile_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_name"
+                                style="@style/TextAppearance.DarkUI.Title" />
+
+                            <TextView
+                                android:id="@+id/profile_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_email"
+                                android:layout_marginTop="@dimen/space_xs"
+                                style="@style/TextAppearance.DarkUI.Body.Small" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/edit_profile_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/edit_profile"
+                            style="@style/Widget.DarkUI.Button.Text"
+                            app:icon="@drawable/ic_edit_dark"
+                            app:iconGravity="textStart" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Appearance Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appearance_settings"
+                android:layout_marginBottom="@dimen/space_sm"
+                style="@style/TextAppearance.DarkUI.Label" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_lg"
+                style="@style/Widget.DarkUI.Card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Theme Setting -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_md"
+                        android:gravity="center_vertical"
+                        android:background="?attr/selectableItemBackground">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@drawable/ic_theme_dark"
+                            android:tint="@color/md_theme_dark_onSurface" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/space_md">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/theme_setting"
+                                style="@style/TextAppearance.DarkUI.Body" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/theme_description"
+                                android:layout_marginTop="@dimen/space_xs"
+                                style="@style/TextAppearance.DarkUI.Body.Small" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/theme_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            style="@style/Widget.DarkUI.Switch" />
+
+                    </LinearLayout>
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:background="@color/divider_dark"
+                        android:layout_marginStart="@dimen/space_lg" />
+
+                    <!-- Dynamic Colors -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_md"
+                        android:gravity="center_vertical"
+                        android:background="?attr/selectableItemBackground">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@drawable/ic_palette_dark"
+                            android:tint="@color/md_theme_dark_onSurface" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/space_md">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dynamic_colors"
+                                style="@style/TextAppearance.DarkUI.Body" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dynamic_colors_description"
+                                android:layout_marginTop="@dimen/space_xs"
+                                style="@style/TextAppearance.DarkUI.Body.Small" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/dynamic_colors_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            style="@style/Widget.DarkUI.Switch" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Notifications Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notifications_settings"
+                android:layout_marginBottom="@dimen/space_sm"
+                style="@style/TextAppearance.DarkUI.Label" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_lg"
+                style="@style/Widget.DarkUI.Card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Push Notifications -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_md"
+                        android:gravity="center_vertical"
+                        android:background="?attr/selectableItemBackground">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@drawable/ic_notifications_dark"
+                            android:tint="@color/md_theme_dark_onSurface" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/space_md">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/push_notifications"
+                                style="@style/TextAppearance.DarkUI.Body" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/push_notifications_description"
+                                android:layout_marginTop="@dimen/space_xs"
+                                style="@style/TextAppearance.DarkUI.Body.Small" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/push_notifications_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            style="@style/Widget.DarkUI.Switch" />
+
+                    </LinearLayout>
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:background="@color/divider_dark"
+                        android:layout_marginStart="@dimen/space_lg" />
+
+                    <!-- Sound -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_md"
+                        android:gravity="center_vertical"
+                        android:background="?attr/selectableItemBackground">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@drawable/ic_volume_dark"
+                            android:tint="@color/md_theme_dark_onSurface" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/space_md">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sound_settings"
+                                style="@style/TextAppearance.DarkUI.Body" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sound_settings_description"
+                                android:layout_marginTop="@dimen/space_xs"
+                                style="@style/TextAppearance.DarkUI.Body.Small" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/sound_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            style="@style/Widget.DarkUI.Switch" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Privacy Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_settings"
+                android:layout_marginBottom="@dimen/space_sm"
+                style="@style/TextAppearance.DarkUI.Label" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_lg"
+                style="@style/Widget.DarkUI.Card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Biometric Auth -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_md"
+                        android:gravity="center_vertical"
+                        android:background="?attr/selectableItemBackground">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@drawable/ic_fingerprint_dark"
+                            android:tint="@color/md_theme_dark_onSurface" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/space_md">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/biometric_auth"
+                                style="@style/TextAppearance.DarkUI.Body" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/biometric_auth_description"
+                                android:layout_marginTop="@dimen/space_xs"
+                                style="@style/TextAppearance.DarkUI.Body.Small" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/biometric_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            style="@style/Widget.DarkUI.Switch" />
+
+                    </LinearLayout>
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:background="@color/divider_dark"
+                        android:layout_marginStart="@dimen/space_lg" />
+
+                    <!-- Auto Lock -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_md"
+                        android:gravity="center_vertical"
+                        android:background="?attr/selectableItemBackground">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@drawable/ic_lock_dark"
+                            android:tint="@color/md_theme_dark_onSurface" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/space_md">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/auto_lock"
+                                style="@style/TextAppearance.DarkUI.Body" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/auto_lock_description"
+                                android:layout_marginTop="@dimen/space_xs"
+                                style="@style/TextAppearance.DarkUI.Body.Small" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/configure"
+                            style="@style/Widget.DarkUI.Button.Text"
+                            android:textSize="@dimen/text_size_sm" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- About Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_settings"
+                android:layout_marginBottom="@dimen/space_sm"
+                style="@style/TextAppearance.DarkUI.Label" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_lg"
+                style="@style/Widget.DarkUI.Card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- App Version -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_md"
+                        android:gravity="center_vertical"
+                        android:background="?attr/selectableItemBackground">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@drawable/ic_info_dark"
+                            android:tint="@color/md_theme_dark_onSurface" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/space_md">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/app_version"
+                                style="@style/TextAppearance.DarkUI.Body" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/app_version_number"
+                                android:layout_marginTop="@dimen/space_xs"
+                                style="@style/TextAppearance.DarkUI.Body.Small" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:background="@color/divider_dark"
+                        android:layout_marginStart="@dimen/space_lg" />
+
+                    <!-- Privacy Policy -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_md"
+                        android:gravity="center_vertical"
+                        android:background="?attr/selectableItemBackground">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@drawable/ic_privacy_dark"
+                            android:tint="@color/md_theme_dark_onSurface" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/space_md">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/privacy_policy"
+                                style="@style/TextAppearance.DarkUI.Body" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/privacy_policy_description"
+                                android:layout_marginTop="@dimen/space_xs"
+                                style="@style/TextAppearance.DarkUI.Body.Small" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="@dimen/icon_size_md"
+                            android:layout_height="@dimen/icon_size_md"
+                            android:src="@drawable/ic_arrow_forward_dark"
+                            android:tint="@color/md_theme_dark_onSurfaceVariant" />
+
+                    </LinearLayout>
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:background="@color/divider_dark"
+                        android:layout_marginStart="@dimen/space_lg" />
+
+                    <!-- Terms of Service -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_md"
+                        android:gravity="center_vertical"
+                        android:background="?attr/selectableItemBackground">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@drawable/ic_terms_dark"
+                            android:tint="@color/md_theme_dark_onSurface" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/space_md">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/terms_of_service"
+                                style="@style/TextAppearance.DarkUI.Body" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/terms_of_service_description"
+                                android:layout_marginTop="@dimen/space_xs"
+                                style="@style/TextAppearance.DarkUI.Body.Small" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="@dimen/icon_size_md"
+                            android:layout_height="@dimen/icon_size_md"
+                            android:src="@drawable/ic_arrow_forward_dark"
+                            android:tint="@color/md_theme_dark_onSurfaceVariant" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Bottom Spacer -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fab_margin" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Floating Action Button for Quick Settings -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/quick_settings_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_settings_dark"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_anchor="@id/app_bar_layout"
+        app:backgroundTint="@color/md_theme_dark_primary"
+        app:tint="@color/md_theme_dark_onPrimary"
+        style="@style/Widget.DarkUI.FloatingActionButton" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

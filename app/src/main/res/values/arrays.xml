@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="theme_options">
+        <item>@string/theme_light</item>
+        <item>@string/theme_dark</item>
+        <item>@string/theme_auto</item>
+    </string-array>
+    
+    <string-array name="theme_values">
+        <item>light</item>
+        <item>dark</item>
+        <item>auto</item>
+    </string-array>
+    
+    <string-array name="file_types">
+        <item>*.py</item>
+        <item>*.txt</item>
+        <item>*.json</item>
+        <item>*.yaml</item>
+        <item>*.yml</item>
+        <item>*.md</item>
+        <item>*.html</item>
+        <item>*.css</item>
+        <item>*.js</item>
+        <item>*.xml</item>
+        <item>*.java</item>
+        <item>*.kt</item>
+        <item>*.cpp</item>
+        <item>*.c</item>
+        <item>*.h</item>
+        <item>*.html</item>
+        <item>*.css</item>
+        <item>*.js</item>
+        <item>*.vue</item>
+        <item>*.jsx</item>
+        <item>*.ts</item>
+    </string-array>
+    
+    <string-array name="file_type_names">
+        <item>Python Files</item>
+        <item>Text Files</item>
+        <item>JSON Files</item>
+        <item>YAML Files</item>
+        <item>YAML Files</item>
+        <item>Markdown Files</item>
+        <item>HTML Files</item>
+        <item>CSS Files</item>
+        <item>JavaScript Files</item>
+        <item>XML Files</item>
+        <item>Java Files</item>
+        <item>Kotlin Files</item>
+        <item>C++ Files</item>
+        <item>C Files</item>
+        <item>Header Files</item>
+        <item>HTML Files</item>
+        <item>CSS Files</item>
+        <item>JavaScript Files</item>
+        <item>Vue Files</item>
+        <item>JSX Files</item>
+        <item>TypeScript Files</item>
+    </string-array>
+    
+    <string-array name="font_sizes">
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>24</item>
+        <item>28</item>
+    </string-array>
+    
+    <string-array name="terminal_themes">
+        <item>Dark</item>
+        <item>Light</item>
+        <item>Monokai</item>
+        <item>Solarized Dark</item>
+        <item>Solarized Light</item>
+    </string-array>
+    
+    <string-array name="git_actions">
+        <item>@string/git_status</item>
+        <item>@string/git_add_all</item>
+        <item>@string/git_commit</item>
+        <item>@string/git_branch</item>
+        <item>@string/git_merge</item>
+        <item>@string/git_diff</item>
+        <item>@string/git_log</item>
+        <item>@string/git_push</item>
+        <item>@string/git_pull</item>
+    </string-array>
+</resources>

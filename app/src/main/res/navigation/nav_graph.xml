@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name=".ui.activities.MainActivity" />
+
+    <activity
+        android:id="@+id/codeEditorActivity"
+        android:name=".ui.activities.CodeEditorActivity" />
+
+    <activity
+        android:id="@+id/terminalActivity"
+        android:name=".ui.activities.TerminalActivity" />
+
+</navigation>

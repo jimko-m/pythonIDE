@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/terminal_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/terminal_output_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/terminal_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/terminal_background"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/terminal_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="$ "
+            android:textColor="@color/terminal_white"
+            android:textSize="14sp"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/terminal_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:textColor="@color/terminal_foreground"
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:imeOptions="actionSend"
+            android:inputType="textNoSuggestions|text"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

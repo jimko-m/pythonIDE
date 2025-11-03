@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="بحث"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_new_folder"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="مجلد جديد"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_new_file"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="ملف جديد"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_paste"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="لصق"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_import"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:title="استيراد"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_export_zip"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="تصدير ZIP"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_view_mode"
+        android:title="طريقة العرض"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/action_list_view"
+                android:title="عرض القائمة"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_grid_view"
+                android:title="عرض الشبكة"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:title="تحديث"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="الإعدادات"
+        app:showAsAction="never" />
+
+</menu>

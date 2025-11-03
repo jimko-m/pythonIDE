@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design 3 Color System -->
+    
+    <!-- Primary colors -->
+    <color name="md_theme_light_primary">#0052CC</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#D9E2FF</color>
+    <color name="md_theme_light_onPrimaryContainer">#001A4C</color>
+    
+    <!-- Secondary colors -->
+    <color name="md_theme_light_secondary">#535F70</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#D7E3F8</color>
+    <color name="md_theme_light_onSecondaryContainer">#101C2B</color>
+    
+    <!-- Tertiary colors -->
+    <color name="md_theme_light_tertiary">#6956A7</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#E1DEFF</color>
+    <color name="md_theme_light_onTertiaryContainer">#221032</color>
+    
+    <!-- Error colors -->
+    <color name="md_theme_light_error">#BA1A1A</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    <color name="md_theme_light_errorContainer">#FFDAD6</color>
+    <color name="md_theme_light_onErrorContainer">#410002</color>
+    
+    <!-- Background and Surface colors -->
+    <color name="md_theme_light_background">#FDFBFF</color>
+    <color name="md_theme_light_onBackground">#1C1B1F</color>
+    <color name="md_theme_light_surface">#FDFBFF</color>
+    <color name="md_theme_light_onSurface">#1C1B1F</color>
+    
+    <!-- Surface variant colors -->
+    <color name="md_theme_light_surfaceVariant">#E1E2EC</color>
+    <color name="md_theme_light_onSurfaceVariant">#43474E</color>
+    
+    <!-- Outline -->
+    <color name="md_theme_light_outline">#73777F</color>
+    
+    <!-- Inverse colors -->
+    <color name="md_theme_light_inverseSurface">#313033</color>
+    <color name="md_theme_light_inverseOnSurface">#F4EFF4</color>
+    <color name="md_theme_light_inversePrimary">#A9C1FF</color>
+    
+    <!-- Additional colors -->
+    <color name="shadow">#1F000000</color>
+    <color name="black_transparent">#80000000</color>
+    <color name="white_transparent">#80FFFFFF</color>
+    
+    <!-- Dark theme colors -->
+    <color name="md_theme_dark_primary">#A9C1FF</color>
+    <color name="md_theme_dark_onPrimary">#00305A</color>
+    <color name="md_theme_dark_primaryContainer">#00457F</color>
+    <color name="md_theme_dark_onPrimaryContainer">#D9E2FF</color>
+    
+    <color name="md_theme_dark_secondary">#BBC7DB</color>
+    <color name="md_theme_dark_onSecondary">#243140</color>
+    <color name="md_theme_dark_secondaryContainer">#3A4757</color>
+    <color name="md_theme_dark_onSecondaryContainer">#D7E3F8</color>
+    
+    <color name="md_theme_dark_tertiary">#D6BCE8</color>
+    <color name="md_theme_dark_onTertiary">#3B2874</color>
+    <color name="md_theme_dark_tertiaryContainer">#513B8C</color>
+    <color name="md_theme_dark_onTertiaryContainer">#E1DEFF</color>
+    
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_errorContainer">#93000A</color>
+    <color name="md_theme_dark_onErrorContainer">#FFDAD6</color>
+    
+    <color name="md_theme_dark_background">#10141B</color>
+    <color name="md_theme_dark_onBackground">#E6E1E5</color>
+    <color name="md_theme_dark_surface">#10141B</color>
+    <color name="md_theme_dark_onSurface">#E6E1E5</color>
+    
+    <color name="md_theme_dark_surfaceVariant">#43474E</color>
+    <color name="md_theme_dark_onSurfaceVariant">#C3C6CF</color>
+    
+    <color name="md_theme_dark_outline">#8D9199</color>
+    
+    <color name="md_theme_dark_inverseSurface">#E6E1E5</color>
+    <color name="md_theme_dark_inverseOnSurface">#313033</color>
+    <color name="md_theme_dark_inversePrimary">#0052CC</color>
+    
+    <!-- Editor specific colors -->
+    <color name="editor_background">#1E1E1E</color>
+    <color name="editor_foreground">#D4D4D4</color>
+    <color name="editor_cursor">#FFFFFF</color>
+    <color name="editor_selection">#264F78</color>
+    
+    <!-- Syntax highlighting colors for Python -->
+    <color name="python_keyword">#569CD6</color>
+    <color name="python_string">#CE9178</color>
+    <color name="python_comment">#6A9955</color>
+    <color name="python_number">#B5CEA8</color>
+    <color name="python_function">#DCDCAA</color>
+    <color name="python_class">#4EC9B0</color>
+    <color name="python_variable">#9CDCFE</color>
+    <color name="python_operator">#D4D4D4</color>
+    <color name="python_module">#4FC1FF</color>
+    
+    <!-- Terminal colors -->
+    <color name="terminal_background">#000000</color>
+    <color name="terminal_foreground">#FFFFFF</color>
+    <color name="terminal_cursor">#FFFFFF</color>
+    <color name="terminal_selection">#264F78</color>
+    <color name="terminal_black">#000000</color>
+    <color name="terminal_red">#CD3131</color>
+    <color name="terminal_green">#00BC00</color>
+    <color name="terminal_yellow">#949800</color>
+    <color name="terminal_blue">#0451A5</color>
+    <color name="terminal_magenta">#BC05BC</color>
+    <color name="terminal_cyan">#00BC00</color>
+    <color name="terminal_white">#555555</color>
+    
+    <!-- Git colors -->
+    <color name="git_added">#0A7F26</color>
+    <color name="git_modified">#FF9B00</color>
+    <color name="git_deleted">#D73A49</color>
+    <color name="git_conflicted">#FF6B6B</color>
+    <color name="git_untracked">#FF9500</color>
+    <color name="git_staged">#007ACC</color>
+    
+    <!-- File type colors -->
+    <color name="python_file">#3776AB</color>
+    <color name="text_file">#A0A0A0</color>
+    <color name="json_file">#CE9178</color>
+    <color name="yaml_file">#FF7A72</color>
+    <color name="markdown_file">#42B883</color>
+    <color name="html_file">#E34C26</color>
+    <color name="css_file">#1572B6</color>
+    <color name="js_file">#F7DF1E</color>
+    <color name="xml_file">#FF6B6B</color>
+    
+    <!-- Status colors -->
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+    <color name="error">#EF4444</color>
+    <color name="info">#3B82F6</color>
+    
+    <!-- Bottom navigation colors -->
+    <color name="bottom_nav_selected">@color/md_theme_light_primary</color>
+    <color name="bottom_nav_unselected">@color/md_theme_light_onSurfaceVariant</color>
+    
+    <!-- Accent colors -->
+    <color name="accent_primary">#0052CC</color>
+    <color name="accent_secondary">#6956A7</color>
+    <color name="accent_tertiary">#00BCD4</color>
+    
+    <!-- Common colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#BDBDBD</color>
+    <color name="gray_dark">#424242</color>
+    <color name="divider">#E0E0E0</color>
+    
+    <!-- Overlay colors -->
+    <color name="scrim">#80000000</color>
+    <color name="divider_overlay">#80000000</color>
+</resources>

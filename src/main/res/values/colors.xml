@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Theme Colors - Material Design 3 -->
+    <color name="md_theme_dark_primary">#ADD8E6</color>
+    <color name="md_theme_dark_onPrimary">#003548</color>
+    <color name="md_theme_dark_primaryContainer">#004F64</color>
+    <color name="md_theme_dark_onPrimaryContainer">#BDE9FB</color>
+    
+    <color name="md_theme_dark_secondary">#B3C8A5</color>
+    <color name="md_theme_dark_onSecondary">#24351B</color>
+    <color name="md_theme_dark_secondaryContainer">#3B4C30</color>
+    <color name="md_theme_dark_onSecondaryContainer">#D1E5C1</color>
+    
+    <color name="md_theme_dark_tertiary">#A7C7E7</color>
+    <color name="md_theme_dark_onTertiary">#07304A</color>
+    <color name="md_theme_dark_tertiaryContainer">#2E4862</color>
+    <color name="md_theme_dark_onTertiaryContainer">#D3E5FB</color>
+    
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_errorContainer">#93000A</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_onErrorContainer">#FFB4AB</color>
+    
+    <color name="md_theme_dark_background">#0C1416</color>
+    <color name="md_theme_dark_onBackground">#E1E6E9</color>
+    <color name="md_theme_dark_surface">#1A2426</color>
+    <color name="md_theme_dark_onSurface">#E1E6E9</color>
+    <color name="md_theme_dark_surfaceVariant">#414D53</color>
+    <color name="md_theme_dark_onSurfaceVariant">#C1C7CE</color>
+    <color name="md_theme_dark_outline">#8B9197</color>
+    <color name="md_theme_dark_inverseOnSurface">#0C1416</color>
+    <color name="md_theme_dark_inverseSurface">#E1E6E9</color>
+    <color name="md_theme_dark_inversePrimary">#00556B</color>
+    <color name="md_theme_dark_surfaceTint">#ADD8E6</color>
+    <color name="md_theme_dark_outlineVariant">#414D53</color>
+    <color name="md_theme_dark_scrim">#000000</color>
+    
+    <!-- Additional Dark Theme Colors -->
+    <color name="primary_dark">#ADD8E6</color>
+    <color name="primary_variant_dark">#004F64</color>
+    <color name="secondary_dark">#B3C8A5</color>
+    <color name="background_dark">#121212</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="error_dark">#FF6B6B</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_dark">#B0B0B0</color>
+    <color name="text_hint_dark">#808080</color>
+    
+    <!-- Status Bar -->
+    <color name="status_bar_dark">#000000</color>
+    <color name="navigation_bar_dark">#1A1A1A</color>
+    
+    <!-- Gradient Colors -->
+    <color name="gradient_start_dark">#0C1416</color>
+    <color name="gradient_middle_dark">#1A2426</color>
+    <color name="gradient_end_dark">#2C3E50</color>
+    
+    <!-- Glass Effect Colors -->
+    <color name="glass_background_dark">#1A2426</color>
+    <color name="glass_border_dark">#ADD8E6</color>
+    
+    <!-- Card Colors -->
+    <color name="card_background_dark">#1A2426</color>
+    <color name="card_border_dark">#414D53</color>
+    
+    <!-- Button Colors -->
+    <color name="button_primary_dark">#ADD8E6</color>
+    <color name="button_primary_text_dark">#003548</color>
+    <color name="button_secondary_dark">#414D53</color>
+    <color name="button_secondary_text_dark">#E1E6E9</color>
+    <color name="button_outline_dark">#ADD8E6</color>
+    <color name="button_outline_text_dark">#ADD8E6</color>
+    
+    <!-- Animation Colors -->
+    <color name="ripple_dark">#ADD8E6</color>
+    <color name="focus_dark">#ADD8E6</color>
+    
+    <!-- Success, Warning, Info Colors -->
+    <color name="success_dark">#4CAF50</color>
+    <color name="warning_dark">#FF9800</color>
+    <color name="info_dark">#2196F3</color>
+    
+    <!-- File Manager Specific Colors -->
+    <!-- Primary colors -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- File manager specific colors -->
+    <color name="path_background">#F5F5F5</color>
+    <color name="path_text_color">#757575</color>
+    
+    <color name="search_background">#FFFFFF</color>
+    
+    <color name="status_background">#FAFAFA</status_background>
+    <color name="status_text_color">#616161</color>
+    
+    <color name="file_name_color">#212121</color>
+    <color name="file_details_color">#757575</color>
+    
+    <!-- Code Editor Colors -->
+    <color name="editor_background">#FFFFFF</color>
+    <color name="editor_text">#212121</color>
+    <color name="editor_cursor">#FF0000</color>
+    
+    <!-- Line Numbers Colors -->
+    <color name="line_numbers_background">#F5F5F5</color>
+    <color name="line_numbers_text">#757575</color>
+    
+    <!-- Sidebar Colors -->
+    <color name="sidebar_background">#FAFAFA</color>
+    <color name="sidebar_title_text">#424242</color>
+    <color name="selected_file_background">#E3F2FD</color>
+    
+    <!-- File Explorer Colors -->
+    <color name="file_name_text">#212121</color>
+    <color name="file_type_text">#757575</color>
+    
+    <!-- Search Colors -->
+    <color name="search_highlight">#FFEB3B</color>
+    
+    <!-- Status Bar Colors -->
+    <color name="status_background">#EEEEEE</color>
+    <color name="status_text">#424242</color>
+    
+    <!-- Syntax Highlighting Colors -->
+    <color name="keyword_highlight">#9F44D3</color>
+    <color name="builtin_highlight">#2286C3</color>
+    <color name="function_highlight">#007BFF</color>
+    <color name="class_highlight">#FF6347</color>
+    <color name="string_highlight">#238755</color>
+    <color name="comment_highlight">#808080</color>
+    <color name="number_highlight">#B8312F</color>
+    <color name="operator_highlight">#9C27B0</color>
+    <color name="bracket_highlight">#FFC107</color>
+    <color name="bracket_match_highlight">#FF9800</color>
+    
+    <!-- UI Elements -->
+    <color name="fab_background">#4CAF50</color>
+    <color name="fab_icon">#FFFFFF</color>
+    
+    <!-- Error and Warning Colors -->
+    <color name="error_color">#F44336</color>
+    <color name="warning_color">#FF9800</color>
+    <color name="success_color">#4CAF50</color>
+    
+    <!-- Monaco Theme Colors -->
+    <color name="monokai_background">#272822</color>
+    <color name="monokai_text">#F8F8F2</color>
+    <color name="monokai_keyword">#F92672</color>
+    <color name="monokai_string">#E6DB74</color>
+    <color name="monokai_comment">#75715E</color>
+    <color name="monokai_number">#AE81FF</color>
+    <color name="monokai_function">#A6E22E</color>
+    
+    <!-- GitHub Theme Colors -->
+    <color name="github_background">#FFFFFF</color>
+    <color name="github_text">#24292E</color>
+    <color name="github_keyword">#D73A49</color>
+    <color name="github_string">#032F62</color>
+    <color name="github_comment">#6A737D</color>
+    <color name="github_number">#005CC5</color>
+    <color name="github_function">#6F42C1</color>
+    
+    <color name="empty_state_text_color">#9E9E9E</color>
+    
+    <color name="selection_color">#3F51B5</color>
+    
+    <!-- Icon colors -->
+    <color name="icon_tint">#616161</color>
+    
+    <!-- Background colors -->
+    <color name="background_light">#FAFAFA</color>
+    <color name="background_dark">#F5F5F5</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+    
+    <!-- Button colors -->
+    <color name="button_primary">#3F51B5</color>
+    <color name="button_secondary">#E0E0E0</color>
+    
+    <!-- Dialog colors -->
+    <color name="dialog_background">#FFFFFF</color>
+    <color name="dialog_title">#212121</color>
+    <color name="dialog_message">#757575</color>
+    
+    <!-- File type specific colors -->
+    <color name="folder_color">#FFC107</color>
+    <color name="image_color">#4CAF50</color>
+    <color name="video_color">#2196F3</color>
+    <color name="audio_color">#9C27B0</color>
+    <color name="document_color">#F44336</color>
+    <color name="archive_color">#FF9800</color>
+    <color name="unknown_color">#9E9E9E</color>
+    
+    <!-- Progress and loading colors -->
+    <color name="progress_primary">#3F51B5</color>
+    <color name="progress_background">#E0E0E0</color>
+    
+    <!-- Selection and highlight colors -->
+    <color name="selected_background">#E3F2FD</color>
+    <color name="highlight_background">#FFF3E0</highlight_background>
+    
+    <!-- Context menu colors -->
+    <color name="context_menu_background">#FFFFFF</color>
+    <color name="context_menu_item">#212121</color>
+    <color name="context_menu_divider">#E0E0E0</color>
+    
+    <!-- FAB colors -->
+    <color name="fab_color">#3F51B5</color>
+    <color name="fab_ripple">#1A237E</fab_ripple>
+    
+    <!-- Library Manager specific colors -->
+    <color name="library_installed">#4CAF50</color>
+    <color name="library_available">#2196F3</color>
+    <color name="library_update">#FF9800</color>
+    <color name="library_dependencies">#9C27B0</color>
+    <color name="library_search_background">#F8F9FA</color>
+    <color name="library_card_background">#FFFFFF</color>
+    <color name="library_card_border">#E0E0E0</color>
+    <color name="library_install_button">#4CAF50</color>
+    <color name="library_uninstall_button">#F44336</color>
+    <color name="library_update_button">#FF9800</color>
+    <color name="library_details_button">#3F51B5</color>
+    <color name="bottom_nav_background">#FFFFFF</color>
+    <color name="bottom_nav_selected">#3F51B5</color>
+    <color name="bottom_nav_unselected">#757575</color>
+</resources>

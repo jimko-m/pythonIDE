@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.DarkUI.Card.Glass"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="@dimen/margin_xs"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:rippleColor="@color/ripple_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Image Section -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_item"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:background="@color/md_theme_dark_surfaceVariant"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Material3.Corner.Top.Large"
+            tools:src="@drawable/ic_image_dark" />
+
+        <!-- Content Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_md">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xs"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="عنوان العنصر"
+                android:textAppearance="@style/TextAppearance.DarkUI.Body"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xs"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="وصف مختصر للعنصر"
+                android:textAppearance="@style/TextAppearance.DarkUI.Body.Small"
+                android:textColor="@color/md_theme_dark_onSurfaceVariant" />
+
+            <!-- Bottom Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginTop="auto">
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.DarkUI.Button.Icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="@string/action_share"
+                    app:icon="@drawable/ic_share_dark"
+                    app:iconSize="16dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.DarkUI.Button.Icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="@string/action_delete"
+                    app:icon="@drawable/ic_delete_dark"
+                    app:iconSize="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

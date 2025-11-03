@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.darkui.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.darkui.DashboardFragment"
+        android:label="@string/nav_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.darkui.FavoritesFragment"
+        android:label="@string/nav_favorites"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.darkui.ProfileFragment"
+        android:label="@string/nav_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_recent"
+        android:name="com.darkui.RecentFragment"
+        android:label="@string/nav_recent"
+        tools:layout="@layout/fragment_recent" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.darkui.SettingsFragment"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.darkui.HelpFragment"
+        android:label="@string/nav_help"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.darkui.AboutFragment"
+        android:label="@string/nav_about"
+        tools:layout="@layout/fragment_about" />
+
+    <!-- Action flows -->
+    <action
+        android:id="@+id/action_global_to_settings"
+        app:destination="@id/nav_settings" />
+
+    <action
+        android:id="@+id/action_global_to_profile"
+        app:destination="@id/nav_profile" />
+
+</navigation>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Undo -->
+    <item
+        android:id="@+id/action_undo"
+        android:icon="@drawable/ic_undo"
+        android:title="تراجع"
+        app:showAsAction="ifRoom" />
+
+    <!-- Redo -->
+    <item
+        android:id="@+id/action_redo"
+        android:icon="@drawable/ic_redo"
+        android:title="إعادة التنفيذ"
+        app:showAsAction="ifRoom" />
+
+    <!-- Search and Replace -->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="البحث والاستبدال"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <!-- Find and Replace -->
+    <item
+        android:id="@+id/action_find_replace"
+        android:icon="@drawable/ic_find_replace"
+        android:title="البحث والاستبدال المتقدم"
+        app:showAsAction="never" />
+
+    <!-- Save -->
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_save"
+        android:title="حفظ"
+        app:showAsAction="ifRoom" />
+
+    <!-- Format Code -->
+    <item
+        android:id="@+id/action_format"
+        android:icon="@drawable/ic_format"
+        android:title="تنسيق الكود"
+        app:showAsAction="never" />
+
+    <!-- Run -->
+    <item
+        android:id="@+id/action_run"
+        android:icon="@drawable/ic_play_arrow"
+        android:title="تشغيل الكود"
+        app:showAsAction="ifRoom" />
+
+    <!-- Editor Settings -->
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="إعدادات المحرر"
+        app:showAsAction="never" />
+
+    <!-- New File -->
+    <item
+        android:id="@+id/action_new_file"
+        android:icon="@drawable/ic_add"
+        android:title="ملف جديد"
+        app:showAsAction="never" />
+
+    <!-- Open File -->
+    <item
+        android:id="@+id/action_open_file"
+        android:icon="@drawable/ic_open"
+        android:title="فتح ملف"
+        app:showAsAction="never" />
+
+    <!-- Help -->
+    <item
+        android:id="@+id/action_help"
+        android:icon="@drawable/ic_help"
+        android:title="المساعدة"
+        app:showAsAction="never" />
+
+</menu>

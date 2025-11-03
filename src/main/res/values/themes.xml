@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Dark Theme - Material Design 3 -->
+    <style name="Theme.DarkUI" parent="Theme.Material3.Dark">
+        <item name="colorPrimary">@color/md_theme_dark_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_dark_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_dark_onPrimaryContainer</item>
+        
+        <item name="colorSecondary">@color/md_theme_dark_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_dark_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_dark_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_dark_onSecondaryContainer</item>
+        
+        <item name="colorTertiary">@color/md_theme_dark_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_dark_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_dark_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_dark_onTertiaryContainer</item>
+        
+        <item name="colorError">@color/md_theme_dark_error</item>
+        <item name="colorErrorContainer">@color/md_theme_dark_errorContainer</item>
+        <item name="colorOnError">@color/md_theme_dark_onError</item>
+        <item name="colorOnErrorContainer">@color/md_theme_dark_onErrorContainer</item>
+        
+        <item name="android:colorBackground">@color/md_theme_dark_background</item>
+        <item name="colorOnBackground">@color/md_theme_dark_onBackground</item>
+        
+        <item name="colorSurface">@color/md_theme_dark_surface</item>
+        <item name="colorOnSurface">@color/md_theme_dark_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_dark_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_dark_onSurfaceVariant</item>
+        
+        <item name="colorOutline">@color/md_theme_dark_outline</item>
+        <item name="colorSurfaceInverse">@color/md_theme_dark_inverseSurface</item>
+        <item name="colorOnSurfaceInverse">@color/md_theme_dark_inverseOnSurface</item>
+        <item name="colorPrimaryInverse">@color/md_theme_dark_inversePrimary</item>
+        <item name="colorSurfaceTint">@color/md_theme_dark_surfaceTint</item>
+        
+        <!-- Status Bar and Navigation -->
+        <item name="android:statusBarColor">@color/status_bar_dark</item>
+        <item name="android:navigationBarColor">@color/navigation_bar_dark</item>
+        
+        <!-- Window attributes -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        
+        <!-- Enable edge-to-edge -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        
+        <!-- Animation and transitions -->
+        <item name="android:windowActivityTransitions" tools:targetApi="l">true</item>
+        <item name="android:windowEnterTransition" tools:targetApi="l">@transition/fade</item>
+        <item name="android:windowExitTransition" tools:targetApi="l">@transition/fade</item>
+        <item name="android:windowReenterTransition" tools:targetApi="l">@transition/fade</item>
+        <item name="android:windowReturnTransition" tools:targetApi="l">@transition/fade</item>
+    </style>
+    
+    <!-- Splash Screen Theme -->
+    <style name="Theme.DarkUI.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/md_theme_dark_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_animated</item>
+        <item name="windowSplashScreenAnimationDuration">300</item>
+        <item name="postSplashScreenTheme">@style/Theme.DarkUI</item>
+    </style>
+    
+    <!-- Custom Button Styles -->
+    <style name="Button.DarkUI" parent="Widget.Material3.Button">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/button_primary_text_dark</item>
+        <item name="android:backgroundTint">@color/button_primary_dark</item>
+        <item name="rippleColor">@color/ripple_dark</item>
+        <item name="android:stateListAnimator">@animator/button_elevation</item>
+    </style>
+    
+    <!-- Secondary Button Style -->
+    <style name="Button.DarkUI.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/button_outline_text_dark</item>
+        <item name="strokeColor">@color/button_outline_dark</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/ripple_dark</item>
+    </style>
+    
+    <!-- Text Input Layout Style -->
+    <style name="TextInputLayout.DarkUI" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/md_theme_dark_primary</item>
+        <item name="hintTextColor">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="startIconTint">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="endIconTint">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="boxBackgroundColor">@color/md_theme_dark_surface</item>
+        <item name="android:textColorHint">@color/md_theme_dark_onSurfaceVariant</item>
+    </style>
+    
+    <!-- Card Style -->
+    <style name="Card.DarkUI" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/card_background_dark</item>
+        <item name="cardElevation">8dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="strokeColor">@color/card_border_dark</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+    
+    <!-- App Bar Style -->
+    <style name="Toolbar.DarkUI" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/md_theme_dark_surface</item>
+        <item name="titleTextColor">@color/md_theme_dark_onSurface</item>
+        <item name="subtitleTextColor">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="android:theme">@style/ThemeOverlay.Material3.Dark</item>
+    </style>
+    
+    <!-- Bottom Navigation Style -->
+    <style name="BottomNavigation.DarkUI" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/md_theme_dark_surface</item>
+        <item name="itemIconTint">@drawable/bottom_nav_color_selector_dark</item>
+        <item name="itemTextColor">@drawable/bottom_nav_color_selector_dark</item>
+        <item name="elevation">8dp</item>
+    </style>
+    
+    <!-- Drawer Style -->
+    <style name="NavigationView.DarkUI" parent="Widget.Material3.NavigationView">
+        <item name="android:background">@color/md_theme_dark_surface</item>
+        <item name="itemIconTint">@drawable/nav_view_color_selector_dark</item>
+        <item name="itemTextColor">@drawable/nav_view_color_selector_dark</item>
+        <item name="elevation">16dp</item>
+    </style>
+    
+    <!-- Floating Action Button Style -->
+    <style name="FloatingActionButton.DarkUI" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">@color/md_theme_dark_primary</item>
+        <item name="tint">@color/md_theme_dark_onPrimary</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+    </style>
+</resources>

@@ -1,0 +1,101 @@
+package com.pythonide.advanced;
+
+import java.util.*;
+import java.util.concurrent.CompletableFuture;
+
+/**
+ * Advanced Keyboard Shortcuts Manager for Python IDE
+ * Supports customizable shortcuts, context-aware shortcuts, and command execution
+ */
+public class KeyboardShortcuts {
+    
+    public static class ShortcutKey {
+        private String key;
+        private boolean ctrl;
+        private boolean alt;
+        private boolean shift;
+        private String description;
+        private String category;
+        
+        public ShortcutKey(String key, boolean ctrl, boolean alt, boolean shift, String description) {
+            this.key = key;
+            this.ctrl = ctrl;
+            this.alt = alt;
+            this.shift = shift;
+            this.description = description;
+            this.category = "General";
+        }
+        
+        public ShortcutKey(String key, boolean ctrl, boolean alt, boolean shift, String description, String category) {
+            this.key = key;
+            this.ctrl = ctrl;
+            this.alt = alt;
+            this.shift = shift;
+            this.description = description;
+            this.category = category;
+        }
+        
+        public String toString() {
+            StringBuilder sb = new StringBuilder();
+            if (ctrl) sb.append("Ctrl+");
+            if (alt) sb.append("Alt+");
+            if (shift) sb.append("Shift+");
+            sb.append(key);
+            return sb.toString();
+        }
+        
+        // Getters and setters
+        public String getKey() { return key; }
+        public boolean isCtrl() { return ctrl; }
+        public boolean isAlt() { return alt; }
+        public boolean isShift() { return shift; }
+        public String getDescription() { return description; }
+        public String getCategory() { return category; }
+    }
+    
+    public interface ShortcutAction {
+        void execute();
+        CompletableFuture<Void> executeAsync();
+    }
+    
+    public interface KeyPressedListener {
+        void onShortcutPressed(ShortcutKey key, ShortcutAction action);
+    }
+    
+    public enum Context {
+        EDITOR("Editor"),
+        PROJECT_EXPLORER("Project Explorer"),
+        TERMINAL("Terminal"),
+        DEBUGGER("Debugger"),
+        GENERAL("General"),
+        FILE_MANAGEMENT("File Management"),
+        CODE_NAVIGATION("Code Navigation"),
+        SEARCH_REPLACE("Search & Replace"),
+        VIEW_SWITCHING("View Switching"),
+        DATA_SCIENCE("Data Science");
+        
+        private final String displayName;
+        
+        Context(String displayName) {
+            this.displayName = displayName;
+        }
+        
+        public String getDisplayName() {
+            return displayName;
+        }
+    }
+    
+    public static class ShortcutCommand {
+        private String commandId;
+        private String name;
+        private ShortcutKey shortcutKey;
+        private ShortcutAction action;
+        private Set<Context> activeContexts;
+        private boolean enabled;
+        
+        public ShortcutCommand(String commandId, String name, ShortcutKey shortcutKey, ShortcutAction action) {
+            this.commandId = commandId;
+            this.name = name;
+            this.shortcutKey = shortcutKey;
+            this.action = action;
+            this.activeContexts = new HashSet<>();\n            this.enabled = true;\n        }\n        \n        public void addContext(Context context) {\n            activeContexts.add(context);\n        }\n        \n        public void removeContext(Context context) {\n            activeContexts.remove(context);\n        }\n        \n        public boolean isContextActive(Context currentContext) {\n            return activeContexts.isEmpty() || activeContexts.contains(currentContext);\n        }\n        \n        // Getters\n        public String getCommandId() { return commandId; }\n        public String getName() { return name; }\n        public ShortcutKey getShortcutKey() { return shortcutKey; }\n        public ShortcutAction getAction() { return action; }\n        public Set<Context> getActiveContexts() { return activeContexts; }\n        public boolean isEnabled() { return enabled; }\n        public void setEnabled(boolean enabled) { this.enabled = enabled; }\n    }\n    \n    private Map<String, ShortcutCommand> commands;\n    private Map<String, ShortcutKey> keyBindings;\n    private List<KeyPressedListener> listeners;\n    private Context currentContext;\n    private boolean shortcutSystemEnabled;\n    \n    public KeyboardShortcuts() {\n        this.commands = new HashMap<>();\n        this.keyBindings = new HashMap<>();\n        this.listeners = new ArrayList<>();\n        this.currentContext = Context.EDITOR;\n        this.shortcutSystemEnabled = true;\n        \n        initializeDefaultShortcuts();\n    }\n    \n    private void initializeDefaultShortcuts() {\n        // File Management Shortcuts\n        registerCommand(\"file.new\", \"ملف جديد\",\n            new ShortcutKey(\"N\", true, false, false, \"إنشاء ملف جديد\", Context.FILE_MANAGEMENT.getDisplayName()),\n            () -> newFile(), Context.GENERAL);\n        \n        registerCommand(\"file.open\", \"فتح ملف\",\n            new ShortcutKey(\"O\", true, false, false, \"فتح ملف موجود\", Context.FILE_MANAGEMENT.getDisplayName()),\n            () -> openFile(), Context.GENERAL);\n        \n        registerCommand(\"file.save\", \"حفظ\",\n            new ShortcutKey(\"S\", true, false, false, \"حفظ الملف الحالي\", Context.FILE_MANAGEMENT.getDisplayName()),\n            () -> saveFile(), Context.EDITOR, Context.PROJECT_EXPLORER);\n        \n        registerCommand(\"file.save_all\", \"حفظ الكل\",\n            new ShortcutKey(\"S\", true, false, true, \"حفظ جميع الملفات المفتوحة\", Context.FILE_MANAGEMENT.getDisplayName()),\n            () -> saveAllFiles(), Context.EDITOR, Context.PROJECT_EXPLORER);\n        \n        registerCommand(\"file.close\", \"إغلاق الملف\",\n            new ShortcutKey(\"W\", true, false, false, \"إغلاق الملف الحالي\", Context.FILE_MANAGEMENT.getDisplayName()),\n            () -> closeFile(), Context.EDITOR);\n        \n        // Code Navigation\n        registerCommand(\"editor.find\", \"البحث\",\n            new ShortcutKey(\"F\", true, false, false, \"البحث في النص\", Context.CODE_NAVIGATION.getDisplayName()),\n            () -> openFindDialog(), Context.EDITOR);\n        \n        registerCommand(\"editor.find_replace\", \"البحث والاستبدال\",\n            new ShortcutKey(\"H\", true, false, false, \"البحث والاستبدال\", Context.CODE_NAVIGATION.getDisplayName()),\n            () -> openFindReplaceDialog(), Context.EDITOR);\n        \n        registerCommand(\"editor.go_to_line\", \"الانتقال لسطر\",\n            new ShortcutKey(\"L\", true, false, false, \"الانتقال لسطر معين\", Context.CODE_NAVIGATION.getDisplayName()),\n            () -> goToLine(), Context.EDITOR);\n        \n        registerCommand(\"editor.bookmark\", \"وضع إشارة مرجعية\",\n            new ShortcutKey(\"B\", true, false, false, \"وضع إشارة مرجعية\", Context.CODE_NAVIGATION.getDisplayName()),\n            () -> toggleBookmark(), Context.EDITOR);\n        \n        registerCommand(\"editor.next_bookmark\", \"التالي مرجعي\",\n            new ShortcutKey(\"N\", true, false, false, \"الانتقال للمرجعية التالية\", Context.CODE_NAVIGATION.getDisplayName()),\n            () -> nextBookmark(), Context.EDITOR);\n        \n        // View Switching\n        registerCommand(\"view.project_explorer\", \"مستكشف المشروع\",\n            new ShortcutKey(\"1\", true, false, false, \"إظهار/إخفاء مستكشف المشروع\", Context.VIEW_SWITCHING.getDisplayName()),\n            () -> toggleProjectExplorer(), Context.GENERAL);\n        \n        registerCommand(\"view.terminal\", \"الطرفية\",\n            new ShortcutKey(\"`\", true, false, false, \"إظهار/إخفاء الطرفية\", Context.VIEW_SWITCHING.getDisplayName()),\n            () -> toggleTerminal(), Context.GENERAL);\n        \n        registerCommand(\"view.debug_console\", \"وحدة التحكم للتشخيص\",\n            new ShortcutKey(\"D\", true, false, false, \"إظهار وحدة التحكم للتشخيص\", Context.VIEW_SWITCHING.getDisplayName()),\n            () -> toggleDebugConsole(), Context.DEBUGGER);\n        \n        registerCommand(\"view.output_panel\", \"لوحة الإخراج\",\n            new ShortcutKey(\"O\", true, false, false, \"إظهار لوحة الإخراج\", Context.VIEW_SWITCHING.getDisplayName()),\n            () -> toggleOutputPanel(), Context.GENERAL);\n        \n        // Code Execution\n        registerCommand(\"run.current_file\", \"تشغيل الملف الحالي\",\n            new ShortcutKey(\"R\", true, false, false, \"تشغيل الملف الحالي\", Context.EDITOR.getDisplayName()),\n            () -> runCurrentFile(), Context.EDITOR);\n        \n        registerCommand(\"run.project\", \"تشغيل المشروع\",\n            new ShortcutKey(\"R\", true, false, true, \"تشغيل المشروع كاملاً\", Context.EDITOR.getDisplayName()),\n            () -> runProject(), Context.EDITOR);\n        \n        registerCommand(\"debug.start\", \"بدء التشخيص\",\n            new ShortcutKey(\"F5\", false, false, false, \"بدء التشخيص\", Context.DEBUGGER.getDisplayName()),\n            () -> startDebugging(), Context.DEBUGGER);\n        \n        registerCommand(\"debug.step_over\", \"تجاوز\",\n            new ShortcutKey(\"F10\", false, false, false, \"تجاوز السطر الحالي\", Context.DEBUGGER.getDisplayName()),\n            () -> stepOver(), Context.DEBUGGER);\n        \n        registerCommand(\"debug.step_into\", \"الدخول\",\n            new ShortcutKey(\"F11\", false, false, false, \"الداخل في دالة\", Context.DEBUGGER.getDisplayName()),\n            () -> stepInto(), Context.DEBUGGER);\n        \n        registerCommand(\"debug.step_out\", \"الخروج\",\n            new ShortcutKey(\"F12\", false, false, false, \"الخروج من الدالة\", Context.DEBUGGER.getDisplayName()),\n            () -> stepOut(), Context.DEBUGGER);\n        \n        // Data Science Specific Shortcuts\n        registerCommand(\"ds.run_cell\", \"تشغيل الخلية\",\n            new ShortcutKey(\"Shift+Enter\", false, false, false, \"تشغيل الخلية الحالية\", Context.DATA_SCIENCE.getDisplayName()),\n            () -> runCurrentCell(), Context.DATA_SCIENCE);\n        \n        registerCommand(\"ds.run_all_cells\", \"تشغيل جميع الخلايا\",\n            new ShortcutKey(\"A\", true, false, false, \"تشغيل جميع الخلايا\", Context.DATA_SCIENCE.getDisplayName()),\n            () -> runAllCells(), Context.DATA_SCIENCE);\n        \n        registerCommand(\"ds.insert_cell_below\", \"إدراج خلية أدناه\",\n            new ShortcutKey(\"B\", true, false, false, \"إدراج خلية أدناه\", Context.DATA_SCIENCE.getDisplayName()),\n            () -> insertCellBelow(), Context.DATA_SCIENCE);\n        \n        registerCommand(\"ds.insert_cell_above\", \"إدراج خلية أعلاه\",\n            new ShortcutKey(\"A\", true, false, false, \"إدراج خلية أعلاه\", Context.DATA_SCIENCE.getDisplayName()),\n            () -> insertCellAbove(), Context.DATA_SCIENCE);\n        \n        registerCommand(\"ds.delete_cell\", \"حذف خلية\",\n            new ShortcutKey(\"DD\", true, false, false, \"حذف الخلية الحالية\", Context.DATA_SCIENCE.getDisplayName()),\n            () -> deleteCurrentCell(), Context.DATA_SCIENCE);\n        \n        // Advanced Editor Functions\n        registerCommand(\"editor.comment_line\", \"تعليق/إلغاء تعليق\",\n            new ShortcutKey(\"/\", true, false, false, \"تعليق السطر الحالي\", Context.EDITOR.getDisplayName()),\n            () -> toggleComment(), Context.EDITOR);\n        \n        registerCommand(\"editor.block_comment\", \"تعليق كتلة\",\n            new ShortcutKey(\"Shift+/\", false, false, false, \"تعليق الكتلة المحددة\", Context.EDITOR.getDisplayName()),\n            () -> toggleBlockComment(), Context.EDITOR);\n        \n        registerCommand(\"editor.duplicate_line\", \"تكرار السطر\",\n            new ShortcutKey(\"D\", true, false, false, \"تكرار السطر الحالي\", Context.EDITOR.getDisplayName()),\n            () -> duplicateLine(), Context.EDITOR);\n        \n        registerCommand(\"editor.delete_line\", \"حذف السطر\",\n            new ShortcutKey(\"D\", true, true, false, \"حذف السطر الحالي\", Context.EDITOR.getDisplayName()),\n            () -> deleteLine(), Context.EDITOR);\n        \n        registerCommand(\"editor.move_line_up\", \"تحريك للأعلى\",\n            new ShortcutKey(\"Alt+Up\", false, true, false, \"تحريك السطر للأعلى\", Context.EDITOR.getDisplayName()),\n            () -> moveLineUp(), Context.EDITOR);\n        \n        registerCommand(\"editor.move_line_down\", \"تحريك للأسفل\",\n            new ShortcutKey(\"Alt+Down\", false, true, false, \"تحريك السطر للأسفل\", Context.EDITOR.getDisplayName()),\n            () -> moveLineDown(), Context.EDITOR);\n        \n        // Quick Actions\n        registerCommand(\"quick.command\", \"لوحة الأوامر\",\n            new ShortcutKey(\"P\", true, false, false, \"فتح لوحة الأوامر\", Context.GENERAL.getDisplayName()),\n            () -> showCommandPalette(), Context.GENERAL);\n        \n        registerCommand(\"quick.open_file\", \"فتح ملف سريع\",\n            new ShortcutKey(\"P\", true, false, true, \"فتح ملف بسرعة\", Context.GENERAL.getDisplayName()),\n            () -> quickOpenFile(), Context.GENERAL);\n        \n        registerCommand(\"quick.settings\", \"الإعدادات\",\n            new ShortcutKey(\",\", true, false, false, \"فتح الإعدادات\", Context.GENERAL.getDisplayName()),\n            () -> openSettings(), Context.GENERAL);\n        \n        registerCommand(\"quick.zoom_in\", \"تكبير\",\n            new ShortcutKey(\"=\", true, false, false, \"تكبير الصفحة\", Context.EDITOR.getDisplayName()),\n            () -> zoomIn(), Context.EDITOR);\n        \n        registerCommand(\"quick.zoom_out\", \"تصغير\",\n            new ShortcutKey(\"-\", true, false, false, \"تصغير الصفحة\", Context.EDITOR.getDisplayName()),\n            () -> zoomOut(), Context.EDITOR);\n    }\n    \n    /**\n     * Register a new shortcut command\n     */\n    public void registerCommand(String commandId, String name, ShortcutKey shortcutKey, ShortcutAction action, Context... contexts) {\n        ShortcutCommand command = new ShortcutCommand(commandId, name, shortcutKey, action);\n        for (Context context : contexts) {\n            command.addContext(context);\n        }\n        \n        commands.put(commandId, command);\n        keyBindings.put(shortcutKey.toString(), shortcutKey);\n    }\n    \n    /**\n     * Handle key press event\n     */\n    public boolean handleKeyPress(String key, boolean ctrl, boolean alt, boolean shift) {\n        if (!shortcutSystemEnabled) {\n            return false;\n        }\n        \n        ShortcutKey pressedKey = new ShortcutKey(key, ctrl, alt, shift, \"\");\n        String keyString = pressedKey.toString();\n        \n        for (ShortcutCommand command : commands.values()) {\n            if (command.isEnabled() && \n                command.isContextActive(currentContext) &&\n                command.getShortcutKey().toString().equals(keyString)) {\n                \n                // Notify listeners before execution\n                notifyKeyPressed(pressedKey, command.getAction());\n                \n                // Execute command\n                try {\n                    command.getAction().execute();\n                    return true;\n                } catch (Exception e) {\n                    // Handle command execution error\n                    return false;\n                }\n            }\n        }\n        \n        return false;\n    }\n    \n    /**\n     * Set current context\n     */\n    public void setCurrentContext(Context context) {\n        this.currentContext = context;\n    }\n    \n    /**\n     * Get current context\n     */\n    public Context getCurrentContext() {\n        return currentContext;\n    }\n    \n    /**\n     * Enable/disable shortcut system\n     */\n    public void setShortcutSystemEnabled(boolean enabled) {\n        this.shortcutSystemEnabled = enabled;\n    }\n    \n    /**\n     * Get all available commands\n     */\n    public Map<String, ShortcutCommand> getAllCommands() {\n        return new HashMap<>(commands);\n    }\n    \n    /**\n     * Get commands by category\n     */\n    public Map<String, List<ShortcutCommand>> getCommandsByCategory() {\n        Map<String, List<ShortcutCommand>> categorized = new HashMap<>();\n        \n        for (ShortcutCommand command : commands.values()) {\n            String category = command.getShortcutKey().getCategory();\n            if (!categorized.containsKey(category)) {\n                categorized.put(category, new ArrayList<>());\n            }\n            categorized.get(category).add(command);\n        }\n        \n        return categorized;\n    }\n    \n    /**\n     * Enable/disable specific command\n     */\n    public void setCommandEnabled(String commandId, boolean enabled) {\n        ShortcutCommand command = commands.get(commandId);\n        if (command != null) {\n            command.setEnabled(enabled);\n        }\n    }\n    \n    /**\n     * Add key pressed listener\n     */\n    public void addKeyPressedListener(KeyPressedListener listener) {\n        listeners.add(listener);\n    }\n    \n    private void notifyKeyPressed(ShortcutKey key, ShortcutAction action) {\n        for (KeyPressedListener listener : listeners) {\n            listener.onShortcutPressed(key, action);\n        }\n    }\n    \n    // Placeholder methods for actual functionality\n    private void newFile() { /* Implement new file creation */ }\n    private void openFile() { /* Implement file opening */ }\n    private void saveFile() { /* Implement file saving */ }\n    private void saveAllFiles() { /* Implement save all files */ }\n    private void closeFile() { /* Implement file closing */ }\n    private void openFindDialog() { /* Implement find dialog */ }\n    private void openFindReplaceDialog() { /* Implement find/replace dialog */ }\n    private void goToLine() { /* Implement go to line */ }\n    private void toggleBookmark() { /* Implement bookmark toggle */ }\n    private void nextBookmark() { /* Implement next bookmark */ }\n    private void toggleProjectExplorer() { /* Implement project explorer toggle */ }\n    private void toggleTerminal() { /* Implement terminal toggle */ }\n    private void toggleDebugConsole() { /* Implement debug console toggle */ }\n    private void toggleOutputPanel() { /* Implement output panel toggle */ }\n    private void runCurrentFile() { /* Implement current file execution */ }\n    private void runProject() { /* Implement project execution */ }\n    private void startDebugging() { /* Implement debugging start */ }\n    private void stepOver() { /* Implement step over */ }\n    private void stepInto() { /* Implement step into */ }\n    private void stepOut() { /* Implement step out */ }\n    private void runCurrentCell() { /* Implement cell execution */ }\n    private void runAllCells() { /* Implement all cells execution */ }\n    private void insertCellBelow() { /* Implement cell insertion */ }\n    private void insertCellAbove() { /* Implement cell insertion */ }\n    private void deleteCurrentCell() { /* Implement cell deletion */ }\n    private void toggleComment() { /* Implement comment toggle */ }\n    private void toggleBlockComment() { /* Implement block comment */ }\n    private void duplicateLine() { /* Implement line duplication */ }\n    private void deleteLine() { /* Implement line deletion */ }\n    private void moveLineUp() { /* Implement line move up */ }\n    private void moveLineDown() { /* Implement line move down */ }\n    private void showCommandPalette() { /* Implement command palette */ }\n    private void quickOpenFile() { /* Implement quick file open */ }\n    private void openSettings() { /* Implement settings open */ }\n    private void zoomIn() { /* Implement zoom in */ }\n    private void zoomOut() { /* Implement zoom out */ }\n}

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ========================================= -->
+    <!-- MATERIAL DESIGN 3 SPACING SYSTEM -->
+    <!-- ========================================= -->
+    
+    <!-- Base Spacing Scale -->
+    <dimen name="space_0dp">0dp</dimen>
+    <dimen name="space_1dp">1dp</dimen>
+    <dimen name="space_2dp">2dp</dimen>
+    <dimen name="space_3dp">3dp</dimen>
+    <dimen name="space_4dp">4dp</dimen>
+    <dimen name="space_6dp">6dp</dimen>
+    <dimen name="space_8dp">8dp</dimen>
+    <dimen name="space_12dp">12dp</dimen>
+    <dimen name="space_16dp">16dp</dimen>
+    <dimen name="space_20dp">20dp</dimen>
+    <dimen name="space_24dp">24dp</dimen>
+    <dimen name="space_28dp">28dp</dimen>
+    <dimen name="space_32dp">32dp</dimen>
+    <dimen name="space_40dp">40dp</dimen>
+    <dimen name="space_48dp">48dp</dimen>
+    <dimen name="space_56dp">56dp</dimen>
+    <dimen name="space_64dp">64dp</dimen>
+    <dimen name="space_72dp">72dp</dimen>
+    <dimen name="space_80dp">80dp</dimen>
+    <dimen name="space_96dp">96dp</dimen>
+    <dimen name="space_128dp">128dp</dimen>
+    
+    <!-- Named Spacing Constants -->
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+    <dimen name="space_lg">24dp</dimen>
+    <dimen name="space_xl">32dp</dimen>
+    <dimen name="space_xxl">48dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- STANDARD MARGINS AND PADDING -->
+    <!-- ========================================= -->
+    
+    <!-- Margin Values -->
+    <dimen name="margin_xs">4dp</dimen>
+    <dimen name="margin_sm">8dp</dimen>
+    <dimen name="margin_md">16dp</dimen>
+    <dimen name="margin_lg">24dp</dimen>
+    <dimen name="margin_xl">32dp</dimen>
+    <dimen name="margin_xxl">48dp</dimen>
+    <dimen name="margin_xxxl">64dp</dimen>
+    
+    <!-- Padding Values -->
+    <dimen name="padding_xs">4dp</dimen>
+    <dimen name="padding_sm">8dp</dimen>
+    <dimen name="padding_md">16dp</dimen>
+    <dimen name="padding_lg">24dp</dimen>
+    <dimen name="padding_xl">32dp</dimen>
+    <dimen name="padding_xxl">48dp</dimen>
+    <dimen name="padding_xxxl">64dp</dimen>
+    
+    <!-- Inner Padding for Cards and Containers -->
+    <dimen name="card_padding_xs">6dp</dimen>
+    <dimen name="card_padding_sm">8dp</dimen>
+    <dimen name="card_padding_md">12dp</dimen>
+    <dimen name="card_padding_lg">16dp</dimen>
+    <dimen name="card_padding_xl">20dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- BUTTON DIMENSIONS -->
+    <!-- ========================================= -->
+    
+    <!-- Button Heights -->
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_height_small">40dp</dimen>
+    <dimen name="button_height_large">64dp</dimen>
+    <dimen name="button_height_mini">32dp</dimen>
+    
+    <!-- Button Widths -->
+    <dimen name="button_width_mini">80dp</dimen>
+    <dimen name="button_width_small">120dp</dimen>
+    <dimen name="button_width_large">180dp</dimen>
+    
+    <!-- Button Padding -->
+    <dimen name="button_padding_horizontal">24dp</dimen>
+    <dimen name="button_padding_vertical">8dp</dimen>
+    <dimen name="button_padding_icon">16dp</dimen>
+    
+    <!-- Button Corner Radius -->
+    <dimen name="button_corner_radius">12dp</dimen>
+    <dimen name="button_corner_radius_small">8dp</dimen>
+    <dimen name="button_corner_radius_large">16dp</dimen>
+    
+    <!-- Button Elevation -->
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_elevation_pressed">4dp</dimen>
+    
+    <!-- FAB Dimensions -->
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="fab_size_large">64dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin_large">24dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_elevation_pressed">12dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- CARD DIMENSIONS -->
+    <!-- ========================================= -->
+    
+    <!-- Card Heights -->
+    <dimen name="card_min_height">120dp</dimen>
+    <dimen name="card_max_height">400dp</dimen>
+    <dimen name="card_width_compact">300dp</dimen>
+    <dimen name="card_width_expanded">500dp</dimen>
+    
+    <!-- Card Corner Radius -->
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_corner_radius_small">8dp</dimen>
+    <dimen name="card_corner_radius_large">20dp</dimen>
+    <dimen name="card_corner_radius_xlarge">24dp</dimen>
+    
+    <!-- Card Elevation -->
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="card_elevation_low">4dp</dimen>
+    <dimen name="card_elevation_high">16dp</dimen>
+    <dimen name="card_elevation_very_high">24dp</dimen>
+    
+    <!-- Card Margins -->
+    <dimen name="card_margin_xs">4dp</dimen>
+    <dimen name="card_margin_sm">8dp</dimen>
+    <dimen name="card_margin_md">12dp</dimen>
+    <dimen name="card_margin_lg">16dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- APP BAR DIMENSIONS -->
+    <!-- ========================================= -->
+    
+    <!-- Toolbar Heights -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_height_large">64dp</dimen>
+    <dimen name="toolbar_height_expanded">128dp</dimen>
+    
+    <!-- App Bar Elevation -->
+    <dimen name="app_bar_elevation">4dp</dimen>
+    <dimen name="app_bar_elevation_raised">8dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- NAVIGATION COMPONENTS -->
+    <!-- ========================================= -->
+    
+    <!-- Bottom Navigation -->
+    <dimen name="bottom_nav_height">64dp</dimen>
+    <dimen name="bottom_nav_height_tall">72dp</dimen>
+    <dimen name="bottom_nav_elevation">8dp</dimen>
+    <dimen name="bottom_nav_item_padding">8dp</dimen>
+    <dimen name="bottom_nav_item_width">96dp</dimen>
+    
+    <!-- Navigation Drawer -->
+    <dimen name="nav_drawer_width">280dp</dimen>
+    <dimen name="nav_drawer_width_wide">320dp</dimen>
+    <dimen name="nav_drawer_elevation">16dp</dimen>
+    <dimen name="nav_drawer_header_height">160dp</dimen>
+    <dimen name="nav_drawer_header_padding">16dp</dimen>
+    
+    <!-- Tab Layout -->
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="tab_height_tall">64dp</dimen>
+    <dimen name="tab_padding_horizontal">16dp</dimen>
+    <dimen name="tab_padding_vertical">12dp</dimen>
+    <dimen name="tab_icon_size">24dp</dimen>
+    <dimen name="tab_indicator_height">2dp</dimen>
+    <dimen name="tab_indicator_height_bold">3dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- TEXT DIMENSIONS -->
+    <!-- ========================================= -->
+    
+    <!-- Text Size Scale -->
+    <dimen name="text_size_xs">10sp</dimen>
+    <dimen name="text_size_sm">12sp</dimen>
+    <dimen name="text_size_md">14sp</dimen>
+    <dimen name="text_size_lg">16sp</dimen>
+    <dimen name="text_size_xl">18sp</dimen>
+    <dimen name="text_size_xxl">20sp</dimen>
+    
+    <!-- Headline Sizes -->
+    <dimen name="text_size_headline_small">20sp</dimen>
+    <dimen name="text_size_headline">24sp</dimen>
+    <dimen name="text_size_headline_medium">28sp</dimen>
+    <dimen name="text_size_headline_large">32sp</dimen>
+    <dimen name="text_size_headline_extra_large">36sp</dimen>
+    
+    <!-- Title Sizes -->
+    <dimen name="text_size_title_small">16sp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_title_medium">24sp</dimen>
+    <dimen name="text_size_title_large">28sp</dimen>
+    
+    <!-- Body Sizes -->
+    <dimen name="text_size_body_small">12sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_body_medium">16sp</dimen>
+    <dimen name="text_size_body_large">18sp</dimen>
+    
+    <!-- Label Sizes -->
+    <dimen name="text_size_label_small">10sp</dimen>
+    <dimen name="text_size_label">12sp</dimen>
+    <dimen name="text_size_label_medium">14sp</dimen>
+    <dimen name="text_size_label_large">16sp</dimen>
+    
+    <!-- Caption Sizes -->
+    <dimen name="text_size_caption">10sp</dimen>
+    <dimen name="text_size_caption_medium">11sp</dimen>
+    <dimen name="text_size_caption_large">12sp</dimen>
+    
+    <!-- Display Sizes -->
+    <dimen name="text_size_display_small">32sp</dimen>
+    <dimen name="text_size_display">36sp</dimen>
+    <dimen name="text_size_display_medium">45sp</dimen>
+    <dimen name="text_size_display_large">56sp</dimen>
+    <dimen name="text_size_display_extra_large">64sp</dimen>
+    
+    <!-- Text Spacing -->
+    <dimen name="text_line_spacing_extra_small">2dp</dimen>
+    <dimen name="text_line_spacing_small">3dp</dimen>
+    <dimen name="text_line_spacing_medium">4dp</dimen>
+    <dimen name="text_line_spacing_large">5dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- HEADING HEIGHTS -->
+    <!-- ========================================= -->
+    
+    <dimen name="heading_height_sm">32dp</dimen>
+    <dimen name="heading_height_md">40dp</dimen>
+    <dimen name="heading_height_lg">48dp</dimen>
+    <dimen name="heading_height_xl">56dp</dimen>
+    <dimen name="heading_height_xxl">64dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- LIST ITEM DIMENSIONS -->
+    <!-- ========================================= -->
+    
+    <!-- List Item Heights -->
+    <dimen name="list_item_height">56dp</dimen>
+    <dimen name="list_item_height_small">48dp</dimen>
+    <dimen name="list_item_height_large">72dp</dimen>
+    <dimen name="list_item_height_extra_large">88dp</dimen>
+    
+    <!-- List Item Padding -->
+    <dimen name="list_item_padding_horizontal">16dp</dimen>
+    <dimen name="list_item_padding_vertical">8dp</dimen>
+    <dimen name="list_item_padding_small">12dp</dimen>
+    <dimen name="list_item_padding_large">20dp</dimen>
+    
+    <!-- List Item Spacing -->
+    <dimen name="list_item_spacing">1dp</dimen>
+    <dimen name="list_section_spacing">8dp</dimen>
+    <dimen name="list_divider_height">1dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- ICON DIMENSIONS -->
+    <!-- ========================================= -->
+    
+    <!-- Icon Sizes -->
+    <dimen name="icon_size_xs">8dp</dimen>
+    <dimen name="icon_size_sm">12dp</dimen>
+    <dimen name="icon_size_md">16dp</dimen>
+    <dimen name="icon_size_lg">24dp</dimen>
+    <dimen name="icon_size_xl">32dp</dimen>
+    <dimen name="icon_size_xxl">48dp</dimen>
+    <dimen name="icon_size_xxxl">64dp</dimen>
+    
+    <!-- Avatar Icon Sizes -->
+    <dimen name="icon_size_avatar_xs">16dp</dimen>
+    <dimen name="icon_size_avatar_sm">24dp</dimen>
+    <dimen name="icon_size_avatar_md">32dp</dimen>
+    <dimen name="icon_size_avatar_lg">48dp</dimen>
+    <dimen name="icon_size_avatar_xl">64dp</dimen>
+    <dimen name="icon_size_avatar_xxl">80dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- AVATAR DIMENSIONS -->
+    <!-- ========================================= -->
+    
+    <dimen name="avatar_size_xs">24dp</dimen>
+    <dimen name="avatar_size_sm">32dp</dimen>
+    <dimen name="avatar_size_md">48dp</dimen>
+    <dimen name="avatar_size_lg">64dp</dimen>
+    <dimen name="avatar_size_xl">80dp</dimen>
+    <dimen name="avatar_size_xxl">96dp</dimen>
+    <dimen name="avatar_size_xxxl">120dp</dimen>
+    
+    <!-- Avatar Border -->
+    <dimen name="avatar_border_width">2dp</dimen>
+    <dimen name="avatar_border_width_thick">4dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- FORM ELEMENTS -->
+    <!-- ========================================= -->
+    
+    <!-- Input Field Dimensions -->
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="input_height_small">40dp</dimen>
+    <dimen name="input_height_large">64dp</dimen>
+    <dimen name="input_corner_radius">8dp</dimen>
+    <dimen name="input_corner_radius_small">4dp</dimen>
+    
+    <!-- Input Field Padding -->
+    <dimen name="input_padding_horizontal">16dp</dimen>
+    <dimen name="input_padding_vertical">12dp</dimen>
+    <dimen name="input_padding_start">16dp</dimen>
+    <dimen name="input_padding_end">16dp</dimen>
+    <dimen name="input_padding_top">16dp</dimen>
+    <dimen name="input_padding_bottom">16dp</dimen>
+    
+    <!-- Search Bar Dimensions -->
+    <dimen name="search_height">56dp</dimen>
+    <dimen name="search_height_large">64dp</dimen>
+    <dimen name="search_corner_radius">28dp</dimen>
+    <dimen name="search_padding_horizontal">16dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- PROGRESS INDICATORS -->
+    <!-- ========================================= -->
+    
+    <!-- Linear Progress -->
+    <dimen name="progress_bar_height">4dp</dimen>
+    <dimen name="progress_bar_height_thick">8dp</dimen>
+    <dimen name="progress_bar_corner_radius">2dp</dimen>
+    <dimen name="progress_bar_corner_radius_thick">4dp</dimen>
+    
+    <!-- Circular Progress -->
+    <dimen name="circular_progress_size">48dp</dimen>
+    <dimen name="circular_progress_size_small">24dp</dimen>
+    <dimen name="circular_progress_size_large">64dp</dimen>
+    <dimen name="circular_progress_thickness">4dp</dimen>
+    <dimen name="circular_progress_thickness_thick">6dp</dimen>
+    
+    <!-- Seek Bar -->
+    <dimen name="seekbar_height">4dp</dimen>
+    <dimen name="seekbar_thumb_size">20dp</dimen>
+    <dimen name="seekbar_thumb_padding">8dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- DIALOG DIMENSIONS -->
+    <!-- ========================================= -->
+    
+    <!-- Dialog Sizes -->
+    <dimen name="dialog_corner_radius">16dp</dimen>
+    <dimen name="dialog_padding">24dp</dimen>
+    <dimen name="dialog_elevation">24dp</dimen>
+    <dimen name="dialog_min_width">280dp</dimen>
+    <dimen name="dialog_max_width">560dp</dimen>
+    
+    <!-- Dialog Padding -->
+    <dimen name="dialog_padding_xs">12dp</dimen>
+    <dimen name="dialog_padding_sm">16dp</dimen>
+    <dimen name="dialog_padding_md">24dp</dimen>
+    <dimen name="dialog_padding_lg">32dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- DIVIDER DIMENSIONS -->
+    <!-- ========================================= -->
+    
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="divider_height_thick">2dp</dimen>
+    <dimen name="divider_margin_horizontal">16dp</divider_margin_horizontal>
+    <dimen name="divider_margin_vertical">8dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- STATUS BAR AND NAVIGATION -->
+    <!-- ========================================= -->
+    
+    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="navigation_bar_height">48dp</dimen>
+    <dimen name="navigation_bar_width">48dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- GRID AND LAYOUT -->
+    <!-- ========================================= -->
+    
+    <dimen name="grid_spacing">8dp</dimen>
+    <dimen name="grid_spacing_small">4dp</dimen>
+    <dimen name="grid_spacing_large">16dp</dimen>
+    <dimen name="grid_columns">2</dimen>
+    <dimen name="column_width">160dp</dimen>
+    <dimen name="column_gap">8dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- RIPPLE EFFECTS -->
+    <!-- ========================================= -->
+    
+    <dimen name="ripple_radius">28dp</dimen>
+    <dimen name="ripple_radius_large">56dp</dimen>
+    <dimen name="ripple_alpha">40</dimen>
+    
+    <!-- ========================================= -->
+    <!-- SHADOWS AND ELEVATION -->
+    <!-- ========================================= -->
+    
+    <dimen name="elevation_none">0dp</dimen>
+    <dimen name="elevation_low">2dp</dimen>
+    <dimen name="elevation_lowest">1dp</dimen>
+    <dimen name="elevation_medium">4dp</dimen>
+    <dimen name="elevation_medium_low">6dp</dimen>
+    <dimen name="elevation_high">8dp</dimen>
+    <dimen name="elevation_very_high">16dp</dimen>
+    <dimen name="elevation_extreme">24dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- SCREEN SPECIFIC -->
+    <!-- ========================================= -->
+    
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="screen_padding_large">24dp</dimen>
+    <dimen name="screen_margin">20dp</dimen>
+    <dimen name="screen_margin_large">32dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- ANIMATION VALUES -->
+    <!-- ========================================= -->
+    
+    <dimen name="animation_duration_extra_short">75ms</dimen>
+    <dimen name="animation_duration_short">150ms</dimen>
+    <dimen name="animation_duration_medium">300ms</dimen>
+    <dimen name="animation_duration_long">500ms</dimen>
+    <dimen name="animation_duration_extra_long">750ms</dimen>
+    <dimen name="animation_duration_mega_long">1000ms</dimen>
+    
+    <!-- Animation Distances -->
+    <dimen name="animation_distance_xs">8dp</dimen>
+    <dimen name="animation_distance_sm">16dp</dimen>
+    <dimen name="animation_distance_md">24dp</dimen>
+    <dimen name="animation_distance_lg">48dp</dimen>
+    <dimen name="animation_distance_xl">64dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- GLASS AND EFFECTS -->
+    <!-- ========================================= -->
+    
+    <!-- Glass Effect Dimensions -->
+    <dimen name="glass_corner_radius">12dp</dimen>
+    <dimen name="glass_corner_radius_large">16dp</dimen>
+    <dimen name="glass_border_width">1dp</dimen>
+    <dimen name="glass_border_width_thick">2dp</dimen>
+    <dimen name="glass_elevation">8dp</dimen>
+    
+    <!-- Glow Effects -->
+    <dimen name="glow_radius_xs">2dp</dimen>
+    <dimen name="glow_radius_sm">4dp</dimen>
+    <dimen name="glow_radius_md">8dp</dimen>
+    <dimen name="glow_radius_lg">16dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- BADGE AND INDICATOR DIMENSIONS -->
+    <!-- ========================================= -->
+    
+    <!-- Badge Dimensions -->
+    <dimen name="badge_size_xs">12dp</dimen>
+    <dimen name="badge_size_sm">16dp</dimen>
+    <dimen name="badge_size_md">20dp</dimen>
+    <dimen name="badge_size_lg">24dp</dimen>
+    <dimen name="badge_size_xl">32dp</dimen>
+    
+    <!-- Badge Position -->
+    <dimen name="badge_margin">-4dp</dimen>
+    <dimen name="badge_margin_large">-8dp</dimen>
+    
+    <!-- Dot Indicator -->
+    <dimen name="dot_size">8dp</dimen>
+    <dimen name="dot_size_large">12dp</dimen>
+    <dimen name="dot_spacing">8dp</dimen>
+    <dimen name="dot_spacing_large">12dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- LOADING AND SKELETON DIMENSIONS -->
+    <!-- ========================================= -->
+    
+    <!-- Skeleton Loading -->
+    <dimen name="skeleton_height_xs">8dp</dimen>
+    <dimen name="skeleton_height_sm">12dp</dimen>
+    <dimen name="skeleton_height_md">16dp</dimen>
+    <dimen name="skeleton_height_lg">20dp</dimen>
+    <dimen name="skeleton_height_xl">24dp</dimen>
+    <dimen name="skeleton_corner_radius">4dp</dimen>
+    <dimen name="skeleton_corner_radius_large">8dp</dimen>
+    
+    <!-- Loading Spinner -->
+    <dimen name="loading_size_xs">16dp</dimen>
+    <dimen name="loading_size_sm">24dp</dimen>
+    <dimen name="loading_size_md">32dp</dimen>
+    <dimen name="loading_size_lg">48dp</dimen>
+    <dimen name="loading_size_xl">64dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- INTERACTIVE ELEMENTS -->
+    <!-- ========================================= -->
+    
+    <!-- Touch Target -->
+    <dimen name="touch_target_size_min">48dp</dimen>
+    <dimen name="touch_target_size_comfortable">56dp</dimen>
+    <dimen name="touch_target_size_spacious">64dp</dimen>
+    
+    <!-- Interaction Padding -->
+    <dimen name="touch_area_expansion">8dp</dimen>
+    <dimen name="touch_area_expansion_minimum">4dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- OVERFLOW AND DROPDOWN -->
+    <!-- ========================================= -->
+    
+    <!-- Dropdown Menu -->
+    <dimen name="dropdown_menu_padding_vertical">8dp</dimen>
+    <dimen name="dropdown_menu_padding_horizontal">12dp</dimen>
+    <dimen name="dropdown_menu_item_height">48dp</dimen>
+    <dimen name="dropdown_menu_item_padding">16dp</dimen>
+    
+    <!-- Context Menu -->
+    <dimen name="context_menu_padding">8dp</dimen>
+    <dimen name="context_menu_item_height">48dp</dimen>
+    <dimen name="context_menu_item_padding">16dp</dimen>
+    <dimen name="context_menu_width">200dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- TOOLTIP AND POPUP -->
+    <!-- ========================================= -->
+    
+    <!-- Tooltip -->
+    <dimen name="tooltip_padding_horizontal">8dp</dimen>
+    <dimen name="tooltip_padding_vertical">6dp</dimen>
+    <dimen name="tooltip_corner_radius">4dp</dimen>
+    <dimen name="tooltip_elevation">4dp</dimen>
+    <dimen name="tooltip_margin">8dp</dimen>
+    
+    <!-- Popup Window -->
+    <dimen name="popup_window_padding">8dp</dimen>
+    <dimen name="popup_window_elevation">8dp</dimen>
+    <dimen name="popup_window_corner_radius">8dp</dimen>
+    
+    <!-- ========================================= -->
+    <!-- SCROLLBAR DIMENSIONS -->
+    <!-- ========================================= -->
+    
+    <dimen name="scrollbar_thumb_width">8dp</dimen>
+    <dimen name="scrollbar_thumb_min_height">48dp</dimen>
+    <dimen name="scrollbar_track_width">4dp</dimen>
+    <dimen name="scrollbar_corner_radius">2dp</dimen>
+    
+</resources>

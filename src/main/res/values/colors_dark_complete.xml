@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design 3 Dark Theme Colors - Professional Palette -->
+    
+    <!-- Primary Colors -->
+    <color name="md_theme_dark_primary">#ADD8E6</color>
+    <color name="md_theme_dark_onPrimary">#003548</color>
+    <color name="md_theme_dark_primaryContainer">#004F64</color>
+    <color name="md_theme_dark_onPrimaryContainer">#BDE9FB</color>
+    
+    <!-- Secondary Colors -->
+    <color name="md_theme_dark_secondary">#B3C8A5</color>
+    <color name="md_theme_dark_onSecondary">#24351B</color>
+    <color name="md_theme_dark_secondaryContainer">#3B4C30</color>
+    <color name="md_theme_dark_onSecondaryContainer">#D1E5C1</color>
+    
+    <!-- Tertiary Colors -->
+    <color name="md_theme_dark_tertiary">#A7C7E7</color>
+    <color name="md_theme_dark_onTertiary">#07304A</color>
+    <color name="md_theme_dark_tertiaryContainer">#2E4862</color>
+    <color name="md_theme_dark_onTertiaryContainer">#D3E5FB</color>
+    
+    <!-- Error Colors -->
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_errorContainer">#93000A</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_onErrorContainer">#FFB4AB</color>
+    
+    <!-- Surface Colors -->
+    <color name="md_theme_dark_background">#0C1416</color>
+    <color name="md_theme_dark_onBackground">#E1E6E9</color>
+    <color name="md_theme_dark_surface">#1A2426</color>
+    <color name="md_theme_dark_onSurface">#E1E6E9</color>
+    <color name="md_theme_dark_surfaceVariant">#414D53</color>
+    <color name="md_theme_dark_onSurfaceVariant">#C1C7CE</color>
+    
+    <!-- Additional Surface Colors -->
+    <color name="md_theme_dark_surfaceBright">#3A464B</color>
+    <color name="md_theme_dark_surfaceDim">#0C1416</color>
+    <color name="md_theme_dark_surfaceContainer">#202A2D</color>
+    <color name="md_theme_dark_surfaceContainerHighest">#2B3539</color>
+    <color name="md_theme_dark_surfaceContainerLow">#141A1C</color>
+    <color name="md_theme_dark_surfaceContainerLowest">#080C0D</color>
+    
+    <!-- Outline Colors -->
+    <color name="md_theme_dark_outline">#8B9197</color>
+    <color name="md_theme_dark_outlineVariant">#414D53</color>
+    
+    <!-- Inverse Colors -->
+    <color name="md_theme_dark_inverseOnSurface">#0C1416</color>
+    <color name="md_theme_dark_inverseSurface">#E1E6E9</color>
+    <color name="md_theme_dark_inversePrimary">#00556B</color>
+    
+    <!-- Special Colors -->
+    <color name="md_theme_dark_surfaceTint">#ADD8E6</color>
+    <color name="md_theme_dark_scrim">#000000</color>
+    
+    <!-- Professional UI Colors -->
+    
+    <!-- Enhanced Primary Palette -->
+    <color name="primary_dark">#ADD8E6</color>
+    <color name="primary_variant_dark">#004F64</color>
+    <color name="primary_dark_700">#0088B3</color>
+    <color name="primary_dark_800">#006C8A</color>
+    <color name="primary_dark_900">#004F64</color>
+    
+    <!-- Secondary Enhanced Palette -->
+    <color name="secondary_dark">#B3C8A5</color>
+    <color name="secondary_variant_dark">#3B4C30</color>
+    <color name="secondary_dark_700">#8FB685</color>
+    <color name="secondary_dark_800">#6A9E55</color>
+    <color name="secondary_dark_900">#3B4C30</color>
+    
+    <!-- Tertiary Enhanced Palette -->
+    <color name="tertiary_dark">#A7C7E7</color>
+    <color name="tertiary_variant_dark">#2E4862</color>
+    
+    <!-- Background Palette -->
+    <color name="background_dark">#0C1416</color>
+    <color name="background_dark_100">#141A1C</color>
+    <color name="background_dark_200">#1A2023</color>
+    <color name="background_dark_300">#202A2D</color>
+    <color name="background_dark_400">#2B3539</color>
+    <color name="background_dark_500">#364042</color>
+    
+    <!-- Surface Enhanced Palette -->
+    <color name="surface_dark">#1A2426</color>
+    <color name="surface_dark_100">#141A1C</color>
+    <color name="surface_dark_200">#202A2D</color>
+    <color name="surface_dark_300">#2B3539</color>
+    <color name="surface_dark_400">#364042</color>
+    <color name="surface_dark_500">#414D53</color>
+    
+    <!-- Status Colors -->
+    <color name="success_dark">#4CAF50</color>
+    <color name="warning_dark">#FF9800</color>
+    <color name="info_dark">#2196F3</color>
+    <color name="error_dark">#F44336</color>
+    <color name="error_dark_700">#D32F2F</color>
+    <color name="error_dark_800">#C62828</color>
+    <color name="error_dark_900">#B71C1C</color>
+    
+    <!-- Text Colors Hierarchy -->
+    <color name="text_primary_dark">#E1E6E9</color>
+    <color name="text_primary_variant_dark">#C1C7CE</color>
+    <color name="text_secondary_dark">#B0B0B0</color>
+    <color name="text_hint_dark">#808080</color>
+    <color name="text_disabled_dark">#5A5A5A</color>
+    <color name="text_primary_inverse_dark">#0C1416</color>
+    
+    <!-- System Bar Colors -->
+    <color name="status_bar_dark">#000000</color>
+    <color name="navigation_bar_dark">#1A1A1A</color>
+    <color name="status_bar_scrim_dark">#80000000</color>
+    
+    <!-- Gradient and Effects -->
+    <color name="gradient_start_dark">#0C1416</color>
+    <color name="gradient_middle_dark">#1A2426</color>
+    <color name="gradient_end_dark">#2C3E50</color>
+    <color name="gradient_primary_dark">#004F64</color>
+    <color name="gradient_secondary_dark">#3B4C30</color>
+    
+    <!-- Glass Effects -->
+    <color name="glass_background_dark">#1A2426</color>
+    <color name="glass_border_dark">#ADD8E6</color>
+    <color name="glass_background_dim_dark">#801A2426</color>
+    <color name="glass_shadow_dark">#80000000</color>
+    
+    <!-- Card and Container Colors -->
+    <color name="card_background_dark">#1A2426</color>
+    <color name="card_background_elevated_dark">#202A2D</color>
+    <color name="card_border_dark">#414D53</color>
+    <color name="card_shadow_dark">#80000000</color>
+    
+    <!-- Button Colors -->
+    <color name="button_primary_dark">#ADD8E6</color>
+    <color name="button_primary_pressed_dark">#8ABDD2</color>
+    <color name="button_primary_text_dark">#003548</color>
+    <color name="button_secondary_dark">#414D53</color>
+    <color name="button_secondary_pressed_dark">#5A6168</color>
+    <color name="button_secondary_text_dark">#E1E6E9</color>
+    <color name="button_outline_dark">#ADD8E6</color>
+    <color name="button_outline_text_dark">#ADD8E6</color>
+    <color name="button_outline_disabled_dark">#5A5A5A</color>
+    <color name="button_ghost_dark">#00FFFFFF</color>
+    <color name="button_ghost_text_dark">#ADD8E6</color>
+    
+    <!-- Interactive Elements -->
+    <color name="ripple_dark">#ADD8E6</color>
+    <color name="focus_dark">#ADD8E6</color>
+    <color name="selection_dark">#004F64</color>
+    <color name="highlight_dark">#ADD8E6</color>
+    
+    <!-- Navigation Colors -->
+    <color name="nav_background_dark">#1A2426</color>
+    <color name="nav_selected_dark">#ADD8E6</color>
+    <color name="nav_unselected_dark">#B0B0B0</color>
+    <color name="nav_active_dark">#D1E5C1</color>
+    
+    <!-- Input Field Colors -->
+    <color name="input_background_dark">#1A2426</color>
+    <color name="input_border_dark">#414D53</color>
+    <color name="input_border_focus_dark">#ADD8E6</color>
+    <color name="input_text_dark">#E1E6E9</color>
+    <color name="input_hint_dark">#808080</color>
+    <color name="input_error_dark">#FFB4AB</color>
+    
+    <!-- Tab and Chip Colors -->
+    <color name="tab_selected_dark">#ADD8E6</color>
+    <color name="tab_unselected_dark">#B0B0B0</color>
+    <color name="chip_background_dark">#3B4C30</color>
+    <color name="chip_text_dark">#D1E5C1</color>
+    <color name="chip_border_dark">#5A6168</color>
+    
+    <!-- Progress and Loading Colors -->
+    <color name="progress_track_dark">#414D53</color>
+    <color name="progress_indicator_dark">#ADD8E6</color>
+    <color name="progress_buffer_dark">#5A6168</color>
+    <color name="progress_error_dark">#FFB4AB</color>
+    
+    <!-- Switch and Toggle Colors -->
+    <color name="switch_track_dark">#414D53</color>
+    <color name="switch_thumb_dark">#ADD8E6</color>
+    <color name="switch_track_active_dark">#3B4C30</color>
+    <color name="switch_thumb_active_dark">#D1E5C1</color>
+    
+    <!-- Modal and Dialog Colors -->
+    <color name="modal_background_dark">#CC0C1416</color>
+    <color name="dialog_background_dark">#202A2D</color>
+    <color name="dialog_border_dark">#414D53</color>
+    <color name="bottom_sheet_background_dark">#202A2D</color>
+    <color name="drawer_background_dark">#1A2426</color>
+    
+    <!-- Custom Accent Colors -->
+    <color name="accent_blue_dark">#2196F3</color>
+    <color name="accent_green_dark">#4CAF50</color>
+    <color name="accent_orange_dark">#FF9800</color>
+    <color name="accent_red_dark">#F44336</color>
+    <color name="accent_purple_dark">#9C27B0</color>
+    <color name="accent_teal_dark">#009688</color>
+    <color name="accent_pink_dark">#E91E63</color>
+    <color name="accent_indigo_dark">#3F51B5</color>
+    
+    <!-- Separator and Divider Colors -->
+    <color name="divider_dark">#414D53</color>
+    <color name="divider_bright_dark">#5A6168</color>
+    <color name="separator_dark">#8B9197</color>
+    
+    <!-- Status and State Colors -->
+    <color name="online_dark">#4CAF50</color>
+    <color name="offline_dark">#757575</color>
+    <color name="away_dark">#FF9800</color>
+    <color name="busy_dark">#F44336</color>
+    <color name="pending_dark">#FF9800</color>
+    <color name="completed_dark">#4CAF50</color>
+    
+    <!-- Code Editor Specific Colors -->
+    <color name="editor_background_dark">#0C1416</color>
+    <color name="editor_line_number_dark">#5A6168</color>
+    <color name="editor_cursor_dark">#ADD8E6</color>
+    <color name="editor_selection_dark">#004F64</color>
+    <color name="editor_highlight_dark">#1A2426</color>
+    
+    <!-- File Manager Specific Colors -->
+    <color name="file_folder_dark">#FFC107</color>
+    <color name="file_document_dark">#ADD8E6</color>
+    <color name="file_image_dark">#4CAF50</color>
+    <color name="file_video_dark">#2196F3</color>
+    <color name="file_audio_dark">#9C27B0</color>
+    <color name="file_archive_dark">#FF9800</color>
+    <color name="file_executable_dark">#4CAF50</color>
+    
+    <!-- Library Manager Colors -->
+    <color name="library_installed_dark">#4CAF50</color>
+    <color name="library_available_dark">#ADD8E6</color>
+    <color name="library_update_dark">#FF9800</color>
+    <color name="library_error_dark">#F44336</color>
+    <color name="library_compatible_dark">#D1E5C1</color>
+    <color name="library_incompatible_dark">#FFB4AB</color>
+    
+    <!-- Notification Colors -->
+    <color name="notification_background_dark">#202A2D</color>
+    <color name="notification_title_dark">#E1E6E9</color>
+    <color name="notification_text_dark">#B0B0B0</color>
+    <color name="notification_icon_dark">#ADD8E6</color>
+    
+    <!-- Badge and Indicator Colors -->
+    <color name="badge_background_dark">#F44336</color>
+    <color name="badge_text_dark">#FFFFFF</color>
+    <color name="badge_secondary_dark">#FF9800</color>
+    <color name="badge_success_dark">#4CAF50</color>
+    
+    <!-- Transparency and Alpha Values -->
+    <color name="alpha_12_dark">#1AADD8E6</color>
+    <color name="alpha_20_dark">#33ADD8E6</color>
+    <color name="alpha_30_dark">#4DADD8E6</color>
+    <color name="alpha_40_dark">#66ADD8E6</color>
+    <color name="alpha_50_dark">#80ADD8E6</color>
+    <color name="alpha_60_dark">#99ADD8E6</color>
+    <color name="alpha_70_dark">#B3ADD8E6</color>
+    <color name="alpha_80_dark">#CCADD8E6</color>
+    <color name="alpha_90_dark">#E5ADD8E6</color>
+</resources>

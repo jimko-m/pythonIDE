@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_new"
+        android:icon="@drawable/ic_add"
+        android:title="@string/action_new"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_open"
+        android:icon="@drawable/ic_folder_open"
+        android:title="@string/action_open"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_save"
+        android:title="@string/action_save"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_file_manager"
+        android:title="@string/menu_file_manager"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_git"
+        android:title="@string/menu_git"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/action_about"
+        app:showAsAction="never" />
+
+</menu>

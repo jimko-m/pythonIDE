@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface"
+    tools:context=".ui.activities.CodeEditorActivity">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/ToolbarStyle"
+        app:title="@string/editor_title"
+        app:titleTextColor="?attr/colorOnPrimaryContainer"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:menu="@menu/editor_menu" />
+
+    <!-- Editor Container -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Monaco Editor WebView -->
+        <WebView
+            android:id="@+id/monaco_editor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/WebViewStyle" />
+
+        <!-- Editor Controls Overlay -->
+        <LinearLayout
+            android:id="@+id/editor_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="?attr/colorSurfaceVariant"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/file_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="12sp"
+                android:gravity="start|center_vertical" />
+
+            <TextView
+                android:id="@+id/cursor_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="12sp"
+                android:gravity="end|center_vertical" />
+
+        </LinearLayout>
+
+        <!-- Find/Replace Panel -->
+        <LinearLayout
+            android:id="@+id/find_replace_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="?attr/colorSurfaceVariant"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/find_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_hint"
+                android:inputType="text"
+                style="@style/EditTextStyle" />
+
+            <EditText
+                android:id="@+id/replace_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_replace_hint"
+                android:inputType="text"
+                style="@style/EditTextStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/btn_find_next"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="التالي"
+                    style="@style/ButtonStyle.Outlined" />
+
+                <Button
+                    android:id="@+id/btn_find_previous"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="السابق"
+                    style="@style/ButtonStyle.Outlined" />
+
+                <Button
+                    android:id="@+id/btn_replace"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="استبدال"
+                    style="@style/ButtonStyle.Outlined" />
+
+                <Button
+                    android:id="@+id/btn_replace_all"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="استبدال الكل"
+                    style="@style/ButtonStyle.Outlined" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Loading Progress -->
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            style="@style/ProgressBarStyle" />
+
+    </FrameLayout>
+
+    <!-- Status Bar -->
+    <LinearLayout
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="?attr/colorSurfaceVariant"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/status_ready"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="10sp"
+            android:gravity="start|center_vertical" />
+
+        <TextView
+            android:id="@+id/file_modified"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="10sp"
+            android:gravity="end|center_vertical" />
+
+    </LinearLayout>
+
+</LinearLayout>

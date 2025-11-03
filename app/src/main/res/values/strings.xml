@@ -1,0 +1,224 @@
+<resources>
+    <string name="app_name">Python IDE</string>
+    
+    <!-- Main Menu -->
+    <string name="menu_new_file">ملف جديد</string>
+    <string name="menu_open_file">فتح ملف</string>
+    <string name="menu_save_file">حفظ</string>
+    <string name="menu_save_as">حفظ باسم</string>
+    <string name="menu_file_manager">إدارة الملفات</string>
+    <string name="menu_git">Git</string>
+    <string name="menu_settings">الإعدادات</string>
+    <string name="menu_exit">خروج</string>
+    
+    <!-- Navigation -->
+    <string name="nav_editor">المحرر</string>
+    <string name="nav_terminal">المحطة الطرفية</string>
+    <string name="nav_files">الملفات</string>
+    <string name="nav_git">Git</string>
+    <string name="nav_termux">Termux</string>
+    
+    <!-- Editor -->
+    <string name="editor_new_file">ملف جديد</string>
+    <string name="editor_open_file">فتح ملف</string>
+    <string name="editor_save_file">حفظ</string>
+    <string name="editor_find_replace">البحث والاستبدال</string>
+    <string name="editor_format_code">تنسيق الكود</string>
+    <string name="editor_undo">تراجع</string>
+    <string name="editor_redo">إعادة</string>
+    <string name="editor_cut">قطع</string>
+    <string name="editor_copy">نسخ</string>
+    <string name="editor_paste">لصق</string>
+    <string name="editor_select_all">تحديد الكل</string>
+    <string name="editor_share">مشاركة</string>
+    <string name="editor_export">تصدير</string>
+    
+    <!-- Terminal -->
+    <string name="terminal_title">المحطة الطرفية</string>
+    <string name="terminal_clear">مسح</string>
+    <string name="terminal_kill_process">إنهاء العملية</string>
+    <string name="terminal_run_python">تشغيل Python</string>
+    <string name="terminal_install_package">تثبيت حزمة</string>
+    <string name="terminal_create_virtual_env">إنشاء بيئة افتراضية</string>
+    
+    <!-- File Manager -->
+    <string name="file_manager_title">إدارة الملفات</string>
+    <string name="file_new_folder">مجلد جديد</string>
+    <string name="file_new_file">ملف جديد</string>
+    <string name="file_rename">إعادة تسمية</string>
+    <string name="file_delete">حذف</string>
+    <string name="file_move">نقل</string>
+    <string name="file_copy">نسخ</string>
+    <string name="file_share">مشاركة</string>
+    <string name="file_export">تصدير</string>
+    <string name="file_import">استيراد</string>
+    <string name="file_properties">الخصائص</string>
+    
+    <!-- Git -->
+    <string name="git_title">Git التحكم في الإصدارات</string>
+    <string name="git_init">تهيئة Repository</string>
+    <string name="git_clone">استنساخ</string>
+    <string name="git_commit">Commit</string>
+    <string name="git_push">رفع</string>
+    <string name="git_pull">سحب</string>
+    <string name="git_branch">فرع</string>
+    <string name="git_merge">دمج</string>
+    <string name="git_diff">الفروق</string>
+    <string name="git_status">الحالة</string>
+    <string name="git_log">السجل</string>
+    <string name="git_add_all">إضافة الكل</string>
+    <string name="git_commit_message">رسالة Commit</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_editor">محرر الكود</string>
+    <string name="settings_terminal">المحطة الطرفية</string>
+    <string name="settings_git">Git</string>
+    <string name="settings_general">عام</string>
+    <string name="settings_about">حول التطبيق</string>
+    
+    <!-- Theme -->
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">داكن</string>
+    <string name="theme_auto">تلقائي</string>
+    
+    <!-- Permissions -->
+    <string name="permission_storage_required">يتطلب التطبيق إذن الوصول للملفات</string>
+    <string name="permission_camera_required">يتطلب التطبيق إذن الكاميرا</string>
+    <string name="permission_microphone_required">يتطلب التطبيق إذن الميكروفون</string>
+    <string name="permission_grant">منح الإذن</string>
+    <string name="permission_deny">رفض</string>
+    
+    <!-- Messages -->
+    <string name="msg_file_saved">تم حفظ الملف</string>
+    <string name="msg_file_not_saved">فشل في حفظ الملف</string>
+    <string name="msg_file_opened">تم فتح الملف</string>
+    <string name="msg_file_created">تم إنشاء الملف</string>
+    <string name="msg_file_deleted">تم حذف الملف</string>
+    <string name="msg_invalid_file">ملف غير صالح</string>
+    <string name="msg_no_file_selected">لم يتم اختيار ملف</string>
+    <string name="msg_unsaved_changes">يوجد تغييرات غير محفوظة</string>
+    <string name="msg_save_changes">حفظ التغييرات؟</string>
+    <string name="msg_yes">نعم</string>
+    <string name="msg_no">لا</string>
+    <string name="msg_cancel">إلغاء</string>
+    <string name="msg_ok">موافق</string>
+    <string name="msg_error">خطأ</string>
+    <string name="msg_success">نجح</string>
+    <string name="msg_warning">تحذير</string>
+    <string name="msg_info">معلومات</string>
+    <string name="msg_later">لاحقاً</string>
+    
+    <!-- Error Messages -->
+    <string name="error_file_not_found">الملف غير موجود</string>
+    <string name="error_permission_denied">تم رفض الإذن</string>
+    <string name="error_network_connection">مشكلة في الاتصال</string>
+    <string name="error_git_operation">خطأ في عملية Git</string>
+    <string name="error_terminal_execution">خطأ في تنفيذ الأمر</string>
+    <string name="error_unknown">خطأ غير معروف</string>
+    
+    <!-- Hints -->
+    <string name="hint_search_files">البحث في الملفات</string>
+    <string name="hint_commit_message">اكتب رسالة Commit</string>
+    <string name="hint_filename">اسم الملف</string>
+    <string name="hint_foldername">اسم المجلد</string>
+    <string name="hint_search_terminal">أدخل أمر Terminal</string>
+    
+    <!-- Placeholders -->
+    <string name="placeholder_python_file">main.py</string>
+    <string name="placeholder_app_description">بيئة تطوير متكاملة للبرمجة بـ Python</string>
+    <string name="placeholder_version">الإصدار %s</string>
+    
+    <!-- Menu Actions -->
+    <string name="action_new">جديد</string>
+    <string name="action_open">فتح</string>
+    <string name="action_save">حفظ</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="action_about">حول</string>
+    <string name="action_help">مساعدة</string>
+    <string name="action_refresh">تحديث</string>
+    <string name="action_search">بحث</string>
+    <string name="action_filter">تصفية</string>
+    <string name="action_sort">ترتيب</string>
+    
+    <!-- Bottom Sheet -->
+    <string name="bottom_sheet_title">خيارات</string>
+    <string name="bottom_sheet_dismiss">إغلاق</string>
+    
+    <!-- Dialog Titles -->
+    <string name="dialog_new_file_title">ملف جديد</string>
+    <string name="dialog_rename_file_title">إعادة تسمية الملف</string>
+    <string name="dialog_delete_file_title">حذف الملف</string>
+    <string name="dialog_git_commit_title">Commit التغييرات</string>
+    <string name="dialog_settings_title">الإعدادات</string>
+    <string name="dialog_about_title">حول Python IDE</string>
+    
+    <!-- Long Click Actions -->
+    <string name="long_click_edit">تعديل</string>
+    <string name="long_click_run">تشغيل</string>
+    <string name="long_click_debug">تصحيح</string>
+    <string name="long_click_preview">معاينة</string>
+    
+    <!-- Status Messages -->
+    <string name="status_loading">جاري التحميل...</string>
+    <string name="status_saving">جاري الحفظ...</string>
+    <string name="status_compiling">جاري التجميع...</string>
+    <string name="status_running">جاري التشغيل...</string>
+    <string name="status_ready">جاهز</string>
+    
+    <!-- Search -->
+    <string name="search_hint">بحث...</string>
+    <string name="search_replace_hint">البحث والاستبدال</string>
+    <string name="search_result_not_found">لم يتم العثور على نتائج</string>
+    <string name="search_results_found">تم العثور على %d نتيجة</string>
+    
+    <!-- Tab Labels -->
+    <string name="tab_editor">المحرر</string>
+    <string name="tab_console">الكونسول</string>
+    <string name="tab_terminal">المحطة</string>
+    <string name="tab_files">الملفات</string>
+    <string name="tab_git">Git</string>
+    
+    <!-- Actions -->
+    <string name="action_run">تشغيل</string>
+    <string name="action_stop">إيقاف</string>
+    <string name="action_debug">تصحيح</string>
+    <string name="action_install">تثبيت</string>
+    <string name="action_update">تحديث</string>
+    <string name="action_download">تحميل</string>
+    <string name="action_upload">رفع</string>
+    <string name="action_sync">مزامنة</string>
+    <string name="action_backup">نسخ احتياطي</string>
+    <string name="action_restore">استعادة</string>
+    
+    <!-- Features -->
+    <string name="feature_monaco_editor">محرر Monaco المتقدم</string>
+    <string name="feature_termux_integration">تكامل مع Termux</string>
+    <string name="feature_git_support">دعم Git</string>
+    <string name="feature_room_database">قاعدة بيانات Room</string>
+    <string name="feature_webview_support">دعم WebView</string>
+    <string name="feature_file_manager">مدير الملفات المتقدم</string>
+    <string name="feature_code_completion">إكمال الكود الذكي</string>
+    <string name="feature_syntax_highlight">تمييز الصيغة</string>
+    <string name="feature_auto_save">حفظ تلقائي</string>
+    <string name="feature_cloud_sync">مزامنة سحابية</string>
+    
+    <!-- Feature descriptions -->
+    <string name="feature_desc_monaco_editor">محرر كود متقدم مع ميزات احترافية</string>
+    <string name="feature_desc_termux_integration">تكامل مع بيئة Termux لتشغيل Python</string>
+    <string name="feature_desc_git_support">دعم كامل لأوامر Git للتحكم في الإصدارات</string>
+    <string name="feature_desc_room_database">قاعدة بيانات محلية سريعة وموثوقة</string>
+    <string name="feature_desc_webview_support">عرض صفحات الويب والملفات HTML</string>
+    <string name="feature_desc_file_manager">مدير ملفات قوي مع دعم متعدد الصيغ</string>
+    
+    <!-- Notifications -->
+    <string name="notification_channel_name">تنبيهات Python IDE</string>
+    <string name="notification_channel_desc">تنبيهات وأخطاء التطبيق</string>
+    <string name="notification_file_saved_title">تم حفظ الملف</string>
+    <string name="notification_file_saved_text">تم حفظ الملف بنجاح</string>
+    <string name="notification_git_sync_title">مزامنة Git</string>
+    <string name="notification_git_sync_text">تم مزامنة المستودع</string>
+    <string name="notification_termux_error_title">خطأ Termux</string>
+    <string name="notification_termux_error_text">حدث خطأ في تنفيذ الأمر</string>
+    
+</resources>
