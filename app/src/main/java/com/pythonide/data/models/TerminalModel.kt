@@ -126,11 +126,11 @@ data class RunningProcess(
     val sessionId: String? = null
 ) {
     enum class ProcessStatus(val displayName: String) {
-        RUNNING("يعمل"),
-        SLEEPING("نائم"),
-        STOPPED("متوقف"),
-        ZOMBIE("زومبي"),
-        UNKNOWN("غير معروف");
+        RUNNING("Running"),
+        SLEEPING("Sleeping"),
+        STOPPED("Stopped"),
+        ZOMBIE("Zombie"),
+        UNKNOWN("Unknown");
         
         companion object {
             fun fromString(status: String): ProcessStatus {
@@ -221,8 +221,8 @@ data class TerminalSettings(
     val historyFileEnabled: Boolean = true
 ) {
     enum class TerminalTheme(val displayName: String) {
-        DARK("داكن"),
-        LIGHT("فاتح"),
+        DARK("Dark"),
+        LIGHT("Light"),
         MONOKAI("Monokai"),
         SOLARIZED_DARK("Solarized Dark"),
         SOLARIZED_LIGHT("Solarized Light"),

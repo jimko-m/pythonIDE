@@ -48,7 +48,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="اللغة / Language"
+                        android:text="@string/text_language"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:textColor="?attr/colorPrimary"
@@ -68,7 +68,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="العربية"
+                            android:text="@string/text_arabic"
                             android:textColor="?attr/colorPrimary"
                             app:strokeColor="?attr/colorPrimary"
                             android:layout_marginEnd="8dp" />
@@ -89,7 +89,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="يتطلب إعادة تشغيل التطبيق للتطبيق / Requires app restart to apply"
+                        android:text="@string/text_app_restart_required"
                         android:textSize="12sp"
                         android:textColor="?attr/colorOnSurfaceVariant"
                         android:layout_marginTop="8dp"
@@ -223,7 +223,7 @@
                             style="@style/Widget.Material3.Button.OutlinedButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="⭐ تقييم"
+                            android:text="@string/text_rate_app"
                             android:textColor="?attr/colorPrimary"
                             app:strokeColor="?attr/colorPrimary" />
 

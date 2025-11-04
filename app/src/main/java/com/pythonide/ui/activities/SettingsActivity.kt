@@ -126,7 +126,7 @@ class SettingsActivity : AppCompatActivity() {
         // Show restart message
         AlertDialog.Builder(this)
             .setTitle(getString(R.string.msg_info))
-            .setMessage("يجب إعادة تشغيل التطبيق لتطبيق التغييرات\nApp restart required to apply changes")
+            .setMessage(getString(R.string.settings_app_restart_message))
             .setPositiveButton(getString(R.string.msg_ok)) { dialog, _ ->
                 dialog.dismiss()
             }
@@ -185,14 +185,13 @@ class SettingsActivity : AppCompatActivity() {
         AlertDialog.Builder(this)
             .setTitle(getString(R.string.dialog_about_title))
             .setMessage("""
-                التطبيق: ${getString(R.string.app_name)}
-                الإصدار: $versionName
+                App: ${getString(R.string.app_name)}
+                Version: $versionName
                 Build: $versionCode
                 
-                بيئة تطوير متكاملة للبرمجة بـ Python
                 Integrated Python Development Environment
                 
-                المطور: MiniMax Agent
+                Developer: MiniMax Agent
             """.trimIndent())
             .setPositiveButton(getString(R.string.msg_ok), null)
             .show()
@@ -200,10 +199,10 @@ class SettingsActivity : AppCompatActivity() {
 
     private fun showRateAppDialog() {
         AlertDialog.Builder(this)
-            .setTitle("⭐ تقييم التطبيق")
-            .setMessage("هل أعجبك التطبيق؟ قيّمه 5 نجوم!\nDo you like the app? Rate it 5 stars!")
+            .setTitle(getString(R.string.settings_rate_app_title))
+            .setMessage(getString(R.string.settings_rate_app_message))
             .setPositiveButton("⭐⭐⭐⭐⭐") { _, _ ->
-                Toast.makeText(this, "شكراً لك! / Thank you!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.settings_thank_you), Toast.LENGTH_SHORT).show()
             }
             .setNeutralButton(getString(R.string.msg_later)) { _, _ ->
                 // Later action

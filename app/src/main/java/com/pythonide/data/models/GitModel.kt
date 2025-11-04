@@ -176,11 +176,11 @@ data class GitFileChange(
     val newFileSize: Long? = null
 ) {
     enum class ChangeType(val displayName: String) {
-        ADD("إضافة"),
-        MODIFY("تعديل"),
-        DELETE("حذف"),
-        RENAME("إعادة تسمية"),
-        COPY("نسخ");
+        ADD("Add"),
+        MODIFY("Modify"),
+        DELETE("Delete"),
+        RENAME("Rename"),
+        COPY("Copy");
         
         companion object {
             fun fromString(type: String): ChangeType {

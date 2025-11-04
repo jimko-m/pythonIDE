@@ -99,7 +99,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="التالي"
+                    android:text="@string/btn_next"
                     style="@style/ButtonStyle.Outlined" />
 
                 <Button
@@ -107,7 +107,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="السابق"
+                    android:text="@string/btn_previous"
                     style="@style/ButtonStyle.Outlined" />
 
                 <Button
@@ -115,7 +115,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="استبدال"
+                    android:text="@string/btn_replace"
                     style="@style/ButtonStyle.Outlined" />
 
                 <Button
@@ -123,7 +123,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="استبدال الكل"
+                    android:text="@string/btn_replace_all"
                     style="@style/ButtonStyle.Outlined" />
 
             </LinearLayout>

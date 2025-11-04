@@ -67,15 +67,15 @@ data class FileModel(
  * Git status for files
  */
 enum class GitFileStatus(val displayName: String, val color: String) {
-    UNTRACKED("غير متتبع", "#FF9500"),
-    MODIFIED("معدل", "#FF9B00"),
-    ADDED("مضاف", "#0A7F26"),
-    DELETED("محذوف", "#D73A49"),
-    RENAMED("معاد التسمية", "#9B59B6"),
-    COPIED("منسوخ", "#3498DB"),
-    UNMODIFIED("غير معدل", "#95A5A6"),
-    IGNORED("متجاهل", "#BDC3C7"),
-    CONFLICT("متضارب", "#FF6B6B");
+    UNTRACKED("Untracked", "#FF9500"),
+    MODIFIED("Modified", "#FF9B00"),
+    ADDED("Added", "#0A7F26"),
+    DELETED("Deleted", "#D73A49"),
+    RENAMED("Renamed", "#9B59B6"),
+    COPIED("Copied", "#3498DB"),
+    UNMODIFIED("Unmodified", "#95A5A6"),
+    IGNORED("Ignored", "#BDC3C7"),
+    CONFLICT("Conflict", "#FF6B6B");
     
     companion object {
         fun fromString(status: String?): GitFileStatus {

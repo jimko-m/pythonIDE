@@ -50,7 +50,7 @@
                 android:textColor="?attr/colorOnSurfaceVariant"
                 android:textSize="12sp"
                 android:maxLines="1"
-                tools:text="10 KB • قبل 5 دقائق" />
+                tools:text="10 KB • 5 minutes ago" />
 
         </LinearLayout>
 
@@ -72,7 +72,7 @@
             android:layout_height="24dp"
             android:layout_gravity="center_vertical"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="المزيد"
+            android:contentDescription="@string/content_description_more"
             android:src="@drawable/ic_more_vert"
             android:tint="?attr/colorOnSurface" />
 

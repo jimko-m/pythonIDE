@@ -161,4 +161,18 @@
     <!-- Overlay colors -->
     <color name="scrim">#80000000</color>
     <color name="divider_overlay">#80000000</color>
+    
+    <!-- Template specific colors -->
+    <color name="primary_alpha_10">#1A0052CC</color>
+    <color name="primary_alpha_20">#330052CC</color>
+    <color name="outline_variant">#E1E2EC</color>
+    <color name="background_primary">@color/md_theme_light_background</color>
+    <color name="text_primary">@color/md_theme_light_onBackground</color>
+    <color name="text_secondary">@color/md_theme_light_onSurfaceVariant</color>
+    <color name="surface">@color/md_theme_light_surface</color>
+    <color name="surface_variant">@color/md_theme_light_surfaceVariant</color>
+    <color name="primary">@color/md_theme_light_primary</color>
+    <color name="primary_variant">@color/md_theme_light_primaryContainer</color>
+    <color name="secondary">@color/md_theme_light_secondary</color>
+    <color name="outline">@color/md_theme_light_outline</color>
 </resources>

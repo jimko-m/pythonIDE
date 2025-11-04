@@ -327,7 +327,7 @@ class MainActivity : AppCompatActivity() {
             ${getString(R.string.feature_room_database)}
             ${getString(R.string.feature_webview_support)}
             
-            بيئة تطوير متكاملة للبرمجة بـ Python
+            Integrated Python Development Environment
         """.trimIndent()
         
         androidx.appcompat.app.AlertDialog.Builder(this)
