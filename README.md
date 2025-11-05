@@ -1,25 +1,30 @@
 # pythonIDE
 
-PythonIDE هو مشروع مفتوح المصدر لتوفير بيئة بسيطة لكتابة وتشغيل وفحص أكواد Python على الأجهزة/البيئات المستهدفة.
+#Project created with artificial intelligence for testing
 
-ملاحظة هامة: تمت إزالة جميع روابط الدعم والاتصال وعبارات طلب التبرع من هذا الملف كما طُلِب.
+PythonIDE is an open-source project to provide a simple environment for writing, running, and testing Python code on target devices/environments.
 
-المميزات
-- محرر كود مع تمييز للنحو (syntax highlighting)
-- محلّل أخطاء مدمج (ErrorDetector)
-- أداة استدعاء وتشغيل أوامر Python وTerminal
-- مساعد مرن لتحسين جودة الكود (formatting, linting)
+Features
+- Code editor with syntax highlighting
+- Built-in error detector
+- Python command and terminal call and execution tool
+- Flexible code quality improvement helper (formatting, linting)
 
-كيفية البناء والتشغيل
-1. تأكد من تثبيت JDK 11+ وAndroid SDK.
-2. من المجلد الجذري للمشروع شغّل:
-   ./gradlew clean assembleDebug
-3. لتشغيل التطبيق على جهاز متصل أو محاكي:
-   ./gradlew installDebug
+How to Build and Run
+1. Ensure JDK 11+ and Android SDK are installed.
 
-المساهمة
-- افتح Issues أو Pull Requests لتحسين المشروع.
-- اتبع توصيف الكود الموجود في /docs لإنشاء تغييرات متناسقة.
+2. From the project root folder, run:
 
-الرخصة
-- المشروع مرخّص بموجب MIT.
+./gradlew clean assembleDebug
+
+3. To run the application on a connected device or emulator:
+
+./gradlew installDebug
+
+Contribute
+- Open Issues or Pull Requests to improve the project.
+
+- Follow the code specification in /docs to make consistent changes.
+
+License
+- The project is licensed under MIT.
