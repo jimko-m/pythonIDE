@@ -11,7 +11,6 @@
 
 **The Most Advanced Python IDE for Android Devices**
 
-[Features](#features) • [Screenshots](#screenshots) • [Download](#download) • [Documentation](#documentation) • [Contributing](#contributing)
 
 </div>
 
@@ -60,36 +59,12 @@ Python IDE for Android is a revolutionary, AI-powered integrated development env
 - **📋 Code Snippets**: Reusable code template management
 - **🎯 Macro Recording**: Automate repetitive coding tasks
 
-## 📸 Screenshots
+
 
 <div align="center">
 
-![Main Interface](docs/screenshots/main_interface.png)
-*Main interface with project navigation*
-
-![Code Editor](docs/screenshots/code_editor.png)
-*Advanced code editor with AI assistance*
-
-![AI Assistant](docs/screenshots/ai_assistant.png)
-*AI-powered code suggestions*
-
-![Terminal](docs/screenshots/terminal.png)
-*Integrated terminal with Python support*
-
-![Cloud Sync](docs/screenshots/cloud_sync.png)
-*Real-time collaboration interface*
-
+   #The project was created using artificial intelligence.
 </div>
-
-## 📦 Download
-
-### Stable Release (Recommended)
-- **[Download APK v2.0.0](https://github.com/pythonide/android/releases/latest)** - Latest stable release
-- **[Google Play Store](https://play.google.com/store/apps/details?id=com.pythonide)** - Official store version
-
-### Beta/Pre-release
-- **[Beta APK v2.1.0-beta](https://github.com/pythonide/android/releases/tag/v2.1.0-beta)** - Latest beta features
-- **[Debug APK](https://ci.pythonide.com/artifacts/latest-debug.apk)** - Latest development build
 
 ### System Requirements
 
@@ -97,18 +72,6 @@ Python IDE for Android is a revolutionary, AI-powered integrated development env
 - **RAM**: 4GB minimum, 6GB recommended
 - **Storage**: 1GB free space
 - **Processor**: ARM64 or ARMv7 with hardware virtualization support
-
-## 🛠️ Quick Start
-
-### 1. Installation
-
-```bash
-# Download and install the APK
-adb install pythonide.apk
-
-# Or install via Google Play Store
-# Search for "Python IDE Android"
-```
 
 ### 2. First Project
 
@@ -168,31 +131,11 @@ We welcome contributions from the community! Here's how to get started:
 
 ### Development Setup
 
-```bash
-# Clone the repository
-git clone https://github.com/pythonide/android.git
-cd android
+```
 
 # Open in Android Studio
 # Follow DEVELOPMENT.md for complete setup
 ```
-
-## 🐛 Bug Reports
-
-Found a bug? Please report it:
-
-1. **Check existing issues** - Avoid duplicates
-2. **Create a detailed report** with steps to reproduce
-3. **Include system information** and error logs
-4. **Attach screenshots** if relevant
-
-[🐛 Report Bug](https://github.com/pythonide/android/issues/new?template=bug_report.md)
-
-## 💡 Feature Requests
-
-Have an idea for a new feature? We'd love to hear it!
-
-[💡 Request Feature](https://github.com/pythonide/android/issues/new?template=feature_request.md)
 
 ## 📄 License
 
@@ -233,7 +176,6 @@ copies or substantial portions of the Software.
 <div align="center">
 
 **Made with ❤️ for the Python community**
-
-[Website](https://pythonide.com) • [Twitter](https://twitter.com/pythonide) • [Discord](https://discord.gg/pythonide) • [Reddit](https://reddit.com/r/pythonide)
+##The project was created using artificial intelligence.
 
 </div>
